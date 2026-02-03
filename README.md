@@ -49,7 +49,7 @@
 <div class="container">
 
   <h1>Sasidhar Mopuru</h1>
-  <p class="tagline">Data & Software Engineer | Databricks Certified | Python | SQL | AI / LLM Evaluation</p>
+  <p class="tagline">Data Engineer | Databricks Certified | Python | SQL | AI / LLM Evaluation</p>
 
   <div class="card">
     <h2>About Me</h2>
@@ -105,7 +105,7 @@
   <div class="card">
     <h2>Technical Skills</h2>
     <ul>
-      <li>Programming: Python, Java, C</li>
+      <li>Programming: Python</li>
       <li>Data: SQL, Databricks, PySpark, Kafka</li>
       <li>Architecture: Batch pipelines, Streaming systems, Lakehouse</li>
       <li>Tools: Git, Linux, Jupyter, VS Code</li>
@@ -126,11 +126,11 @@
     <h2>Contact</h2>
     <p>Email: sasidharmopuru@gmail.com</p>
     <p>Location: India</p>
-    <p>Open to global remote AI & Data roles</p>
+    <p>Open to global remote Data & AI roles</p>
   </div>
 
   <footer>
-    © 2026 Sasidhar Mopuru | Built with HTML
+    © 2026 Sasidhar Mopuru | Data Engineer
   </footer>
 
 </div>
