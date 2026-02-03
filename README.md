@@ -1,5 +1,3 @@
-# Portfolio
-About me
 <!DOCTYPE html>
 <html lang="en">
 <head>
