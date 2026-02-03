@@ -2,138 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Sasidhar Mopuru | Data Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sasidhar Mopuru | Data & AI Engineer</title>
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
-      margin: 0;
-      background: #020617;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
       color: #e5e7eb;
+      margin: 0;
+      padding: 0;
     }
-    header {
-      text-align: center;
-      padding: 90px 20px;
-      background: linear-gradient(135deg, #020617, #0f172a);
-    }
-    h1, h2, h3 { color: #f8fafc; }
-    section {
-      padding: 60px 20px;
+    .container {
       max-width: 900px;
       margin: auto;
+      padding: 40px;
+    }
+    h1, h2, h3 {
+      color: #38bdf8;
+    }
+    .tagline {
+      color: #94a3b8;
+      margin-bottom: 30px;
     }
     .card {
       background: #020617;
-      border: 1px solid #1e293b;
-      border-radius: 14px;
-      padding: 24px;
+      border-radius: 10px;
+      padding: 20px;
       margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
     }
-    .tag {
-      display: inline-block;
-      background: #1e293b;
-      padding: 6px 12px;
-      border-radius: 20px;
-      margin: 5px;
-      font-size: 14px;
+    ul {
+      padding-left: 20px;
     }
-    a { color: #38bdf8; text-decoration: none; }
+    li {
+      margin-bottom: 8px;
+    }
     footer {
       text-align: center;
-      padding: 30px;
-      color: #94a3b8;
-      border-top: 1px solid #1e293b;
+      color: #64748b;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-<header>
+<div class="container">
+
   <h1>Sasidhar Mopuru</h1>
-  <p>Databricks Certified Data Engineer | Python | SQL | AI & LLM Systems</p>
-  <p>
-    <a href="mailto:sasidharmopuru@gmail.com">sasidharmopuru@gmail.com</a> |
-    <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233">LinkedIn</a> |
-    <a href="https://github.com/sasidharmopuru">GitHub</a>
-  </p>
-</header>
+  <p class="tagline">Data & Software Engineer | Databricks Certified | Python | SQL | AI / LLM Evaluation</p>
 
-<section>
-  <h2>Professional Summary</h2>
   <div class="card">
-    Data and AI engineering professional with strong foundations in Python, SQL, and data systems.
-    Databricks Certified with hands-on experience in machine learning projects, data analytics,
-    and large-scale data processing concepts. Strong analytical background with 94.14 percentile
-    in JEE Mains, demonstrating advanced problem-solving and logical reasoning ability.
+    <h2>About Me</h2>
+    <p>
+      I am a Data Engineer with hands-on experience building enterprise-scale data products 
+      in both batch and real-time streaming environments. Currently working at Accenture 
+      for a global client, I specialize in designing end-to-end data pipelines, ensuring data quality, 
+      and developing scalable systems using Python, SQL, Databricks, and PySpark.
+    </p>
+    <p>
+      My long-term goal is to transition into AI and LLM engineering roles, where I can apply 
+      my data engineering background to building high-quality training datasets, evaluation systems, 
+      and intelligent data-driven applications.
+    </p>
   </div>
-</section>
 
-<section>
-  <h2>Core Skills</h2>
   <div class="card">
-    <span class="tag">Python</span>
-    <span class="tag">SQL</span>
-    <span class="tag">Databricks</span>
-    <span class="tag">PySpark</span>
-    <span class="tag">Machine Learning</span>
-    <span class="tag">Data Engineering</span>
-    <span class="tag">System Design</span>
-    <span class="tag">LLM Evaluation</span>
-    <span class="tag">Git/GitHub</span>
-    <span class="tag">Linux</span>
-  </div>
-</section>
-
-<section>
-  <h2>Key Project</h2>
-  <div class="card">
-    <h3>IPL Score Prediction using Machine Learning</h3>
-    <p><b>September 2022 – January 2023</b></p>
+    <h2>Professional Experience</h2>
+    <h3>Data Engineer – Accenture (Client: Dell)</h3>
+    <p>February 2024 – Present</p>
     <ul>
-      <li>Designed and implemented a machine learning model to predict IPL powerplay scores using historical match data.</li>
-      <li>Performed end-to-end data preprocessing, feature engineering, and model evaluation in Python.</li>
-      <li>Improved understanding of real-world prediction challenges, data quality issues, and performance metrics.</li>
+      <li>Developed multiple enterprise data products across batch and streaming architectures.</li>
+      <li>Designed end-to-end data flows from source systems to SDP and CDP layers.</li>
+      <li>Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.</li>
+      <li>Implemented unit test frameworks for Python-based data pipelines.</li>
+      <li>Created DDL scripts and configuration-driven workflows using Git.</li>
+      <li>Performed data validation, debugging, and performance optimization.</li>
+      <li>Worked under strict NDA and enterprise data governance standards.</li>
     </ul>
   </div>
-</section>
 
-<section>
-  <h2>Certifications</h2>
   <div class="card">
+    <h2>Projects</h2>
+    <h3>IPL Score Prediction using Machine Learning</h3>
+    <p>September 2022 – January 2023</p>
+    <ul>
+      <li>Built an ML model to predict IPL powerplay scores using historical data.</li>
+      <li>Performed data preprocessing, feature engineering, and model evaluation.</li>
+      <li>Implemented the project in Python using standard ML libraries.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Certifications</h2>
     <ul>
       <li><b>Databricks Certified Data Engineer Associate</b></li>
       <li>Databricks PySpark Streaming Training – Accenture (8 Weeks)</li>
       <li>Google Data Analytics Professional Certificate – Coursera</li>
-      <li>NPTEL Certification in Management Information Systems – IIT Madras (2022)</li>
+      <li>NPTEL MIS – IIT Madras (2022)</li>
     </ul>
   </div>
-</section>
 
-<section>
-  <h2>Education & Achievements</h2>
   <div class="card">
-    <p><b>B.Tech – Computer Science Engineering</b></p>
-    <p>Madanapalle Institute of Technology & Science (UGC – Autonomous)</p>
-    <p>CGPA: 7.99</p>
-    <p><b>Academic Achievement:</b> Secured 94.14 percentile in JEE Mains</p>
-  </div>
-</section>
-
-<section>
-  <h2>Professional Direction</h2>
-  <div class="card">
-    Focused on building a long-term career in:
+    <h2>Technical Skills</h2>
     <ul>
-      <li>Data Engineering</li>
-      <li>AI & LLM Systems</li>
-      <li>AI Code Evaluation & Quality Engineering</li>
+      <li>Programming: Python, Java, C</li>
+      <li>Data: SQL, Databricks, PySpark, Kafka</li>
+      <li>Architecture: Batch pipelines, Streaming systems, Lakehouse</li>
+      <li>Tools: Git, Linux, Jupyter, VS Code</li>
+      <li>Core: ETL, Data Quality, Unit Testing, System Design</li>
     </ul>
   </div>
-</section>
 
-<footer>
-  © 2026 Sasidhar Mopuru | Data & AI Engineering Portfolio
-</footer>
+  <div class="card">
+    <h2>Education & Achievements</h2>
+    <ul>
+      <li>B.Tech in CSE – CGPA 7.99</li>
+      <li>JEE Mains – 94.14 Percentile</li>
+      <li>Enterprise Data Engineer at Accenture</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: sasidharmopuru@gmail.com</p>
+    <p>Location: India</p>
+    <p>Open to global remote AI & Data roles</p>
+  </div>
+
+  <footer>
+    © 2026 Sasidhar Mopuru | Built with HTML
+  </footer>
+
+</div>
 
 </body>
 </html>
