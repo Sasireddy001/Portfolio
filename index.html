@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sasidhar Mopuru, Data Engineer">
+  <title>Sasidhar Mopuru | Data Engineer</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+    .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+    header { text-align: center; margin-bottom: 50px; }
+    header h1 { margin: 0; font-size: 2.8em; letter-spacing: -1px; }
+    header .tagline { color: var(--muted); font-size: 1.25em; margin-top: 10px; }
+    .badges { text-align: center; margin-bottom: 40px; }
+    .badges img, .badges a img { margin: 4px; vertical-align: middle; border-radius: 4px; }
+    section {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    h3 { margin-bottom: 6px; color: var(--text); }
+    .meta { color: var(--muted); font-size: 0.95em; margin-bottom: 12px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    th { color: var(--accent); }
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+    .skill {
+      background: var(--border);
+      padding: 10px 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 0.95em;
+    }
+    footer { text-align: center; color: var(--muted); margin-top: 40px; padding-bottom: 20px; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      section { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Sasidhar Mopuru</h1>
+    <p class="tagline">Data Engineer | Databricks Certified | Python | SQL | AI / LLM Evaluation</p>
+  </header>
+
+  <div class="badges">
+    <a href="https://www.python.org" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+    </a>
+    <a href="https://spark.apache.org" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=white" alt="Apache Spark">
+    </a>
+    <a href="https://databricks.com" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white" alt="Databricks">
+    </a>
+    <a href="https://kafka.apache.org" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white" alt="Apache Kafka">
+    </a>
+    <a href="https://delta.io" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/Delta%20Lake-00ADD8?logo=delta&logoColor=white" alt="Delta Lake">
+    </a>
+    <a href="https://github.com/features/actions" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" alt="GitHub Actions">
+    </a>
+  </div>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a Data Engineer with hands-on experience building enterprise-scale data products
+      in both batch and real-time streaming environments. I specialize in designing end-to-end
+      data pipelines, ensuring data quality, and developing scalable systems using Python,
+      SQL, Databricks, and PySpark.
+    </p>
+    <p>
+      My long-term goal is to transition into AI and LLM engineering roles, where I can apply
+      my data engineering background to building high-quality training datasets, evaluation
+      systems, and intelligent data-driven applications.
+    </p>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <h3>Data Engineer – Accenture</h3>
+    <p class="meta">Feb 2024 – Present</p>
+    <ul>
+      <li>Developed multiple enterprise data products across batch and streaming architectures.</li>
+      <li>Designed end-to-end data flows from source systems to SDP and CDP layers.</li>
+      <li>Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.</li>
+      <li>Implemented unit test frameworks for Python-based data pipelines.</li>
+      <li>Created DDL scripts and configuration-driven workflows using Git.</li>
+      <li>Performed data validation, debugging, and performance optimization.</li>
+      <li>Worked under strict NDA and enterprise data governance standards.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Selected Projects</h2>
+    <h3>IPL Score Prediction using Machine Learning</h3>
+    <p class="meta">Sep 2022 – Jan 2023</p>
+    <ul>
+      <li>Built an ML model to predict IPL powerplay scores using historical data.</li>
+      <li>Performed data preprocessing, feature engineering, and model evaluation.</li>
+      <li>Implemented the project in Python using standard ML libraries.</li>
+    </ul>
+    <p>
+      <a href="https://github.com/Sasireddy001/Portfolio">View Portfolio Repository</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <table>
+      <thead>
+        <tr><th>Certification</th><th>Issuer</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Databricks Certified Data Engineer Associate</td><td>Databricks</td></tr>
+        <tr><td>Databricks PySpark Streaming Training – 8 Weeks</td><td>Accenture</td></tr>
+        <tr><td>Google Data Analytics Professional Certificate</td><td>Coursera</td></tr>
+        <tr><td>NPTEL MIS</td><td>IIT Madras</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Databricks</div>
+      <div class="skill">Apache Spark</div>
+      <div class="skill">Delta Lake</div>
+      <div class="skill">Apache Kafka</div>
+      <div class="skill">Git</div>
+      <div class="skill">Linux</div>
+      <div class="skill">Jupyter</div>
+      <div class="skill">VS Code</div>
+      <div class="skill">ETL</div>
+      <div class="skill">Data Quality</div>
+      <div class="skill">Unit Testing</div>
+      <div class="skill">System Design</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education & Achievements</h2>
+    <ul>
+      <li>B.Tech in Computer Science and Engineering – CGPA 7.99</li>
+      <li>JEE Mains – 94.14 Percentile</li>
+      <li>Enterprise Data Engineer at Accenture</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:sasidharmopuru@gmail.com">sasidharmopuru@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/Sasireddy001" target="_blank" rel="noopener">@Sasireddy001</a></li>
+      <li>Location: India</li>
+      <li>Open to global remote Data & AI roles</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>2026 Sasidhar Mopuru | Data Engineer</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
