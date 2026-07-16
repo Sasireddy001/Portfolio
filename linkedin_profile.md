@@ -33,6 +33,7 @@ Featured project — Production-Style Kafka PySpark Delta Pipeline: a production
 Portfolio: https://sasireddy001.github.io/Portfolio/
 Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
 GitHub: https://github.com/Sasireddy001
+LinkedIn: https://www.linkedin.com/in/sasidhar-mopuru-417a03233
 Email: sasidharmopuru@gmail.com
 
 Open to global remote Data & AI roles.
