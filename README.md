@@ -2,7 +2,7 @@
 
 # Sasidhar Mopuru
 
-### Data Engineer | Databricks Certified | Python | SQL | AI / LLM Evaluation
+### Data & AI Platform Engineer | Databricks Certified | Kafka · PySpark · Delta Lake · Python
 
 [![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-sasireddy001.github.io%2FPortfolio-4ade80?logo=githubpages&logoColor=white)](https://sasireddy001.github.io/Portfolio)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org)
@@ -10,20 +10,28 @@
 [![Databricks](https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white)](https://databricks.com)
 [![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white)](https://kafka.apache.org)
 [![Delta Lake](https://img.shields.io/badge/Delta%20Lake-00ADD8?logo=delta&logoColor=white)](https://delta.io)
-[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
+[![GitHub  Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
 </div>
 
 ## About Me
 
-I am a Data Engineer with hands-on experience building enterprise-scale data
-products in both batch and real-time streaming environments. I specialize in
-designing end-to-end data pipelines, ensuring data quality, and developing
-scalable systems using Python, SQL, Databricks, and PySpark.
+I am a **Data & AI Platform Engineer** with 2+ years of experience building production-grade streaming data products and lakehouse systems at Accenture. I specialize in turning high-velocity event data into reliable, AI-ready data platforms.
 
-My long-term goal is to transition into AI and LLM engineering roles, where I
-can apply my data engineering background to building high-quality training
-datasets, evaluation systems, and intelligent data-driven applications.
+- **Real-time pipelines:** Kafka → PySpark → Delta Lake with exactly-once processing
+- **Cloud & Lakehouse platforms:** Databricks, Apache Spark, schema enforcement, data quality
+- **AI-ready data engineering:** Evaluation systems, RAG data foundations, and agentic pipelines
+- **Production discipline:** CI/CD, automated testing, modular configuration-driven code
+
+I am actively expanding into **Cloud, DevOps, Platform Engineering, and AI/LLM systems** — roles where strong data-engineering fundamentals are a force multiplier.
+
+## What I Build
+
+End-to-end streaming data platforms that feed analytics, ML, and generative AI applications — with the reliability, testability, and observability production systems demand.
+
+## Target Roles
+
+Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Architect · DevOps Engineer (data-platform focus)
 
 ## Professional Experience
 
@@ -66,11 +74,13 @@ datasets, evaluation systems, and intelligent data-driven applications.
 
 ## Technical Skills
 
-- **Programming:** Python, SQL
-- **Data Platforms:** Databricks, Apache Spark, Delta Lake, Apache Kafka
-- **Architecture:** Batch pipelines, Streaming systems, Lakehouse
-- **Tools:** Git, Linux, Jupyter, VS Code
-- **Core Competencies:** ETL, Data Quality, Unit Testing, System Design
+- **Programming:** Python, SQL, PySpark
+- **Data Engineering:** Apache Kafka, PySpark Streaming, ETL/ELT Pipelines, Data Ingestion, Data Transformation, Batch & Streaming Processing
+- **Data Platforms:** Databricks, Apache Spark, Delta Lake, SingleStore, Relational Databases
+- **Quality & Testing:** Pytest, Unittest, Mocking, Data Validation, Schema Validation
+- **DevOps & Tools:** Git, CI/CD Pipelines, IOMate, Jira, Agile Scrum
+- **Architecture:** Object-Oriented Programming, Modular Coding, YAML/JSON, Logging, Exception Handling, System Design
+- **Building Toward:** Cloud (AWS/Azure), Kubernetes, Terraform, Docker, GenAI, RAG, AI Agents, Platform Engineering, Observability
 
 ## Education & Achievements
 
@@ -89,6 +99,9 @@ datasets, evaluation systems, and intelligent data-driven applications.
 
 ## Contact
 
+- Portfolio: [sasireddy001.github.io/Portfolio](https://sasireddy001.github.io/Portfolio)
 - Email: [sasidharmopuru@gmail.com](mailto:sasidharmopuru@gmail.com)
+- GitHub: [@Sasireddy001](https://github.com/Sasireddy001)
+- LinkedIn: *(add your URL here)*
 - Location: India
 - Open to global remote Data & AI roles
