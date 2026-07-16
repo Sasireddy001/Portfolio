@@ -46,6 +46,11 @@ Open to global remote Data & AI roles.
 - Link: https://sasireddy001.github.io/Portfolio/
 - Description: A live portfolio site showcasing my data engineering experience, certifications, technical skills, and projects. Built with HTML/CSS and hosted on GitHub Pages.
 
+**RAG Document QA Chatbot**
+- Link: https://github.com/Sasireddy001/rag-document-qa
+- Description: A retrieval-augmented generation (RAG) application with FastAPI, Streamlit, ChromaDB, and local or OpenAI LLMs. Implements document ingestion, text chunking, sentence-transformer embeddings, dense retrieval, and LLM answer generation. Includes pytest tests with mocked components, GitHub Actions CI, and architecture documentation.
+- Skills: Python, FastAPI, Streamlit, ChromaDB, Vector Databases, RAG, LLM, OpenAI, Sentence-Transformers, CI/CD, GitHub Actions
+
 **Production-Style Kafka PySpark Delta Pipeline**
 - Link: https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline
 - Description: A production-style streaming data pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes the results to Delta Lake. Features environment-driven configuration, JSON schema enforcement, checkpointing with exactly-once semantics, pytest unit tests, GitHub Actions CI, and a throughput benchmark. Designed to run on Databricks or locally.
@@ -122,7 +127,12 @@ Add these to the Skills section (top 50):
 - Machine Learning
 - Data Analysis
 - Cloud Data Engineering Concepts
-- GenAI / RAG / AI Agents (building toward)
+- RAG / LLM
+- FastAPI
+- Streamlit
+- ChromaDB
+- Vector Databases
+- GenAI / AI Agents (building toward)
 
 ---
 
