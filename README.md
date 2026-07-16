@@ -4,6 +4,7 @@
 
 ### Data Engineer | Databricks Certified | Python | SQL | AI / LLM Evaluation
 
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-sasireddy001.github.io%2FPortfolio-4ade80?logo=githubpages&logoColor=white)](https://sasireddy001.github.io/Portfolio)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org)
 [![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=white)](https://spark.apache.org)
 [![Databricks](https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white)](https://databricks.com)
