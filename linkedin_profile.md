@@ -12,19 +12,23 @@ Sasidhar Mopuru
 
 ## Headline
 
-Data Engineer | Databricks Certified | Python | SQL | Kafka | PySpark | Delta Lake | Building Scalable Streaming & Lakehouse Systems
+Data & AI Platform Engineer | Databricks Certified | Python | SQL | Kafka · PySpark · Delta Lake · Databricks | Building Scalable Streaming & Lakehouse Systems
 
 ---
 
 ## About
 
-I am a Data Engineer with hands-on experience building enterprise-scale data products across both batch and real-time streaming environments. I specialize in designing end-to-end data pipelines, ensuring data quality, and developing scalable systems using Python, SQL, Databricks, and PySpark.
+I am a Data & AI Platform Engineer with 2+ years of experience at Accenture building production-grade streaming data products and lakehouse systems. I specialize in turning high-velocity event data into reliable, AI-ready data platforms.
 
-My work spans Kafka-based JSON ingestion, lakehouse architectures, PySpark Structured Streaming, and configuration-driven CI/CD workflows. I have implemented unit test frameworks for Python data pipelines, created DDL and ETL scripts, and performed data validation, debugging, and performance optimization for production workloads.
+Core expertise:
+• Kafka → PySpark → Delta Lake streaming pipelines with exactly-once processing
+• Databricks lakehouse architectures, schema enforcement, and data quality
+• Configuration-driven Python frameworks (YAML/JSON), automated testing with pytest/unittest, and CI/CD pipelines
+• Data validation, schema validation, debugging, and performance optimization for production workloads
 
-Featured project — Production-Style Kafka PySpark Delta Pipeline: a production-style streaming data pipeline built with Apache Kafka, PySpark Structured Streaming, and Delta Lake, complete with pytest unit tests, GitHub Actions CI, and a performance benchmark.
+I am actively expanding into Cloud, DevOps, Platform Engineering, and AI/LLM systems — areas where strong data-engineering fundamentals are a force multiplier.
 
-My long-term goal is to transition into AI and LLM engineering roles, where I can apply my data engineering background to building high-quality training datasets, evaluation systems, and intelligent data-driven applications.
+Featured project — Production-Style Kafka PySpark Delta Pipeline: a production-style streaming data pipeline built with Apache Kafka, PySpark Structured Streaming, and Delta Lake, complete with pytest unit tests, GitHub Actions CI, and a throughput benchmark.
 
 Portfolio: https://sasireddy001.github.io/Portfolio/
 GitHub: https://github.com/Sasireddy001
@@ -89,24 +93,34 @@ Add these to the Skills section (top 50):
 
 - Python
 - SQL
-- Apache Spark
 - PySpark
+- Apache Spark
 - Databricks
 - Delta Lake
 - Apache Kafka
-- ETL
-- Data Quality
+- ETL / ELT
 - Data Pipelines
 - Data Engineering
 - Data Modeling
+- Data Quality
+- Schema Validation
+- Data Validation
+- Unit Testing (pytest / unittest / mocking)
 - System Design
-- Unit Testing
+- Object-Oriented Programming
+- Modular Coding
+- CI/CD
 - Git
 - Linux
 - Jupyter
 - VS Code
+- Jira
+- Agile / Scrum
+- YAML / JSON
 - Machine Learning
 - Data Analysis
+- Cloud Data Engineering Concepts
+- GenAI / RAG / AI Agents (building toward)
 
 ---
 
