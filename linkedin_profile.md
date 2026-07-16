@@ -22,6 +22,8 @@ I am a Data Engineer with hands-on experience building enterprise-scale data pro
 
 My work spans Kafka-based JSON ingestion, lakehouse architectures, PySpark Structured Streaming, and configuration-driven CI/CD workflows. I have implemented unit test frameworks for Python data pipelines, created DDL and ETL scripts, and performed data validation, debugging, and performance optimization for production workloads.
 
+Featured project — Kafka → PySpark → Delta Lake Pipeline: a production-style streaming data pipeline built with Apache Kafka, PySpark Structured Streaming, and Delta Lake, complete with pytest unit tests, GitHub Actions CI, and a performance benchmark.
+
 My long-term goal is to transition into AI and LLM engineering roles, where I can apply my data engineering background to building high-quality training datasets, evaluation systems, and intelligent data-driven applications.
 
 Portfolio: https://sasireddy001.github.io/Portfolio/
@@ -37,6 +39,11 @@ Open to global remote Data & AI roles.
 **Data Engineering Portfolio**
 - Link: https://sasireddy001.github.io/Portfolio/
 - Description: A live portfolio site showcasing my data engineering experience, certifications, technical skills, and projects. Built with HTML/CSS and hosted on GitHub Pages.
+
+**Kafka → PySpark → Delta Lake Pipeline**
+- Link: https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline
+- Description: A production-style streaming data pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes the results to Delta Lake. Features environment-driven configuration, JSON schema enforcement, checkpointing with exactly-once semantics, pytest unit tests, GitHub Actions CI, and a throughput benchmark. Designed to run on Databricks or locally.
+- Skills: Apache Kafka, Apache Spark, PySpark, Delta Lake, Databricks, Python, ETL, Data Pipelines, Git, GitHub Actions
 
 **IPL Score Prediction using Machine Learning**
 - Sep 2022 – Jan 2023
