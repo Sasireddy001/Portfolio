@@ -1,139 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Sasidhar Mopuru | Data Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-    }
-    h1, h2, h3 {
-      color: #38bdf8;
-    }
-    .tagline {
-      color: #94a3b8;
-      margin-bottom: 30px;
-    }
-    .card {
-      background: #020617;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    footer {
-      text-align: center;
-      color: #64748b;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
+<div align="center">
 
-<div class="container">
+# Sasidhar Mopuru
 
-  <h1>Sasidhar Mopuru</h1>
-  <p class="tagline">Data Engineer | Databricks Certified | Python | SQL | AI / LLM Evaluation</p>
+### Data Engineer | Databricks Certified | Python | SQL | AI / LLM Evaluation
 
-  <div class="card">
-    <h2>About Me</h2>
-    <p>
-      I am a Data Engineer with hands-on experience building enterprise-scale data products 
-      in both batch and real-time streaming environments. Currently working at Accenture 
-      for a global client, I specialize in designing end-to-end data pipelines, ensuring data quality, 
-      and developing scalable systems using Python, SQL, Databricks, and PySpark.
-    </p>
-    <p>
-      My long-term goal is to transition into AI and LLM engineering roles, where I can apply 
-      my data engineering background to building high-quality training datasets, evaluation systems, 
-      and intelligent data-driven applications.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Professional Experience</h2>
-    <h3>Data Engineer – Accenture (Client: Dell)</h3>
-    <p>February 2024 – Present</p>
-    <ul>
-      <li>Developed multiple enterprise data products across batch and streaming architectures.</li>
-      <li>Designed end-to-end data flows from source systems to SDP and CDP layers.</li>
-      <li>Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.</li>
-      <li>Implemented unit test frameworks for Python-based data pipelines.</li>
-      <li>Created DDL scripts and configuration-driven workflows using Git.</li>
-      <li>Performed data validation, debugging, and performance optimization.</li>
-      <li>Worked under strict NDA and enterprise data governance standards.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Projects</h2>
-    <h3>IPL Score Prediction using Machine Learning</h3>
-    <p>September 2022 – January 2023</p>
-    <ul>
-      <li>Built an ML model to predict IPL powerplay scores using historical data.</li>
-      <li>Performed data preprocessing, feature engineering, and model evaluation.</li>
-      <li>Implemented the project in Python using standard ML libraries.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Certifications</h2>
-    <ul>
-      <li><b>Databricks Certified Data Engineer Associate</b></li>
-      <li>Databricks PySpark Streaming Training – Accenture (8 Weeks)</li>
-      <li>Google Data Analytics Professional Certificate – Coursera</li>
-      <li>NPTEL MIS – IIT Madras (2022)</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Programming: Python</li>
-      <li>Data: SQL, Databricks, PySpark, Kafka</li>
-      <li>Architecture: Batch pipelines, Streaming systems, Lakehouse</li>
-      <li>Tools: Git, Linux, Jupyter, VS Code</li>
-      <li>Core: ETL, Data Quality, Unit Testing, System Design</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Education & Achievements</h2>
-    <ul>
-      <li>B.Tech in CSE – CGPA 7.99</li>
-      <li>JEE Mains – 94.14 Percentile</li>
-      <li>Enterprise Data Engineer at Accenture</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: sasidharmopuru@gmail.com</p>
-    <p>Location: India</p>
-    <p>Open to global remote Data & AI roles</p>
-  </div>
-
-  <footer>
-    © 2026 Sasidhar Mopuru | Data Engineer
-  </footer>
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org)
+[![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=white)](https://spark.apache.org)
+[![Databricks](https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white)](https://databricks.com)
+[![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white)](https://kafka.apache.org)
+[![Delta Lake](https://img.shields.io/badge/Delta%20Lake-00ADD8?logo=delta&logoColor=white)](https://delta.io)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
 </div>
 
-</body>
-</html>
+## About Me
+
+I am a Data Engineer with hands-on experience building enterprise-scale data
+products in both batch and real-time streaming environments. I specialize in
+designing end-to-end data pipelines, ensuring data quality, and developing
+scalable systems using Python, SQL, Databricks, and PySpark.
+
+My long-term goal is to transition into AI and LLM engineering roles, where I
+can apply my data engineering background to building high-quality training
+datasets, evaluation systems, and intelligent data-driven applications.
+
+## Professional Experience
+
+### Data Engineer – Accenture
+*Feb 2024 – Present*
+
+- Developed multiple enterprise data products across batch and streaming architectures.
+- Designed end-to-end data flows from source systems to SDP and CDP layers.
+- Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.
+- Implemented unit test frameworks for Python-based data pipelines.
+- Created DDL scripts and configuration-driven workflows using Git.
+- Performed data validation, debugging, and performance optimization.
+- Worked under strict NDA and enterprise data governance standards.
+
+## Selected Projects
+
+### IPL Score Prediction using Machine Learning
+*Sep 2022 – Jan 2023*
+
+- Built an ML model to predict IPL powerplay scores using historical data.
+- Performed data preprocessing, feature engineering, and model evaluation.
+- Implemented the project in Python using standard ML libraries.
+
+## Certifications
+
+| Certification | Issuer |
+|---|---|
+| Databricks Certified Data Engineer Associate | Databricks |
+| Databricks PySpark Streaming Training – 8 Weeks | Accenture |
+| Google Data Analytics Professional Certificate | Coursera |
+| NPTEL MIS | IIT Madras |
+
+## Technical Skills
+
+- **Programming:** Python, SQL
+- **Data Platforms:** Databricks, Apache Spark, Delta Lake, Apache Kafka
+- **Architecture:** Batch pipelines, Streaming systems, Lakehouse
+- **Tools:** Git, Linux, Jupyter, VS Code
+- **Core Competencies:** ETL, Data Quality, Unit Testing, System Design
+
+## Education & Achievements
+
+- B.Tech in Computer Science and Engineering – CGPA 7.99
+- JEE Mains – 94.14 Percentile
+- Enterprise Data Engineer at Accenture
+
+## GitHub Stats
+
+<div align="center">
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Sasireddy001&show_icons=true&theme=default)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Sasireddy001&layout=compact)
+
+</div>
+
+## Contact
+
+- Email: [sasidharmopuru@gmail.com](mailto:sasidharmopuru@gmail.com)
+- Location: India
+- Open to global remote Data & AI roles
