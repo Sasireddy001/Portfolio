@@ -40,6 +40,14 @@ datasets, evaluation systems, and intelligent data-driven applications.
 
 ## Selected Projects
 
+### Production-Style Kafka PySpark Delta Pipeline
+*Jul 2026*
+
+- Built a production-style streaming data pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes the results to Delta Lake.
+- Implemented environment-driven configuration, JSON schema enforcement, checkpointing with exactly-once semantics, and watermark-based deduplication.
+- Created a pytest unit-test suite with an in-memory Spark fixture, GitHub Actions CI, a sample data generator, and a throughput benchmark.
+- Designed to run on Databricks, a Spark cluster, or locally for development.
+
 ### IPL Score Prediction using Machine Learning
 *Sep 2022 – Jan 2023*
 
