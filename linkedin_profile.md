@@ -31,6 +31,7 @@ I am actively expanding into Cloud, DevOps, Platform Engineering, and AI/LLM sys
 Featured project — Production-Style Kafka PySpark Delta Pipeline: a production-style streaming data pipeline built with Apache Kafka, PySpark Structured Streaming, and Delta Lake, complete with pytest unit tests, GitHub Actions CI, and a throughput benchmark.
 
 Portfolio: https://sasireddy001.github.io/Portfolio/
+Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
 GitHub: https://github.com/Sasireddy001
 Email: sasidharmopuru@gmail.com
 
@@ -130,11 +131,15 @@ Add your portfolio site as the custom profile button:
 - Label: Portfolio
 - URL: https://sasireddy001.github.io/Portfolio/
 
+Add a second custom profile button for your resume:
+- Label: Resume
+- URL: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
+
 ---
 
 ## Banner / Background Photo Suggestion
 
 Suggested banner text overlay (if creating a custom banner image):
-- "Data Engineer | Databricks Certified | Kafka · PySpark · Delta Lake · Databricks"
+- "Data & AI Platform Engineer | Databricks Certified | Kafka · PySpark · Delta Lake · Python"
 
 Use a clean dark/tech-themed background with this text in a readable font.

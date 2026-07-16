@@ -11,6 +11,7 @@
 [![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white)](https://kafka.apache.org)
 [![Delta Lake](https://img.shields.io/badge/Delta%20Lake-00ADD8?logo=delta&logoColor=white)](https://delta.io)
 [![GitHub  Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
+[![Resume](https://img.shields.io/badge/Resume-PDF-critical?logo=adobeacrobatreader&logoColor=white)](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf)
 
 </div>
 
@@ -100,6 +101,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 ## Contact
 
 - Portfolio: [sasireddy001.github.io/Portfolio](https://sasireddy001.github.io/Portfolio)
+- Resume: [PDF](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf)
 - Email: [sasidharmopuru@gmail.com](mailto:sasidharmopuru@gmail.com)
 - GitHub: [@Sasireddy001](https://github.com/Sasireddy001)
 - LinkedIn: *(add your URL here)*
