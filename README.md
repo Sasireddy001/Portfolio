@@ -49,6 +49,16 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 ## Selected Projects
 
+### RAG Document QA Chatbot
+*Jul 2026*
+
+- Built a retrieval-augmented generation (RAG) application with **FastAPI**, **Streamlit**, **ChromaDB**, and local or OpenAI LLMs.
+- Implemented document ingestion, text chunking, sentence-transformer embeddings, dense retrieval, and LLM answer generation.
+- Designed an environment-driven, modular architecture with separate ingest, embed, vector-store, LLM, and query components.
+- Created a pytest test suite with mocked embeddings and LLM calls, GitHub Actions CI, and architecture documentation.
+
+**Links:** [Repository](https://github.com/Sasireddy001/rag-document-qa)
+
 ### Production-Style Kafka PySpark Delta Pipeline
 *Jul 2026*
 
@@ -77,11 +87,12 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 - **Programming:** Python, SQL, PySpark
 - **Data Engineering:** Apache Kafka, PySpark Streaming, ETL/ELT Pipelines, Data Ingestion, Data Transformation, Batch & Streaming Processing
+- **AI / LLM / App Development:** RAG, LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, GenAI, AI Agents
 - **Data Platforms:** Databricks, Apache Spark, Delta Lake, SingleStore, Relational Databases
 - **Quality & Testing:** Pytest, Unittest, Mocking, Data Validation, Schema Validation
 - **DevOps & Tools:** Git, CI/CD Pipelines, IOMate, Jira, Agile Scrum
 - **Architecture:** Object-Oriented Programming, Modular Coding, YAML/JSON, Logging, Exception Handling, System Design
-- **Building Toward:** Cloud (AWS/Azure), Kubernetes, Terraform, Docker, GenAI, RAG, AI Agents, Platform Engineering, Observability
+- **Building Toward:** Cloud (AWS/Azure), Kubernetes, Terraform, Docker, Platform Engineering, Observability
 
 ## Education & Achievements
 
