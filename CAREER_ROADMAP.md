@@ -32,7 +32,7 @@ You are a **strong mid-level Data Engineer** with credible hands-on experience i
 
 **Weaknesses / Red flags**
 - Only **one substantial project** on GitHub.
-- No LinkedIn URL, no resume PDF, no contact CTA on the portfolio.
+- LinkedIn URL and resume PDF are now linked from the portfolio; continue adding them to project READMEs and your LinkedIn profile.
 - No evidence of Cloud (AWS/Azure/GCP), Kubernetes, Terraform, Docker, GenAI, or RAG.
 - `writing-samples` repo is abandoned-looking and unrelated.
 - GitHub stats are near zero (new/low activity, no stars, no open-source contributions).
