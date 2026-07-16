@@ -37,7 +37,7 @@ You are a **strong mid-level Data Engineer** with credible hands-on experience i
 - `writing-samples` repo is abandoned-looking and unrelated.
 - GitHub stats are near zero (new/low activity, no stars, no open-source contributions).
 - Target roles are too broad — you are not yet credible for Full Stack or DevOps without project proof.
-- Contact email in public repos differs from resume (`sasidharmopuru@gmail.com` vs `mopurusasidhar112@gmail.com`). Pick one.
+- Contact email is now unified to `sasidharmopuru@gmail.com` across resume, GitHub profile, portfolio, and LinkedIn content.
 
 ### Recruiter score: 52 / 100
 
@@ -275,7 +275,7 @@ Keep it updated as you add projects, and add a profile banner when you can.
 ## N. 30 / 60 / 90-Day Career Acceleration Plan
 
 ### 30 days
-- Update all profiles (GitHub, LinkedIn, portfolio) with the new brand.
+- Update all profiles (GitHub, LinkedIn, portfolio) with the new brand and upload the enhanced resume PDF.
 - Complete Quick Wins list (contact unification, repo tags, pinning, screenshots, `.env.example`).
 - Start AWS Cloud Practitioner or Azure Fundamentals course.
 - Publish 2 LinkedIn posts and 1 technical blog.
