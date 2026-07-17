@@ -67,6 +67,18 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 - Created a pytest unit-test suite with an in-memory Spark fixture, GitHub Actions CI, a sample data generator, and a throughput benchmark.
 - Designed to run on Databricks, a Spark cluster, or locally for development.
 
+**Links:** [Repository](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline)
+
+### Cloud-Native Streaming Data Platform
+*Jul 2026*
+
+- Designed and implemented a cloud-native streaming data platform using Azure Event Hubs, Databricks, ADLS Gen2, and Delta Lake.
+- Created Terraform modules for infrastructure as code with multi-environment support (dev/prod), demonstrating cloud automation skills.
+- Implemented a production-style PySpark streaming job with Azure Event Hubs integration, watermark-based deduplication, and Delta Lake checkpointing.
+- Demonstrated cloud skills, platform engineering, and infrastructure automation capabilities for high-value data platform roles.
+
+**Links:** [Repository](https://github.com/Sasireddy001/Cloud-data-platform)
+
 ### IPL Score Prediction using Machine Learning
 *Sep 2022 – Jan 2023*
 
