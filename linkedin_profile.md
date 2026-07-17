@@ -20,7 +20,7 @@ Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake �
 
 I build real-time, reliable data platforms that turn high-velocity event streams into analytics and AI-ready datasets.
 
-At Accenture, I design and ship Source Data Product (SDP) and Core Data Product (CDP) pipelines using PySpark Structured Streaming, Apache Kafka, and Delta Lake. My focus: exactly-once processing, schema enforcement, checkpointing, and automated testing.
+At Accenture, I design and ship Source Data Product (SDP) and Core Data Product (CDP) pipelines using PySpark, Apache Kafka, and Delta Lake. My focus: exactly-once processing, schema enforcement, checkpointing, and automated testing. I also build configuration-driven, Dockerized Spark jobs deployed through GitLab CI/CD, with secure secret management via HashiCorp Vault.
 
 Featured work:
 • Production-Style Kafka → PySpark → Delta Lake pipeline: schema enforcement, watermark-based deduplication, checkpointing, and 31k–45k rows/s throughput on a 4-core laptop.
@@ -68,7 +68,10 @@ Feb 2024 – Present
 
 - Developed multiple enterprise data products across batch and streaming architectures.
 - Designed end-to-end data flows from source systems to SDP and CDP layers.
-- Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.
+- Built configuration-driven PySpark pipelines with JSON-based job definitions and reusable Python utilities for logging, retry, schema validation, and credential extraction.
+- Containerized Spark jobs with Docker and deployed them through GitLab CI/CD across dev, sit, perf, and prod environments.
+- Integrated Kafka eventing and S3A-compatible object storage into pipeline workflows.
+- Managed secrets and credentials securely using HashiCorp Vault and enterprise certificate stores.
 - Implemented unit test frameworks for Python-based data pipelines.
 - Created DDL scripts and configuration-driven workflows using Git.
 - Performed data validation, debugging, and performance optimization.
@@ -120,9 +123,14 @@ Add these to the Skills section (top 50):
 - CI/CD
 - Git
 - Linux
+- Docker
 - Azure
 - Terraform
 - Kubernetes
+- HashiCorp Vault
+- Oracle
+- SingleStore
+- MongoDB
 - Jupyter
 - VS Code
 - Jira
