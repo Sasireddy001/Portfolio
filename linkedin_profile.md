@@ -12,23 +12,21 @@ Sasidhar Mopuru
 
 ## Headline
 
-Data & AI Platform Engineer | Databricks Certified | Python | SQL | Kafka · PySpark · Delta Lake · Databricks | Building Scalable Streaming & Lakehouse Systems
+Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Streaming & RAG Data Systems
 
 ---
 
 ## About
 
-I am a Data & AI Platform Engineer with 2+ years of experience at Accenture building production-grade streaming data products and lakehouse systems. I specialize in turning high-velocity event data into reliable, AI-ready data platforms.
+I build real-time, reliable data platforms that turn high-velocity event streams into analytics and AI-ready datasets.
 
-Core expertise:
-• Kafka → PySpark → Delta Lake streaming pipelines with exactly-once processing
-• Databricks lakehouse architectures, schema enforcement, and data quality
-• Configuration-driven Python frameworks (YAML/JSON), automated testing with pytest/unittest, and CI/CD pipelines
-• Data validation, schema validation, debugging, and performance optimization for production workloads
+At Accenture, I design and ship Source Data Product (SDP) and Core Data Product (CDP) pipelines using PySpark Structured Streaming, Apache Kafka, and Delta Lake. My focus: exactly-once processing, schema enforcement, checkpointing, and automated testing.
 
-I am actively expanding into Cloud, DevOps, Platform Engineering, and AI/LLM systems — areas where strong data-engineering fundamentals are a force multiplier.
+Featured work:
+• Production-Style Kafka → PySpark → Delta Lake pipeline: schema enforcement, watermark-based deduplication, checkpointing, and 31k–45k rows/s throughput on a 4-core laptop.
+• RAG Document QA Chatbot: FastAPI + Streamlit app using sentence-transformers, ChromaDB, and OpenAI/Ollama LLMs for grounded document Q&A.
 
-Featured project — Production-Style Kafka PySpark Delta Pipeline: a production-style streaming data pipeline built with Apache Kafka, PySpark Structured Streaming, and Delta Lake, complete with pytest unit tests, GitHub Actions CI, and a throughput benchmark.
+I am expanding into cloud-native deployment, Kubernetes, Terraform, and production LLM evaluation — the next layer for high-scale data platforms.
 
 Portfolio: https://sasireddy001.github.io/Portfolio/
 Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
@@ -36,15 +34,11 @@ GitHub: https://github.com/Sasireddy001
 LinkedIn: https://www.linkedin.com/in/sasidhar-mopuru-417a03233
 Email: sasidharmopuru@gmail.com
 
-Open to global remote Data & AI roles.
+Open to Data Platform Engineer and Data Engineer roles in Bengaluru and remote.
 
 ---
 
 ## Featured / Projects
-
-**Data Engineering Portfolio**
-- Link: https://sasireddy001.github.io/Portfolio/
-- Description: A live portfolio site showcasing my data engineering experience, certifications, technical skills, and projects. Built with HTML/CSS and hosted on GitHub Pages.
 
 **RAG Document QA Chatbot**
 - Link: https://github.com/Sasireddy001/rag-document-qa
@@ -56,9 +50,9 @@ Open to global remote Data & AI roles.
 - Description: A production-style streaming data pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes the results to Delta Lake. Features environment-driven configuration, JSON schema enforcement, checkpointing with exactly-once semantics, pytest unit tests, GitHub Actions CI, and a throughput benchmark. Designed to run on Databricks or locally.
 - Skills: Apache Kafka, Apache Spark, PySpark, Delta Lake, Databricks, Python, ETL, Data Pipelines, Git, GitHub Actions
 
-**IPL Score Prediction using Machine Learning**
-- Sep 2022 – Jan 2023
-- Description: Built a machine learning model to predict IPL powerplay scores using historical cricket data. Performed data preprocessing, feature engineering, model training, and evaluation using standard Python ML libraries.
+**Data Engineering Portfolio**
+- Link: https://sasireddy001.github.io/Portfolio/
+- Description: A live portfolio site showcasing my data engineering experience, certifications, technical skills, and projects. Built with HTML/CSS and hosted on GitHub Pages.
 
 ---
 
