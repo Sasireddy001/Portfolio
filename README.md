@@ -78,6 +78,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 | Certification | Issuer |
 |---|---|
+| DP-700: Implementing Data Engineering Solutions using Microsoft Fabric | Microsoft |
 | Databricks Certified Data Engineer Associate | Databricks |
 | Databricks PySpark Streaming Training – 8 Weeks | Accenture |
 | Google Data Analytics Professional Certificate | Coursera |
@@ -86,7 +87,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 ## Technical Skills
 
 - **Programming:** Python, SQL, PySpark
-- **Data Engineering:** Apache Kafka, PySpark Streaming, ETL/ELT Pipelines, Data Ingestion, Data Transformation, Batch & Streaming Processing
+- **Data Engineering:** Apache Kafka, PySpark Streaming, ETL/ELT Pipelines, Data Ingestion, Data Transformation, Batch & Streaming Processing, Microsoft Fabric
 - **AI / LLM / App Development:** RAG, LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, GenAI, AI Agents
 - **Data Platforms:** Databricks, Apache Spark, Delta Lake, SingleStore, Relational Databases
 - **Quality & Testing:** Pytest, Unittest, Mocking, Data Validation, Schema Validation

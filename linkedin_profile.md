@@ -81,6 +81,7 @@ Feb 2024 – Present
 
 ## Certifications
 
+- DP-700: Implementing Data Engineering Solutions using Microsoft Fabric – Microsoft
 - Databricks Certified Data Engineer Associate – Databricks
 - Databricks PySpark Streaming Training (8 Weeks) – Accenture
 - Google Data Analytics Professional Certificate – Coursera
@@ -97,6 +98,7 @@ Add these to the Skills section (top 50):
 - PySpark
 - Apache Spark
 - Databricks
+- Microsoft Fabric
 - Delta Lake
 - Apache Kafka
 - ETL / ELT
