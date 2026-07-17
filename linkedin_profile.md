@@ -20,9 +20,10 @@ Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake �
 
 I build real-time, reliable data platforms that turn high-velocity event streams into analytics and AI-ready datasets.
 
-At Accenture, I design and ship Source Data Product (SDP) and Core Data Product (CDP) pipelines using PySpark, Apache Kafka, and Delta Lake. My focus: exactly-once processing, schema enforcement, checkpointing, and automated testing. I also build configuration-driven, Dockerized Spark jobs deployed through GitLab CI/CD, with secure secret management via HashiCorp Vault.
+At Accenture, my current focus is building and operating a configuration-driven **Core Data Product (CDP) platform**. I design Source-to-Core Data Product pipelines with PySpark, deploy Dockerized Spark jobs through GitLab CI/CD across dev, sit, perf, and prod, and integrate Kafka, S3A-compatible object storage, and HashiCorp Vault for secure, production-grade data workflows.
 
 Featured work:
+• Configuration-driven CDP platform at Accenture: PySpark, Docker, GitLab CI/CD, Kafka, and Vault — building reusable utilities for logging, retry, schema validation, and credential extraction.
 • Production-Style Kafka → PySpark → Delta Lake pipeline: schema enforcement, watermark-based deduplication, checkpointing, and 31k–45k rows/s throughput on a 4-core laptop.
 • RAG Document QA Chatbot: FastAPI + Streamlit app using sentence-transformers, ChromaDB, and OpenAI/Ollama LLMs for grounded document Q&A.
 
