@@ -25,6 +25,20 @@
     }
     a { color: var(--accent); text-decoration: none; }
     a:hover { color: var(--accent-hover); text-decoration: underline; }
+    .hero-cta { margin-top: 24px; }
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #0f172a;
+      padding: 10px 20px;
+      margin: 6px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .cta-btn:hover { background: var(--accent-hover); color: #0f172a; text-decoration: none; }
+    .cta-secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+    .cta-secondary:hover { background: var(--accent); color: #0f172a; }
+    .mermaid { background: #0b1220; border-radius: 8px; padding: 16px; margin-top: 16px; }
     .container { max-width: 900px; margin: auto; padding: 40px 20px; }
     header { text-align: center; margin-bottom: 50px; }
     header h1 { margin: 0; font-size: 2.8em; letter-spacing: -1px; }
@@ -73,6 +87,11 @@
   <header>
     <h1>Sasidhar Mopuru</h1>
     <p class="tagline">Data & AI Platform Engineer | Databricks Certified | Kafka · PySpark · Delta Lake · Python</p>
+    <div class="hero-cta">
+      <a class="cta-btn" href="https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf" target="_blank" rel="noopener">Download Resume</a>
+      <a class="cta-btn cta-secondary" href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="cta-btn cta-secondary" href="https://github.com/Sasireddy001" target="_blank" rel="noopener">GitHub</a>
+    </div>
   </header>
 
   <div class="badges">
@@ -104,6 +123,31 @@
     <p>
       I am a <strong>Data & AI Platform Engineer</strong> with 2+ years of experience building production-grade streaming data products and lakehouse systems. I specialize in turning high-velocity event data into reliable, AI-ready data platforms. My core work spans configuration-driven PySpark pipelines, Kafka → PySpark → Delta Lake streaming systems, Databricks lakehouse architectures, Dockerized deployments, GitLab CI/CD, data quality, and automated testing. I am actively expanding into Cloud, DevOps, Platform Engineering, and AI/LLM systems.
     </p>
+  </section>
+
+  <section>
+    <h2>How I Design Data Platforms</h2>
+    <p>
+      My day-to-day work centers on a Source-to-Core Data Product pattern: ingest data from relational source systems, run PySpark transformations with schema enforcement and deduplication, and publish reliable Core Data Products to downstream consumers.
+    </p>
+    <pre class="mermaid">
+graph LR
+    A[Source Systems] --> B[PySpark ETL]
+    B --> C[Core Data Product]
+    C --> D[Data Consumers]
+    E[Kafka Events] --> B
+    F[S3A Object Storage] --> B
+    G[GitLab CI/CD] --> H[Docker Spark Jobs]
+    H --> B
+    I[HashiCorp Vault] --> B
+    </pre>
+    <ul>
+      <li><strong>Configuration-driven:</strong> JSON job definitions make pipelines easy to extend, review, and deploy across environments.</li>
+      <li><strong>Exactly-once processing:</strong> checkpointing, idempotent writes, and watermark-based deduplication keep data reliable.</li>
+      <li><strong>Secure by default:</strong> secrets, certificates, and credentials are fetched from HashiCorp Vault at runtime.</li>
+      <li><strong>Multi-environment:</strong> the same Docker image moves through dev, sit, perf, and prod via GitLab CI/CD.</li>
+      <li><strong>Observable:</strong> every job is wrapped with logging, retry logic, and status tracking.</li>
+    </ul>
   </section>
 
   <section>
@@ -245,6 +289,15 @@
   </section>
 
   <section>
+    <h2>Currently Exploring</h2>
+    <ul>
+      <li><strong>Cloud-native deployment:</strong> Terraform, Kubernetes, and multi-environment CI/CD for data platforms.</li>
+      <li><strong>Production LLM evaluation:</strong> building measurable, observable retrieval-augmented generation systems.</li>
+      <li><strong>Platform engineering:</strong> reusable data infrastructure, golden paths, and developer experience for data teams.</li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Education & Achievements</h2>
     <ul>
       <li>B.Tech in Computer Science and Engineering – CGPA 7.99</li>
@@ -272,5 +325,9 @@
 
 </div>
 
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
 </body>
 </html>
