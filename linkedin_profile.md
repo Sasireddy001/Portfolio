@@ -40,6 +40,11 @@ Open to Data Platform Engineer and Data Engineer roles in Bengaluru and remote.
 
 ## Featured / Projects
 
+**Cloud-Native Streaming Data Platform**
+- Link: https://github.com/Sasireddy001/Cloud-data-platform
+- Description: A cloud-native streaming data platform using Azure Event Hubs, Databricks, ADLS Gen2, Delta Lake, and Terraform. Ingests events through Event Hubs, processes them with PySpark Structured Streaming, and writes deduplicated data to Delta Lake. Includes multi-environment Terraform modules (dev/prod), GitHub Actions CI/CD, and infrastructure as code.
+- Skills: Azure, Azure Event Hubs, Azure Databricks, ADLS Gen2, Delta Lake, PySpark, Terraform, GitHub Actions, CI/CD, Streaming Data, Lakehouse
+
 **RAG Document QA Chatbot**
 - Link: https://github.com/Sasireddy001/rag-document-qa
 - Description: A retrieval-augmented generation (RAG) application with FastAPI, Streamlit, ChromaDB, and local or OpenAI LLMs. Implements document ingestion, text chunking, sentence-transformer embeddings, dense retrieval, and LLM answer generation. Includes pytest tests with mocked components, GitHub Actions CI, and architecture documentation.
@@ -115,6 +120,9 @@ Add these to the Skills section (top 50):
 - CI/CD
 - Git
 - Linux
+- Azure
+- Terraform
+- Kubernetes
 - Jupyter
 - VS Code
 - Jira
