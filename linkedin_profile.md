@@ -336,3 +336,13 @@ Suggested banner text overlay (if creating a custom banner image):
 
 Use a clean dark/tech-themed background with this text in a readable font.
 
+---
+
+## Publications / Blogs
+
+Add to LinkedIn Featured section or Articles:
+
+- **Databricks Data Engineer Associate Journey**
+  - URL: https://sasireddy001.github.io/Portfolio/blog/databricks-data-engineer-associate-journey.md
+  - Description: Notes, resources, and lessons from my Databricks Data Engineer Associate certification path.
+

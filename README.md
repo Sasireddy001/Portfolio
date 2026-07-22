@@ -264,3 +264,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 - Open to global remote Data & AI roles
 
+## Blog
+
+- [My Databricks Data Engineer Associate Journey](blog/databricks-data-engineer-associate-journey.md) — Certification notes, resources, and preparation strategy.
+
