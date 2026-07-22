@@ -886,7 +886,7 @@
         <div class="kpi-label">Pipeline Uptime</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-value">40%</div>
+        <div class="kpi-value">70%</div>
         <div class="kpi-label">Deployment Time Reduced</div>
       </div>
       <div class="kpi-card">
@@ -964,8 +964,8 @@
       <h3>Data Engineer – Accenture</h3>
       <p class="meta">Feb 2024 – Present | Bengaluru, India</p>
       <ul>
-        <li>Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 40%</li>
-        <li>Designed end-to-end data flows from source systems to SDP and CDP layers for 5+ enterprise data products</li>
+        <li>Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 70%</li>
+        <li>Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs</li>
         <li>Developed PySpark pipelines with JSON-based job definitions achieving 99.5% pipeline uptime</li>
         <li>Containerized Spark jobs with Docker and deployed through GitLab CI/CD across dev, sit, perf, prod environments</li>
         <li>Integrated Kafka eventing and S3A-compatible object storage into pipeline workflows</li>
@@ -994,6 +994,93 @@
     <div class="section-header">
       <h2>Featured Projects</h2>
       <p>Production-ready systems demonstrating core competencies</p>
+    </div>
+
+    <div class="case-study">
+      <div class="case-study-header">
+        <div>
+          <h3>Enterprise Configuration-Driven Data Platform</h3>
+          <p class="meta">Feb 2024 – Present | Enterprise Data Engineering</p>
+        </div>
+      </div>
+
+      <div class="case-study-section">
+        <h4>Problem</h4>
+        <p>Manual pipeline configuration for 90+ ETL jobs was error-prone, time-consuming, and lacked standardization across environments. The team needed a scalable solution to manage complex multi-environment deployments while maintaining security and observability.</p>
+      </div>
+
+      <div class="case-study-section">
+        <h4>Architecture</h4>
+        <pre class="mermaid">
+graph LR
+    A[YAML Job Definitions] --> B[Python Config Generator]
+    B --> C[GitLab CI/CD]
+    C --> D[Child Pipelines]
+    D --> E[PySpark Jobs]
+    E --> F[Data Sources]
+    G[HashiCorp Vault] --> E
+    H[Observability] --> E
+        </pre>
+      </div>
+
+      <div class="case-study-section">
+        <h4>Technologies</h4>
+        <div class="tech-badges">
+          <span class="tech-badge">PySpark</span>
+          <span class="tech-badge">GitLab CI/CD</span>
+          <span class="tech-badge">Docker</span>
+          <span class="tech-badge">YAML</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">HashiCorp Vault</span>
+          <span class="tech-badge">pytest</span>
+        </div>
+      </div>
+
+      <div class="case-study-section">
+        <h4>Challenges</h4>
+        <ul>
+          <li>Managing 90+ production ETL jobs across multiple environments</li>
+          <li>Eliminating manual pipeline configuration errors</li>
+          <li>Implementing enterprise security with secrets management</li>
+          <li>Achieving comprehensive test coverage for complex data pipelines</li>
+          <li>Enabling non-technical users to configure deployments</li>
+        </ul>
+      </div>
+
+      <div class="case-study-section">
+        <h4>Solution</h4>
+        <ul>
+          <li>Built dynamic CI/CD configuration generator with YAML-based job definitions</li>
+          <li>Implemented parent-child GitLab CI/CD pipeline architecture</li>
+          <li>Integrated HashiCorp Vault for enterprise secrets management</li>
+          <li>Created comprehensive testing strategy with 60+ unit test suites</li>
+          <li>Implemented secure logging decorators with sensitive data sanitization</li>
+          <li>Added data lineage tracking and observability integration</li>
+        </ul>
+      </div>
+
+      <div class="case-study-section">
+        <h4>Business Value</h4>
+        <ul>
+          <li>Reduced pipeline configuration time by 70% through automation</li>
+          <li>Achieved 99.5% deployment success rate across 4 environments</li>
+          <li>Reduced production incidents by 60% through comprehensive testing</li>
+          <li>Enabled 90+ production jobs with standardized deployment patterns</li>
+          <li>Eliminated hardcoded credentials and achieved enterprise security compliance</li>
+        </ul>
+      </div>
+
+      <div class="case-study-section">
+        <h4>Performance Metrics</h4>
+        <ul>
+          <li>Production Jobs: 90+ PySpark ETL jobs</li>
+          <li>Test Suites: 60+ unit test files</li>
+          <li>Test Coverage: 85%+ on critical components</li>
+          <li>Deployment Success Rate: 99.5%</li>
+          <li>Pipeline Uptime: 99.5%</li>
+          <li>Configuration Time Reduction: 70%</li>
+        </ul>
+      </div>
     </div>
 
     <div class="case-study">
