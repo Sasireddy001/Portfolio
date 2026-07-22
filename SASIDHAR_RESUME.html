@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sasidhar Mopuru — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0F172A;
+      --accent: #2563EB;
+      --muted: #475569;
+      --rule: #E2E8F0;
+      --bg: #FFFFFF;
+      --subtle: #F8FAFC;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: A4;
+      margin: 10mm 12mm;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 10pt;
+      line-height: 1.45;
+      color: var(--ink);
+      background: #F1F5F9;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 12mm 14mm;
+      background: var(--bg);
+      box-shadow: 0 0 0 1px var(--rule);
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    .name {
+      font-size: 30pt;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      color: var(--ink);
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    .role-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .role {
+      font-size: 12pt;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .badge {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #fff;
+      background: var(--accent);
+      padding: 2px 8px;
+      border-radius: 12px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+      margin-top: 6px;
+      font-size: 9.5pt;
+      color: var(--muted);
+    }
+
+    .contact a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 3px;
+      margin: 0 0 7px 0;
+    }
+
+    p {
+      margin: 0 0 4px 0;
+    }
+
+    .summary {
+      color: var(--muted);
+      font-size: 10.2pt;
+      line-height: 1.45;
+    }
+
+    /* Lists */
+    ul {
+      margin: 4px 0 0 0;
+      padding-left: 16px;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 8px;
+    }
+
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .job-meta {
+      font-size: 9pt;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .metric {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .tech {
+      font-size: 9pt;
+      color: var(--muted);
+    }
+
+    /* Skills */
+    .skill-grid {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      row-gap: 4px;
+      column-gap: 8px;
+      font-size: 9.5pt;
+    }
+
+    .skill-label {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .skill-items {
+      color: var(--muted);
+    }
+
+    /* Projects */
+    .project {
+      margin-bottom: 8px;
+    }
+
+    .project-title {
+      font-weight: 700;
+      font-size: 10.2pt;
+      color: var(--accent);
+      margin: 0;
+    }
+
+    .project-sub {
+      font-size: 9pt;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 3px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .tags li {
+      background: var(--subtle);
+      color: var(--muted);
+      font-size: 8.5pt;
+      padding: 1px 7px;
+      border-radius: 4px;
+      margin: 0;
+    }
+
+    .compact-list {
+      margin: 3px 0 0 0;
+      padding-left: 15px;
+      font-size: 9.5pt;
+      color: var(--muted);
+    }
+
+    .compact-list li {
+      margin-bottom: 2px;
+    }
+
+    /* Certs */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 14px;
+      font-size: 9.5pt;
+    }
+
+    .cert-item {
+      border-left: 3px solid var(--accent);
+      padding-left: 8px;
+      color: var(--muted);
+    }
+
+    .cert-name {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* Education */
+    .edu-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9.5pt;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+      .page {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="name">Sasidhar Mopuru</div>
+      <div class="role-row">
+        <div class="role">Data Platform Engineer</div>
+        <div class="badge">Databricks Certified</div>
+      </div>
+      <div class="contact">
+        <span>Bengaluru, India</span>
+        <span>|</span>
+        <a href="mailto:sasidharmopuru@gmail.com">sasidharmopuru@gmail.com</a>
+        <span>|</span>
+        <span>+91 63029 60712</span>
+        <span>|</span>
+        <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener">LinkedIn</a>
+        <span>|</span>
+        <a href="https://github.com/Sasireddy001" target="_blank" rel="noopener">GitHub</a>
+        <span>|</span>
+        <a href="https://sasireddy001.github.io/Portfolio/" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Data &amp; AI Platform Engineer with 2+ years building production-grade streaming data products and lakehouse systems at Accenture. Databricks Certified Data Engineer Associate and Microsoft DP-700. Core stack: PySpark, Kafka, Delta Lake, Databricks, Docker, Terraform. Delivered 5+ enterprise data products, achieved 99.5% pipeline uptime, and reduced deployment time by 40%.
+      </p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-item"><span class="cert-name">Databricks Data Engineer Associate</span> — Databricks, 2024</div>
+        <div class="cert-item"><span class="cert-name">DP-700: Data Engineering with Microsoft Fabric</span> — Microsoft, 2024</div>
+        <div class="cert-item"><span class="cert-name">Databricks PySpark Streaming Training</span> — Accenture, 2024</div>
+        <div class="cert-item"><span class="cert-name">Google Data Analytics Professional</span> — Coursera, 2023</div>
+        <div class="cert-item"><span class="cert-name">NPTEL MIS</span> — IIT Madras, 2023</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-label">Data Engineering</div>
+        <div class="skill-items">PySpark, Apache Spark, Delta Lake, Apache Kafka, Azure Event Hubs, ETL/ELT, SQL, Data Modeling, Schema Validation, Data Quality</div>
+
+        <div class="skill-label">Cloud &amp; Platforms</div>
+        <div class="skill-items">Databricks, Microsoft Fabric, Azure, AWS (S3, EC2, Lambda), GCP (BigQuery, GKE), SingleStore</div>
+
+        <div class="skill-label">DevOps &amp; MLOps</div>
+        <div class="skill-items">Docker, Kubernetes, Terraform, GitLab CI/CD, GitHub Actions, HashiCorp Vault, Linux, pytest</div>
+
+        <div class="skill-label">AI / LLM</div>
+        <div class="skill-items">RAG, OpenAI, ChromaDB, Vector Databases, Sentence-Transformers, FastAPI, Streamlit</div>
+
+        <div class="skill-label">Languages</div>
+        <div class="skill-items">Python, SQL, YAML, JSON</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Accenture — Data Engineer</div>
+          <div class="job-meta">Feb 2024 – Present | Bengaluru, India</div>
+        </div>
+        <ul>
+          <li><span class="metric">Reduced deployment time by 40%</span> by building a configuration-driven CDP platform with PySpark, Docker, and GitLab CI/CD. <span class="tech">(PySpark, Docker, CI/CD, Databricks)</span></li>
+          <li><span class="metric">Delivered 5+ enterprise data products</span> across batch and streaming architectures with end-to-end SDP and CDP data flows. <span class="tech">(Azure, AWS, Delta Lake)</span></li>
+          <li><span class="metric">Achieved 99.5% pipeline uptime</span> through modular PySpark pipelines with error handling, retry mechanisms, and schema validation. <span class="tech">(PySpark, Kafka, Delta Lake)</span></li>
+          <li><span class="metric">Reduced manual deployment effort by 60%</span> by containerizing Spark jobs and automating CI/CD across dev, sit, perf, and prod. <span class="tech">(Docker, GitLab CI/CD, Vault)</span></li>
+          <li><span class="metric">Reduced data processing latency by 30%</span> through partitioning, caching, and performance optimization strategies. <span class="tech">(PySpark, Delta Lake, SQL)</span></li>
+          <li>Integrated Apache Kafka and S3A-compatible object storage for real-time event processing with exactly-once semantics.</li>
+          <li>Implemented secure credential management with HashiCorp Vault and enterprise certificate stores; 85% pytest coverage on critical pipeline components.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <div class="project-title">Cloud-Native Streaming Data Platform</div>
+        <div class="project-sub">github.com/Sasireddy001/Cloud-data-platform</div>
+        <ul class="compact-list">
+          <li><strong>Stack:</strong> Azure Event Hubs · Databricks · ADLS Gen2 · Delta Lake · Terraform · GitHub Actions</li>
+          <li><strong>Impact:</strong> 99.9% data accuracy, exactly-once streaming, modular Terraform reducing setup time by 50%</li>
+          <li><strong>Highlights:</strong> Multi-environment IaC, auto-scaling, spot-instance cost optimization, schema evolution</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">RAG Document QA Chatbot</div>
+        <div class="project-sub">github.com/Sasireddy001/rag-document-qa</div>
+        <ul class="compact-list">
+          <li><strong>Stack:</strong> FastAPI · Streamlit · ChromaDB · OpenAI · Sentence-Transformers</li>
+          <li><strong>Impact:</strong> 85% retrieval accuracy, 70% fewer API calls through intelligent caching</li>
+          <li><strong>Highlights:</strong> PDF/DOCX/TXT ingestion, modular LLM backends, comprehensive pytest coverage</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Kafka → PySpark → Delta Pipeline</div>
+        <div class="project-sub">github.com/Sasireddy001/Kafka-pyspark-delta-pipeline</div>
+        <ul class="compact-list">
+          <li><strong>Stack:</strong> Apache Kafka · PySpark · Delta Lake · Databricks · GitHub Actions</li>
+          <li><strong>Impact:</strong> 1M+ events/hour, 90% pytest coverage, fault-tolerant exactly-once checkpointing</li>
+          <li><strong>Highlights:</strong> JSON schema enforcement, automatic retry with exponential backoff, AWS Terraform deployment</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu-line">
+        <div><strong>B.Tech in Computer Science and Engineering</strong> — Graduated with Distinction</div>
+        <div>CGPA 7.99/10</div>
+      </div>
+      <div style="font-size: 9.5pt; color: var(--muted); margin-top: 2px;">
+        JEE Mains — 94.14 percentile (Top 6% nationally among 1M+ candidates)
+      </div>
+    </section>
+  </div>
+</body>
+</html>
