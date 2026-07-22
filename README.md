@@ -160,20 +160,6 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 
 
-### IPL Score Prediction using Machine Learning
-
-*Sep 2022 – Jan 2023*
-
-
-
-- Built an ML model to predict IPL powerplay scores using historical data.
-
-- Performed data preprocessing, feature engineering, and model evaluation.
-
-- Implemented the project in Python using standard ML libraries.
-
-
-
 ## Certifications
 
 
@@ -208,7 +194,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 - **Quality & Testing:** Pytest, Unittest, Mocking, Data Validation, Schema Validation
 
-- **DevOps & Tools:** Git, CI/CD Pipelines, IOMate, Jira, Agile Scrum
+- **DevOps & Tools:** Git, CI/CD Pipelines, Docker, Jira, Agile Scrum
 
 - **Architecture:** Object-Oriented Programming, Modular Coding, YAML/JSON, Logging, Exception Handling, System Design
 
