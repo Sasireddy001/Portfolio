@@ -21,11 +21,11 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 Specializes in turning high-velocity event data into reliable, AI-ready data platforms. Core expertise spans configuration-driven PySpark pipelines, Kafka → PySpark → Delta Lake streaming systems, Databricks lakehouse architectures, Dockerized deployments, GitLab CI/CD, data quality, and automated testing.
 
 **Key Achievements:**
-- Built configuration-driven CDP platform reducing deployment time by 40%
-- Achieved 99.5% pipeline uptime for production data products
-- Delivered 5+ enterprise data products across batch and streaming architectures
+- Built configuration-driven CDP platform reducing deployment time by 70%
+- Operated 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains
+- Achieved 99.5% deployment success rate and 99.5% pipeline uptime
 - Implemented CI/CD pipelines across dev, sit, perf, and prod environments
-- Achieved 85% test coverage on critical pipeline components
+- Achieved 97% overall test coverage across 60+ unit test suites
 - Reduced data processing latency by 30% through optimization strategies
 
 Actively expanding into cloud-native deployment, Kubernetes, Terraform, and production LLM evaluation for high-scale data platforms. Passionate about building scalable, maintainable data systems that drive business value.
@@ -41,7 +41,7 @@ Actively expanding into cloud-native deployment, Kubernetes, Terraform, and prod
 - **Built Configuration-Driven CDP Platform:** Designed and developed a Core Data Product (CDP) platform using PySpark, Docker, and GitLab CI/CD. Built dynamic CI/CD configuration generator with YAML-based job definitions enabling non-technical users to configure data pipelines without code changes. Reduced deployment time by 70% and improved pipeline reliability.
 - **End-to-End Data Engineering:** Designed and implemented complete data flows from source systems to Source Data Product (SDP) and Core Data Product (CDP) layers. Successfully delivered 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains (site, supplier, item, product) with 99.5% deployment success rate.
 - **PySpark Pipeline Development:** Built modular, reusable PySpark pipelines with comprehensive error handling, retry mechanisms, and schema validation. Developed Python utilities for logging, credential extraction, and data quality checks. Achieved 99.5% pipeline uptime.
-- **Containerization & CI/CD:** Containerized Spark jobs using Docker (base image: harbor.dell.com/customer-lakehouse/spark-py:3.5.5-v14-python3.12) and established GitLab CI/CD pipelines for automated deployment across dev, sit, perf, and prod environments. Reduced manual deployment effort by 60%.
+- **Containerization & CI/CD:** Containerized Spark jobs using Docker and an enterprise container registry, then established GitLab CI/CD pipelines for automated deployment across dev, sit, perf, and prod environments. Reduced manual deployment effort by 60%.
 - **Streaming Integration:** Integrated Apache Kafka and S3A-compatible object storage into pipeline workflows for real-time event processing. Implemented exactly-once semantics using checkpointing and idempotent sinks.
 - **Security & Secrets Management:** Implemented secure credential management using HashiCorp Vault and enterprise certificate stores. Ensured compliance with enterprise data governance standards and NDA requirements.
 - **Testing & Quality Assurance:** Implemented comprehensive testing strategy with 60+ unit test suites using pytest and mocking. Achieved 97% overall code coverage for pipeline components and reduced production incidents by 60%.
@@ -210,10 +210,11 @@ A live portfolio site showcasing data engineering experience, certifications, te
 - **JEE Mains – 94.14 Percentile:** Ranked in top 6% nationally among 1M+ candidates
 - **Databricks Certified Data Engineer Associate:** Validated expertise in Databricks and Lakehouse architecture
 - **DP-700: Implementing Data Engineering Solutions using Microsoft Fabric:** Certified in Microsoft Fabric data engineering
-- **Enterprise Data Product Delivery:** Successfully delivered 5+ production data products at Accenture
+- **Enterprise Data Product Delivery:** Successfully operated 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains at Accenture
 - **Pipeline Optimization:** Reduced data processing latency by 30% through optimization strategies
-- **Automation Success:** Reduced manual deployment effort by 60% through CI/CD automation
-- **High Uptime:** Achieved 99.5% pipeline uptime for production data products
+- **Automation Success:** Reduced deployment time by 70% and manual effort by 60% through CI/CD automation
+- **Testing Excellence:** Achieved 97% overall code coverage across 60+ unit test suites
+- **High Uptime:** Achieved 99.5% deployment success rate and pipeline uptime for production data products
 
 ---
 
