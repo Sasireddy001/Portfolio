@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building a Production-Style Kafka → PySpark → Delta Lake Pipeline</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; --code:#1e293b; --border:#334155; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); margin:0; line-height:1.75; }
+    header { background: var(--card); padding:1rem 1.5rem; border-bottom:1px solid var(--border); }
+    header a { color: var(--accent); text-decoration:none; font-weight:600; }
+    main { max-width:760px; margin:0 auto; padding:3rem 1.5rem 4rem; }
+    h1 { font-size:2.2rem; line-height:1.2; margin-bottom:1rem; }
+    h2 { color: var(--accent); border-bottom:1px solid var(--border); padding-bottom:.4rem; margin-top:2.5rem; font-size:1.5rem; }
+    h3 { margin-top:2rem; }
+    p, li { color: var(--text); }
+    a { color: var(--accent); }
+    code { background: var(--code); padding:.15rem .35rem; border-radius:.25rem; font-size:.9rem; }
+    pre { background: var(--code); padding:1rem; border-radius:.5rem; overflow-x:auto; }
+    pre code { background: transparent; padding:0; }
+    blockquote { border-left: 3px solid var(--accent); margin:0; padding-left:1rem; color: var(--muted); }
+    table { width:100%; border-collapse: collapse; margin:1.5rem 0; }
+    th, td { border:1px solid var(--border); padding:.5rem .75rem; text-align:left; }
+    th { background: var(--code); }
+    .mermaid { background: transparent; padding:0; text-align:center; }
+    .mermaid:not([data-processed="true"]) { visibility: hidden; }
+    footer { text-align:center; padding:2rem; color: var(--muted); border-top:1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <header><a href="https://sasireddy001.github.io/Portfolio/">← Back to Portfolio</a></header>
+  <main>
+    <h1>Building a Production-Style Kafka → PySpark → Delta Lake Pipeline</h1>
+<p><strong>Sasidhar Mopuru</strong> · Data &amp; AI Platform Engineer · <a href="https://sasireddy001.github.io/Portfolio/">Portfolio</a></p>
+<hr />
+<h2>Introduction</h2>
+<p>Real-time event pipelines are the backbone of modern data platforms. Whether it is user clicks, IoT telemetry, or microservice events, the expectation is the same: data must land fast, stay accurate, and remain available for analytics and ML.</p>
+<p>In this article, I walk through a production-style streaming pipeline that ingests JSON events from <strong>Apache Kafka</strong>, processes them with <strong>PySpark Structured Streaming</strong>, and writes the results to <strong>Delta Lake</strong> with exactly-once semantics. The project is designed to run locally with Docker, on <strong>Databricks</strong>, or on <strong>AWS EMR Serverless</strong>.</p>
+<h2>What the Pipeline Does</h2>
+<p>The pipeline covers the "bronze" ingestion layer:</p>
+<ol>
+<li>Events are published as JSON to a Kafka topic.</li>
+<li>Spark reads micro-batches using <code>readStream</code>.</li>
+<li>Each event is parsed and validated against a known schema.</li>
+<li><code>ingested_at</code>, <code>event_date</code>, and <code>event_hour</code> columns are added.</li>
+<li>Deduplication uses a watermark on <code>event_timestamp</code> plus <code>dropDuplicates("event_id")</code>.</li>
+<li>Cleansed data is written to a Delta Lake bronze table with checkpointing.</li>
+</ol>
+<pre><code class="language-python"># Simplified core flow
+df = (
+    spark.readStream
+    .format(&quot;kafka&quot;)
+    .option(&quot;kafka.bootstrap.servers&quot;, cfg.kafka_bootstrap_servers)
+    .option(&quot;subscribe&quot;, cfg.kafka_topic)
+    .load()
+    .select(from_json(col(&quot;value&quot;).cast(&quot;string&quot;), EVENT_SCHEMA).alias(&quot;event&quot;))
+    .select(&quot;event.*&quot;)
+    .withColumn(&quot;ingested_at&quot;, current_timestamp())
+    .withColumn(&quot;event_date&quot;, to_date(col(&quot;event_timestamp&quot;)))
+    .withColumn(&quot;event_hour&quot;, hour(col(&quot;event_timestamp&quot;)))
+    .withWatermark(&quot;event_timestamp&quot;, &quot;10 minutes&quot;)
+    .dropDuplicates([&quot;event_id&quot;])
+)
+
+df.writeStream \
+    .format(&quot;delta&quot;) \
+    .option(&quot;checkpointLocation&quot;, cfg.checkpoint_path) \
+    .outputMode(&quot;append&quot;) \
+    .start(cfg.delta_path)
+</code></pre>
+<h2>Architecture</h2>
+<pre class="mermaid">graph LR
+    A[Apache Kafka] -->|readStream| B[PySpark Structured Streaming]
+    B --> C[Schema Enforcement]
+    C --> D[Partitioning + Watermark]
+    D --> E[Deduplication]
+    E -->|writeStream| F[Delta Lake Bronze]</pre>
+<h2>Key Design Decisions</h2>
+<h3>1. Exactly-Once Semantics</h3>
+<p>Kafka offsets are tracked in the Spark checkpoint. Delta Lake idempotent writes ensure that replayed offsets do not create duplicates. Restarting the job resumes from the last checkpoint without data loss or duplication.</p>
+<h3>2. Watermark-Based Deduplication</h3>
+<p>Unbounded state is a common failure mode in streaming joins and <code>dropDuplicates</code>. A 10-minute watermark caps the state store while still handling late-arriving events within a reasonable window.</p>
+<h3>3. Environment-Driven Configuration</h3>
+<p>The same code runs locally, on Databricks, and on AWS EMR Serverless. Kafka brokers, Delta paths, and checkpoint locations are read from environment variables, making the package portable across environments.</p>
+<h3>4. Testing Strategy</h3>
+<p>Core transformation logic is unit-tested with <code>pytest</code> and an in-memory Spark fixture. Mocks isolate Kafka and external state, achieving <strong>90%+ coverage</strong> on the transformation module.</p>
+<h2>Performance Benchmarks</h2>
+<p>On a 4-core laptop with a single-node Spark and Docker Kafka:</p>
+<table>
+<thead>
+<tr>
+<th>Rows</th>
+<th>Duration</th>
+<th>Throughput</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100k</td>
+<td>~3.2 s</td>
+<td>~31k rows/s</td>
+</tr>
+<tr>
+<td>1M</td>
+<td>~22 s</td>
+<td>~45k rows/s</td>
+</tr>
+</tbody>
+</table>
+<p>These are single-node numbers. On Databricks or EMR with a proper cluster, throughput scales horizontally with topic partitions and executor count.</p>
+<h2>Cloud Deployment</h2>
+<p>I also added an <strong>AWS deployment</strong> that provisions:
+- Amazon MSK Serverless for Kafka
+- Amazon EMR Serverless for Spark
+- Amazon S3 for Delta Lake and checkpoints
+- Terraform modules for infrastructure as code
+- GitHub Actions workflow for CI/CD</p>
+<p>See the <a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/tree/main/deploy/aws">deploy/aws</a> directory for the full setup.</p>
+<h2>Lessons Learned</h2>
+<ul>
+<li><strong>Schema enforcement early.</strong> Validating the JSON payload before parsing prevents corrupt events from poisoning the Delta table.</li>
+<li><strong>Partition by event time, not ingestion time.</strong> Querying downstream analytics is much faster when partitions reflect business time.</li>
+<li><strong>Checkpoints are production-critical.</strong> Without them, a Spark driver restart replays the entire topic and creates duplicates.</li>
+<li><strong>Start simple, then add failure modes.</strong> A working local pipeline is the prerequisite for meaningful cloud tuning.</li>
+</ul>
+<h2>Try It Yourself</h2>
+<pre><code class="language-bash">git clone https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline.git
+cd Kafka-pyspark-delta-pipeline
+docker-compose up -d
+pip install -e &quot;.[dev]&quot;
+python -m pipeline.streaming_job
+</code></pre>
+<h2>Conclusion</h2>
+<p>This pipeline is a small but complete example of how to build a testable, portable, and production-aware streaming data system. The combination of Kafka, PySpark, Delta Lake, and CI/CD gives a solid foundation for real-time data products.</p>
+<p>If you are building similar systems, I would love to connect.</p>
+  </main>
+  <footer>© Sasidhar Mopuru · Data & AI Platform Engineer</footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true, theme:'dark'});</script>
+</body>
+</html>
