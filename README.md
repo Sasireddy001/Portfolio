@@ -19,10 +19,13 @@
 
 I am a **Data & AI Platform Engineer** with 2+ years of experience building production-grade streaming data products and lakehouse systems at Accenture. I specialize in turning high-velocity event data into reliable, AI-ready data platforms.
 
+Currently, I build and operate a configuration-driven **Core Data Product (CDP) platform** across 4 E2E supply-chain sub-domains (site, supplier, item, product). My work spans **90+ production PySpark ETL jobs**, dynamic CI/CD generation, enterprise secrets management with HashiCorp Vault, and automated testing that reaches **97% overall code coverage** across 60+ test suites.
+
+- **Configuration-driven platforms:** YAML-based job definitions, dynamic GitLab CI/CD generators, multi-environment deployments
 - **Real-time pipelines:** Kafka → PySpark → Delta Lake with exactly-once processing
 - **Cloud & Lakehouse platforms:** Databricks, Apache Spark, schema enforcement, data quality
 - **AI-ready data engineering:** Evaluation systems, RAG data foundations, and agentic pipelines
-- **Production discipline:** CI/CD, automated testing, modular configuration-driven code
+- **Production discipline:** CI/CD, automated testing, modular configuration-driven code, enterprise security
 
 I am actively expanding into **Cloud, DevOps, Platform Engineering, and AI/LLM systems** — roles where strong data-engineering fundamentals are a force multiplier.
 
@@ -120,15 +123,15 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 - **AI / LLM / App Development:** RAG, LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, GenAI, AI Agents
 - **Data Platforms:** Databricks, Apache Spark, Delta Lake, SingleStore, Relational Databases
 - **Quality & Testing:** Pytest, Unittest, Mocking, Data Validation, Schema Validation
-- **DevOps & Tools:** Git, CI/CD Pipelines, IOMate, Jira, Agile Scrum
-- **Architecture:** Object-Oriented Programming, Modular Coding, YAML/JSON, Logging, Exception Handling, System Design
-- **Building Toward:** Cloud (AWS/Azure), Kubernetes, Terraform, Docker, Platform Engineering, Observability
+- **DevOps & Tools:** Git, CI/CD Pipelines (GitHub Actions, GitLab CI), Docker, Kubernetes, Terraform, HashiCorp Vault, Jira, Agile Scrum
+- **Architecture:** Object-Oriented Programming, Modular Coding, YAML/JSON, Logging, Exception Handling, System Design, Platform Engineering, Observability
+- **Building Toward:** Cloud (AWS/Azure), Advanced Kubernetes, Production LLM Evaluation, AI Agents
 
 ## Education & Achievements
 
 - B.Tech in Computer Science and Engineering – CGPA 7.99
 - JEE Mains – 94.14 Percentile
-- Enterprise Data Engineer at Accenture
+- **Enterprise Data Platform Engineer at Accenture:** Built and operated 90+ production PySpark ETL jobs, achieved 97% overall test coverage, and reduced deployment time by 70% through dynamic CI/CD automation
 
 ## GitHub Stats
 

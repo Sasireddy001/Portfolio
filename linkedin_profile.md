@@ -71,12 +71,12 @@ Feb 2024 – Present
 
 - Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 70%.
 - Designed dynamic CI/CD configuration generator with YAML-based job definitions enabling non-technical users to configure data pipelines without code changes.
-- Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs with 99.5% deployment success rate.
+- Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains with 99.5% deployment success rate.
 - Built modular, reusable PySpark pipelines with comprehensive error handling, retry mechanisms, and schema validation achieving 99.5% pipeline uptime.
 - Containerized Spark jobs with Docker and deployed through GitLab CI/CD across dev, sit, perf, prod environments.
 - Integrated Kafka eventing and S3A-compatible object storage into pipeline workflows.
 - Managed secrets and credentials securely using HashiCorp Vault and enterprise certificate stores.
-- Implemented comprehensive testing strategy with 60+ unit test suites achieving 85% code coverage on critical components.
+- Implemented comprehensive testing strategy with 60+ unit test suites achieving 97% overall code coverage on pipeline components.
 - Created DDL scripts and configuration-driven workflows using Git.
 - Performed data validation, debugging, and performance optimization reducing latency by 30%.
 - Worked under strict NDA and enterprise data governance standards.
