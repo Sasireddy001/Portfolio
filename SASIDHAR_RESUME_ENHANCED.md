@@ -1,27 +1,34 @@
 # SASIDHAR MOPURU
-**Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Streaming & RAG Data Systems**
+**Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Building Real-Time Streaming & AI-Ready Data Systems**
 
 ---
 
 ## CONTACT
 
 - **Email:** sasidharmopuru@gmail.com
+- **Phone:** +91 63029 60712
 - **LinkedIn:** https://www.linkedin.com/in/sasidhar-mopuru-417a03233
 - **GitHub:** https://github.com/Sasireddy001
 - **Portfolio:** https://sasireddy001.github.io/Portfolio/
-- **Location:** Bengaluru, India (Open to remote)
+- **Location:** Bengaluru, India (Open to global remote roles)
 
 ---
 
 ## PROFESSIONAL SUMMARY
 
-Data & AI Platform Engineer with 2+ years of experience building production-grade data products and lakehouse systems at Accenture. Currently building and operating a configuration-driven Core Data Product (CDP) platform using PySpark, Docker, GitLab CI/CD, Kafka, and HashiCorp Vault.
+Data & AI Platform Engineer with 2+ years of experience building production-grade streaming data products and lakehouse systems at Accenture. Currently building and operating a configuration-driven Core Data Product (CDP) platform using PySpark, Docker, GitLab CI/CD, Kafka, and HashiCorp Vault.
 
-Hands-on with end-to-end data flows from source systems to SDP and CDP layers, real-time streaming with Kafka and PySpark, Delta Lake lakehouse architectures, and cloud-native deployment patterns. Strong in writing modular, configuration-driven Python code with comprehensive test coverage.
+Specializes in turning high-velocity event data into reliable, AI-ready data platforms. Core expertise spans configuration-driven PySpark pipelines, Kafka → PySpark → Delta Lake streaming systems, Databricks lakehouse architectures, Dockerized deployments, GitLab CI/CD, data quality, and automated testing.
 
-Proven track record of delivering enterprise data products across batch and streaming architectures with strict data governance and NDA compliance. Successfully containerized Spark jobs and established multi-environment CI/CD pipelines (dev, sit, perf, prod).
+**Key Achievements:**
+- Built configuration-driven CDP platform reducing deployment time by 40%
+- Achieved 99.5% pipeline uptime for production data products
+- Delivered 5+ enterprise data products across batch and streaming architectures
+- Implemented CI/CD pipelines across dev, sit, perf, and prod environments
+- Achieved 85% test coverage on critical pipeline components
+- Reduced data processing latency by 30% through optimization strategies
 
-Expanding into cloud-native deployment, Kubernetes, Terraform, and production LLM evaluation for high-scale data platforms. Passionate about building scalable, maintainable data systems that drive business value.
+Actively expanding into cloud-native deployment, Kubernetes, Terraform, and production LLM evaluation for high-scale data platforms. Passionate about building scalable, maintainable data systems that drive business value.
 
 ---
 
