@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A practical roadmap for building a career in Data Platform Engineering by Sasidhar Mopuru.">
+  <title>Data Platform Engineering Roadmap | Sasidhar Mopuru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0B1020;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.8);
+      --text-primary: #ffffff;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent: #2563EB;
+      --accent-light: #3b82f6;
+      --secondary: #06B6D4;
+      --accent-purple: #8B5CF6;
+      --border: rgba(255, 255, 255, 0.1);
+      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(12px);
+      background: rgba(11, 16, 32, 0.85);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .back-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .back-link:hover { color: var(--text-primary); }
+
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px 40px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(37, 99, 235, 0.1) 0%, transparent 100%);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-purple) 100%);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 48px;
+      padding: 28px;
+      border-radius: 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section:hover { box-shadow: var(--shadow-lg); }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: var(--text-primary);
+      border-left: 4px solid var(--accent);
+      padding-left: 14px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 20px 0 10px;
+      color: var(--secondary);
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    p { margin-bottom: 14px; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li { margin-bottom: 10px; }
+
+    .phase-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .phase {
+      padding: 20px;
+      border-radius: 12px;
+      background: var(--glass, rgba(255, 255, 255, 0.05));
+      border: 1px solid var(--border);
+    }
+
+    .phase h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+
+    .phase ul {
+      padding-left: 18px;
+      margin-bottom: 0;
+    }
+
+    .phase li {
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    @media (min-width: 768px) {
+      h1 { font-size: 3rem; }
+      .phase-list { grid-template-columns: 1fr 1fr; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      background: var(--bg-secondary);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="../index.html" class="logo">Sasidhar Mopuru</a>
+    <a href="../index.html" class="back-link">Back to Portfolio</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <span class="badge">Platform Engineering</span>
+  <h1>Data Platform Engineering Roadmap</h1>
+  <p class="subtitle">A practical path from data engineering fundamentals to building production-grade, AI-ready data platforms.</p>
+</section>
+
+<main>
+
+  <section>
+    <h2>What is Data Platform Engineering?</h2>
+    <p>Data Platform Engineering sits at the intersection of <strong>data engineering</strong>, <strong>software engineering</strong>, and <strong>platform/infrastructure</strong>. It is about designing reliable, scalable, and secure systems that enable teams to build data products with speed and confidence — not just writing one-off pipelines.</p>
+  </section>
+
+  <section>
+    <h2>The Roadmap</h2>
+
+    <div class="phase-list">
+      <div class="phase">
+        <h4>1. Foundations</h4>
+        <ul>
+          <li>Python, SQL, and Git</li>
+          <li>Data structures and algorithms basics</li>
+          <li>Linux command line and shell scripting</li>
+          <li>Relational databases and SQL tuning</li>
+        </ul>
+      </div>
+
+      <div class="phase">
+        <h4>2. Core Data Engineering</h4>
+        <ul>
+          <li>Batch ETL/ELT design patterns</li>
+          <li>Apache Spark and PySpark fundamentals</li>
+          <li>Data modeling, warehousing, and lakehouse concepts</li>
+          <li>Schema validation and data quality</li>
+        </ul>
+      </div>
+
+      <div class="phase">
+        <h4>3. Lakehouse & Streaming</h4>
+        <ul>
+          <li>Delta Lake, Databricks, and Apache Kafka</li>
+          <li>PySpark Structured Streaming</li>
+          <li>Exactly-once processing and checkpointing</li>
+          <li>Data contracts and CDC patterns</li>
+        </ul>
+      </div>
+
+      <div class="phase">
+        <h4>4. Platform & DevOps</h4>
+        <ul>
+          <li>CI/CD with GitHub Actions / GitLab CI</li>
+          <li>Containerization with Docker and Kubernetes basics</li>
+          <li>Infrastructure as Code: Terraform / Bicep</li>
+          <li>Secrets management, observability, and governance</li>
+        </ul>
+      </div>
+
+      <div class="phase">
+        <h4>5. Advanced Topics</h4>
+        <ul>
+          <li>Data mesh and domain-oriented data products</li>
+          <li>Configuration-driven platforms</li>
+          <li>Cost optimization and FinOps for data platforms</li>
+          <li>Data platform security and compliance</li>
+        </ul>
+      </div>
+
+      <div class="phase">
+        <h4>6. AI-Ready Data Systems</h4>
+        <ul>
+          <li>Vector databases and embeddings</li>
+          <li>RAG pipeline foundations</li>
+          <li>Feature stores and ML data workflows</li>
+          <li>Production LLM evaluation patterns</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How to Use This Roadmap</h2>
+    <ol>
+      <li>Start with the areas closest to your current role and build outward.</li>
+      <li>Apply everything through a project or production problem — passive learning fades fast.</li>
+      <li>Focus on <strong>why</strong> a tool or pattern is used before memorizing syntax.</li>
+      <li>Document and share your journey; it builds your brand and clarifies your thinking.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Recommended Resources</h2>
+    <ul>
+      <li><strong>Databricks Academy</strong> — Spark and Lakehouse fundamentals</li>
+      <li><strong>Apache Kafka / Confluent docs</strong> — streaming concepts</li>
+      <li><strong>Terraform + Azure/AWS Getting Started</strong> — cloud IaC</li>
+      <li><strong>Designing Data-Intensive Applications</strong> — system design for data</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>Built by Sasidhar Mopuru · <a href="../index.html">Return to portfolio</a></p>
+</footer>
+
+</body>
+</html>
