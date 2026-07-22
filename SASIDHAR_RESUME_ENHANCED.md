@@ -213,7 +213,7 @@ A live portfolio site showcasing data engineering experience, certifications, te
 - **Enterprise Data Product Delivery:** Successfully operated 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains at Accenture
 - **Pipeline Optimization:** Reduced data processing latency by 30% through optimization strategies
 - **Automation Success:** Reduced deployment time by 70% and manual effort by 60% through CI/CD automation
-- **Testing Excellence:** Achieved 97% overall code coverage across 60+ unit test suites
+- **Testing Excellence:** Achieved 95%+ overall code coverage across 60+ unit test suites
 - **High Uptime:** Achieved 99.5% deployment success rate and pipeline uptime for production data products
 
 ---
