@@ -5,325 +5,751 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Sasidhar Mopuru, Data & AI Platform Engineer">
   <title>Sasidhar Mopuru | Data & AI Platform Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-hover: #0ea5e9;
-      --border: #334155;
+      --bg-primary: #0a0a0a;
+      --bg-secondary: #111111;
+      --bg-card: rgba(20, 20, 20, 0.8);
+      --bg-card-hover: rgba(30, 30, 30, 0.9);
+      --text-primary: #ffffff;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent: #3b82f6;
+      --accent-light: #60a5fa;
+      --accent-dark: #2563eb;
+      --border: rgba(255, 255, 255, 0.1);
+      --border-hover: rgba(255, 255, 255, 0.2);
+      --gradient-1: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+      --gradient-2: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+      --gradient-subtle: linear-gradient(180deg, rgba(59, 130, 246, 0.1) 0%, transparent 100%);
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+      --glass: rgba(255, 255, 255, 0.05);
+      --glass-border: rgba(255, 255, 255, 0.1);
     }
-    * { box-sizing: border-box; }
-    body {
+
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
+      padding: 0;
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { color: var(--accent-hover); text-decoration: underline; }
-    .hero-cta { margin-top: 24px; }
-    .cta-btn {
-      display: inline-block;
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(10, 10, 10, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text-primary);
+    }
+
+    nav .nav-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    nav a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--text-primary);
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -30%;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 800px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+    }
+
+    .hero-badge .dot {
+      width: 8px;
+      height: 8px;
       background: var(--accent);
-      color: #0f172a;
-      padding: 10px 20px;
-      margin: 6px;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-title {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .hero-value {
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
       border-radius: 8px;
       font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
     }
-    .cta-btn:hover { background: var(--accent-hover); color: #0f172a; text-decoration: none; }
-    .cta-secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
-    .cta-secondary:hover { background: var(--accent); color: #0f172a; }
-    .mermaid { background: #0b1220; border-radius: 8px; padding: 16px; margin-top: 16px; }
-    .container { max-width: 900px; margin: auto; padding: 40px 20px; }
-    header { text-align: center; margin-bottom: 50px; }
-    header h1 { margin: 0; font-size: 2.8em; letter-spacing: -1px; }
-    header .tagline { color: var(--muted); font-size: 1.25em; margin-top: 10px; }
-    .badges { text-align: center; margin-bottom: 40px; }
-    .badges img, .badges a img { margin: 4px; vertical-align: middle; border-radius: 4px; }
+
+    .btn-primary {
+      background: var(--gradient-1);
+      color: white;
+      border: none;
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-secondary {
+      background: var(--glass);
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--glass-border);
+      border-color: var(--border-hover);
+    }
+
+    /* Sections */
     section {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 28px;
-      margin-bottom: 24px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      padding: 80px 0;
     }
-    h2 {
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 10px;
-      margin-top: 0;
+
+    .section-header {
+      margin-bottom: 48px;
     }
-    h3 { margin-bottom: 6px; color: var(--text); }
-    .meta { color: var(--muted); font-size: 0.95em; margin-bottom: 12px; }
-    ul { padding-left: 22px; }
-    li { margin-bottom: 8px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
-    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
-    th { color: var(--accent); }
-    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
-    .skill {
-      background: var(--border);
-      padding: 10px 12px;
+
+    .section-header h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 12px;
+    }
+
+    .skill-tag {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      padding: 12px 16px;
       border-radius: 8px;
       text-align: center;
-      font-size: 0.95em;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.2s ease;
     }
-    footer { text-align: center; color: var(--muted); margin-top: 40px; padding-bottom: 20px; }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2em; }
-      section { padding: 20px; }
+
+    .skill-tag:hover {
+      border-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    /* Project Cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-4px);
+    }
+
+    .project-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .project-card .meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .project-card ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .project-card li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .project-card li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .project-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Experience Section */
+    .experience-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    .experience-item h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .experience-item .meta {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .experience-item ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .experience-item li {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .experience-item li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* Certifications Table */
+    .cert-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .cert-table th,
+    .cert-table td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cert-table th {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .cert-table td {
+      color: var(--text-secondary);
+    }
+
+    .cert-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Badges */
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .badges img {
+      height: 24px;
+      border-radius: 4px;
+    }
+
+    /* Mermaid Diagram */
+    .mermaid {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 60px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      nav .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 100px 24px 60px;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        justify-content: center;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+
+      section {
+        padding: 60px 0;
+      }
+    }
+
+    /* Smooth Scroll */
+    @media (prefers-reduced-motion: no-preference) {
+      html {
+        scroll-behavior: smooth;
+      }
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-
-  <header>
-    <h1>Sasidhar Mopuru</h1>
-    <p class="tagline">Data & AI Platform Engineer | Databricks Certified | Kafka · PySpark · Delta Lake · Python</p>
-    <div class="hero-cta">
-      <a class="cta-btn" href="https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf" target="_blank" rel="noopener">Download Resume</a>
-      <a class="cta-btn cta-secondary" href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="cta-btn cta-secondary" href="https://github.com/Sasireddy001" target="_blank" rel="noopener">GitHub</a>
+<nav>
+  <div class="container">
+    <div class="logo">Sasidhar Mopuru</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </div>
-  </header>
-
-  <div class="badges">
-    <a href="https://www.python.org" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
-    </a>
-    <a href="https://spark.apache.org" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=white" alt="Apache Spark">
-    </a>
-    <a href="https://databricks.com" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white" alt="Databricks">
-    </a>
-    <a href="https://kafka.apache.org" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white" alt="Apache Kafka">
-    </a>
-    <a href="https://delta.io" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/badge/Delta%20Lake-00ADD8?logo=delta&logoColor=white" alt="Delta Lake">
-    </a>
-    <a href="https://github.com/features/actions" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" alt="GitHub Actions">
-    </a>
   </div>
+</nav>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Currently, I am a <strong>Data Engineer at Accenture</strong> building and operating a configuration-driven <strong>Core Data Product (CDP) platform</strong>. I design Source-to-Core Data Product pipelines with PySpark, deploy Dockerized Spark jobs through GitLab CI/CD across dev, sit, perf, and prod, and integrate Kafka, S3A-compatible object storage, and HashiCorp Vault into secure, production-grade data workflows.
-    </p>
-    <p>
-      I am a <strong>Data & AI Platform Engineer</strong> with 2+ years of experience building production-grade streaming data products and lakehouse systems. I specialize in turning high-velocity event data into reliable, AI-ready data platforms. My core work spans configuration-driven PySpark pipelines, Kafka → PySpark → Delta Lake streaming systems, Databricks lakehouse architectures, Dockerized deployments, GitLab CI/CD, data quality, and automated testing. I am actively expanding into Cloud, DevOps, Platform Engineering, and AI/LLM systems.
-    </p>
-  </section>
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Available for opportunities
+    </div>
+    <h1>Sasidhar Mopuru</h1>
+    <p class="hero-title">Data Platform Engineer | Databricks Certified</p>
+    <p class="hero-value">Building Real-Time Streaming & AI-Ready Data Systems using PySpark, Kafka, Delta Lake, and Python.</p>
+    <div class="hero-cta">
+      <a href="https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+        Download Resume
+      </a>
+      <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener" class="btn btn-secondary">
+        LinkedIn
+      </a>
+      <a href="https://github.com/Sasireddy001" target="_blank" rel="noopener" class="btn btn-secondary">
+        GitHub
+      </a>
+    </div>
+    <div class="badges">
+      <a href="https://www.python.org" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+      </a>
+      <a href="https://spark.apache.org" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=white" alt="Apache Spark">
+      </a>
+      <a href="https://databricks.com" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white" alt="Databricks">
+      </a>
+      <a href="https://kafka.apache.org" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white" alt="Apache Kafka">
+      </a>
+      <a href="https://delta.io" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/Delta%20Lake-00ADD8?logo=delta&logoColor=white" alt="Delta Lake">
+      </a>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>How I Design Data Platforms</h2>
-    <p>
-      My day-to-day work centers on a Source-to-Core Data Product pattern: ingest data from relational source systems, run PySpark transformations with schema enforcement and deduplication, and publish reliable Core Data Products to downstream consumers.
-    </p>
-    <pre class="mermaid">
-graph LR
-    A[Source Systems] --> B[PySpark ETL]
-    B --> C[Core Data Product]
-    C --> D[Data Consumers]
-    E[Kafka Events] --> B
-    F[S3A Object Storage] --> B
-    G[GitLab CI/CD] --> H[Docker Spark Jobs]
-    H --> B
-    I[HashiCorp Vault] --> B
-    </pre>
-    <ul>
-      <li><strong>Configuration-driven:</strong> JSON job definitions make pipelines easy to extend, review, and deploy across environments.</li>
-      <li><strong>Exactly-once processing:</strong> checkpointing, idempotent writes, and watermark-based deduplication keep data reliable.</li>
-      <li><strong>Secure by default:</strong> secrets, certificates, and credentials are fetched from HashiCorp Vault at runtime.</li>
-      <li><strong>Multi-environment:</strong> the same Docker image moves through dev, sit, perf, and prod via GitLab CI/CD.</li>
-      <li><strong>Observable:</strong> every job is wrapped with logging, retry logic, and status tracking.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Professional Experience</h2>
-    <h3>Data Engineer – Accenture</h3>
-    <p class="meta">Feb 2024 – Present</p>
-    <ul>
-      <li>Developed multiple enterprise data products across batch and streaming architectures.</li>
-      <li>Designed end-to-end data flows from source systems to SDP and CDP layers.</li>
-      <li>Built configuration-driven PySpark pipelines with JSON-based job definitions and reusable utilities for logging, retry, schema validation, and credential extraction.</li>
-      <li>Containerized Spark jobs with Docker and deployed them through GitLab CI/CD across dev, sit, perf, and prod environments.</li>
-      <li>Integrated Kafka eventing and S3A-compatible object storage into pipeline workflows.</li>
-      <li>Managed secrets and credentials securely using HashiCorp Vault and enterprise certificate stores.</li>
-      <li>Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.</li>
-      <li>Implemented unit test frameworks for Python-based data pipelines.</li>
-      <li>Created DDL scripts and configuration-driven workflows using Git.</li>
-      <li>Performed data validation, debugging, and performance optimization.</li>
-      <li>Worked under strict NDA and enterprise data governance standards.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>What I Do</h2>
-    <ul>
-      <li>Build real-time data pipelines with exactly-once processing and fault-tolerant checkpoints.</li>
-      <li>Design lakehouse architectures that feed analytics, ML, and generative AI applications.</li>
-      <li>Write modular, configuration-driven Python code with comprehensive test coverage.</li>
-      <li>Bridge data engineering with AI/LLM evaluation, RAG data foundations, and agentic pipelines.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Target Roles</h2>
-    <p>
-      Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Architect · DevOps Engineer (data-platform focus)
-    </p>
-  </section>
-
-  <section>
-    <h2>Featured Personal Projects</h2>
-    <p class="meta">Independent projects that complement my professional work at Accenture.</p>
-    <h3>Production-Style Kafka PySpark Delta Pipeline</h3>
-    <p class="meta">Jul 2026</p>
-    <ul>
-      <li>Built a production-style streaming data pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes the results to Delta Lake.</li>
-      <li>Implemented environment-driven configuration, JSON schema enforcement, checkpointing with exactly-once semantics, and watermark-based deduplication.</li>
-      <li>Created a pytest unit-test suite with an in-memory Spark fixture, GitHub Actions CI, a sample data generator, and a throughput benchmark.</li>
-      <li>Designed to run on Databricks, a Spark cluster, or locally for development.</li>
-    </ul>
-    <p>
-      <a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline">View Repository</a>
-    </p>
-
-    <h3>RAG Document QA Chatbot</h3>
-    <p class="meta">Jul 2026</p>
-    <ul>
-      <li>Built a retrieval-augmented generation (RAG) application with <strong>FastAPI</strong>, <strong>Streamlit</strong>, <strong>ChromaDB</strong>, and local or OpenAI LLMs.</li>
-      <li>Implemented document ingestion, text chunking, sentence-transformer embeddings, dense retrieval, and LLM answer generation.</li>
-      <li>Designed an environment-driven, modular architecture with separate ingest, embed, vector-store, LLM, and query components.</li>
-      <li>Created a pytest test suite with mocked embeddings and LLM calls, GitHub Actions CI, and architecture documentation.</li>
-    </ul>
-    <p>
-      <a href="https://github.com/Sasireddy001/rag-document-qa">View Repository</a>
-    </p>
-
-    <h3>Cloud-Native Streaming Data Platform</h3>
-    <p class="meta">Jul 2026</p>
-    <ul>
-      <li>Designed and implemented a cloud-native streaming data platform using <strong>Azure Event Hubs</strong>, <strong>Databricks</strong>, <strong>ADLS Gen2</strong>, and <strong>Delta Lake</strong>.</li>
-      <li>Created Terraform modules for infrastructure as code with multi-environment support (dev/prod).</li>
-      <li>Implemented a production-style PySpark streaming job with Azure Event Hubs integration, watermark-based deduplication, and Delta Lake checkpointing.</li>
-      <li>Demonstrated cloud skills, platform engineering, and infrastructure automation capabilities.</li>
-    </ul>
-    <p>
-      <a href="https://github.com/Sasireddy001/Cloud-data-platform">View Repository</a>
-    </p>
-
-    <h3>IPL Score Prediction using Machine Learning</h3>
-    <p class="meta">Sep 2022 – Jan 2023</p>
-    <ul>
-      <li>Built an ML model to predict IPL powerplay scores using historical data.</li>
-      <li>Performed data preprocessing, feature engineering, and model evaluation.</li>
-      <li>Implemented the project in Python using standard ML libraries.</li>
-    </ul>
-    <p>
-      <a href="https://github.com/Sasireddy001/Portfolio">View Portfolio Repository</a>
-    </p>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <table>
-      <thead>
-        <tr><th>Certification</th><th>Issuer</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>DP-700: Implementing Data Engineering Solutions using Microsoft Fabric</td><td>Microsoft</td></tr>
-        <tr><td>Databricks Certified Data Engineer Associate</td><td>Databricks</td></tr>
-        <tr><td>Databricks PySpark Streaming Training – 8 Weeks</td><td>Accenture</td></tr>
-        <tr><td>Google Data Analytics Professional Certificate</td><td>Coursera</td></tr>
-        <tr><td>NPTEL MIS</td><td>IIT Madras</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <h2>Technical Skills</h2>
-    <div class="skills">
-      <div class="skill">Python</div>
-      <div class="skill">SQL</div>
-      <div class="skill">PySpark</div>
-      <div class="skill">Apache Spark</div>
-      <div class="skill">Databricks</div>
-      <div class="skill">Microsoft Fabric</div>
-      <div class="skill">Delta Lake</div>
-      <div class="skill">Apache Kafka</div>
-      <div class="skill">Azure Event Hubs</div>
-      <div class="skill">Terraform</div>
-      <div class="skill">ETL/ELT</div>
-      <div class="skill">Data Quality</div>
-      <div class="skill">pytest / Unit Testing</div>
-      <div class="skill">Git</div>
-      <div class="skill">CI/CD</div>
-      <div class="skill">Linux</div>
-      <div class="skill">System Design</div>
-      <div class="skill">Cloud Concepts</div>
-      <div class="skill">RAG / LLM</div>
-      <div class="skill">FastAPI</div>
-      <div class="skill">Streamlit</div>
-      <div class="skill">ChromaDB</div>
-      <div class="skill">Vector DBs</div>
-      <div class="skill">Docker</div>
-      <div class="skill">GitLab CI/CD</div>
-      <div class="skill">HashiCorp Vault</div>
-      <div class="skill">Oracle</div>
-      <div class="skill">SingleStore</div>
-      <div class="skill">MongoDB</div>
+<div class="container">
+  <section id="about">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <p>Data & AI Platform Engineer building production-grade streaming systems</p>
+    </div>
+    <div class="card">
+      <p>
+        Currently, I am a <strong>Data Engineer at Accenture</strong> building and operating a configuration-driven <strong>Core Data Product (CDP) platform</strong>. I design Source-to-Core Data Product pipelines with PySpark, deploy Dockerized Spark jobs through GitLab CI/CD across dev, sit, perf, and prod, and integrate Kafka, S3A-compatible object storage, and HashiCorp Vault into secure, production-grade data workflows.
+      </p>
+      <p style="margin-top: 16px;">
+        I am a <strong>Data & AI Platform Engineer</strong> with 2+ years of experience building production-grade streaming data products and lakehouse systems. I specialize in turning high-velocity event data into reliable, AI-ready data platforms. My core work spans configuration-driven PySpark pipelines, Kafka → PySpark → Delta Lake streaming systems, Databricks lakehouse architectures, Dockerized deployments, GitLab CI/CD, data quality, and automated testing. I am actively expanding into Cloud, DevOps, Platform Engineering, and AI/LLM systems.
+      </p>
     </div>
   </section>
 
-  <section>
-    <h2>Currently Exploring</h2>
-    <ul>
-      <li><strong>Cloud-native deployment:</strong> Terraform, Kubernetes, and multi-environment CI/CD for data platforms.</li>
-      <li><strong>Production LLM evaluation:</strong> building measurable, observable retrieval-augmented generation systems.</li>
-      <li><strong>Platform engineering:</strong> reusable data infrastructure, golden paths, and developer experience for data teams.</li>
-    </ul>
+  <section id="experience">
+    <div class="section-header">
+      <h2>Professional Experience</h2>
+      <p>Building enterprise data products at scale</p>
+    </div>
+    <div class="experience-item">
+      <h3>Data Engineer – Accenture</h3>
+      <p class="meta">Feb 2024 – Present | Bengaluru, India</p>
+      <ul>
+        <li>Developed multiple enterprise data products across batch and streaming architectures.</li>
+        <li>Designed end-to-end data flows from source systems to SDP and CDP layers.</li>
+        <li>Built configuration-driven PySpark pipelines with JSON-based job definitions and reusable utilities for logging, retry, schema validation, and credential extraction.</li>
+        <li>Containerized Spark jobs with Docker and deployed them through GitLab CI/CD across dev, sit, perf, and prod environments.</li>
+        <li>Integrated Kafka eventing and S3A-compatible object storage into pipeline workflows.</li>
+        <li>Managed secrets and credentials securely using HashiCorp Vault and enterprise certificate stores.</li>
+        <li>Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.</li>
+        <li>Implemented unit test frameworks for Python-based data pipelines.</li>
+        <li>Created DDL scripts and configuration-driven workflows using Git.</li>
+        <li>Performed data validation, debugging, and performance optimization.</li>
+        <li>Worked under strict NDA and enterprise data governance standards.</li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h2>Education & Achievements</h2>
-    <ul>
-      <li>B.Tech in Computer Science and Engineering – CGPA 7.99</li>
-      <li>JEE Mains – 94.14 Percentile</li>
-      <li>Enterprise Data Engineer at Accenture</li>
-    </ul>
+  <section id="projects">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <p>Production-ready systems demonstrating core competencies</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Production-Style Kafka PySpark Delta Pipeline</h3>
+        <p class="meta">Jul 2026</p>
+        <ul>
+          <li>Built a production-style streaming data pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes the results to Delta Lake.</li>
+          <li>Implemented environment-driven configuration, JSON schema enforcement, checkpointing with exactly-once semantics, and watermark-based deduplication.</li>
+          <li>Created a pytest unit-test suite with an in-memory Spark fixture, GitHub Actions CI, a sample data generator, and a throughput benchmark.</li>
+          <li>Designed to run on Databricks, a Spark cluster, or locally for development.</li>
+        </ul>
+        <a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline" target="_blank" rel="noopener">View Repository →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>RAG Document QA Chatbot</h3>
+        <p class="meta">Jul 2026</p>
+        <ul>
+          <li>Built a retrieval-augmented generation (RAG) application with <strong>FastAPI</strong>, <strong>Streamlit</strong>, <strong>ChromaDB</strong>, and local or OpenAI LLMs.</li>
+          <li>Implemented document ingestion, text chunking, sentence-transformer embeddings, dense retrieval, and LLM answer generation.</li>
+          <li>Designed an environment-driven, modular architecture with separate ingest, embed, vector-store, LLM, and query components.</li>
+          <li>Created a pytest test suite with mocked embeddings and LLM calls, GitHub Actions CI, and architecture documentation.</li>
+        </ul>
+        <a href="https://github.com/Sasireddy001/rag-document-qa" target="_blank" rel="noopener">View Repository →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Cloud-Native Streaming Data Platform</h3>
+        <p class="meta">Jul 2026</p>
+        <ul>
+          <li>Designed and implemented a cloud-native streaming data platform using <strong>Azure Event Hubs</strong>, <strong>Databricks</strong>, <strong>ADLS Gen2</strong>, and <strong>Delta Lake</strong>.</li>
+          <li>Created Terraform modules for infrastructure as code with multi-environment support (dev/prod).</li>
+          <li>Implemented a production-style PySpark streaming job with Azure Event Hubs integration, watermark-based deduplication, and Delta Lake checkpointing.</li>
+          <li>Demonstrated cloud skills, platform engineering, and infrastructure automation capabilities.</li>
+        </ul>
+        <a href="https://github.com/Sasireddy001/Cloud-data-platform" target="_blank" rel="noopener">View Repository →</a>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <ul>
-      <li>Portfolio: <a href="https://sasireddy001.github.io/Portfolio" target="_blank" rel="noopener">sasireddy001.github.io/Portfolio</a></li>
-      <li>Resume: <a href="https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf" target="_blank" rel="noopener">Download PDF</a></li>
-      <li>Email: <a href="mailto:sasidharmopuru@gmail.com">sasidharmopuru@gmail.com</a></li>
-      <li>GitHub: <a href="https://github.com/Sasireddy001" target="_blank" rel="noopener">@Sasireddy001</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener">linkedin.com/in/sasidhar-mopuru-417a03233</a></li>
-      <li>Location: India</li>
-      <li>Open to global remote Data & AI roles</li>
-    </ul>
+  <section id="skills">
+    <div class="section-header">
+      <h2>Technical Skills</h2>
+      <p>Technologies and tools I work with daily</p>
+    </div>
+    <div class="card">
+      <div class="skills-grid">
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">SQL</div>
+        <div class="skill-tag">PySpark</div>
+        <div class="skill-tag">Apache Spark</div>
+        <div class="skill-tag">Databricks</div>
+        <div class="skill-tag">Microsoft Fabric</div>
+        <div class="skill-tag">Delta Lake</div>
+        <div class="skill-tag">Apache Kafka</div>
+        <div class="skill-tag">Azure Event Hubs</div>
+        <div class="skill-tag">Terraform</div>
+        <div class="skill-tag">ETL/ELT</div>
+        <div class="skill-tag">Data Quality</div>
+        <div class="skill-tag">pytest / Unit Testing</div>
+        <div class="skill-tag">Git</div>
+        <div class="skill-tag">CI/CD</div>
+        <div class="skill-tag">Linux</div>
+        <div class="skill-tag">System Design</div>
+        <div class="skill-tag">Cloud Concepts</div>
+        <div class="skill-tag">RAG / LLM</div>
+        <div class="skill-tag">FastAPI</div>
+        <div class="skill-tag">Streamlit</div>
+        <div class="skill-tag">ChromaDB</div>
+        <div class="skill-tag">Vector DBs</div>
+        <div class="skill-tag">Docker</div>
+        <div class="skill-tag">GitLab CI/CD</div>
+        <div class="skill-tag">HashiCorp Vault</div>
+        <div class="skill-tag">Oracle</div>
+        <div class="skill-tag">SingleStore</div>
+        <div class="skill-tag">MongoDB</div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>2026 Sasidhar Mopuru | Data & AI Platform Engineer</p>
-  </footer>
+  <section id="certifications">
+    <div class="section-header">
+      <h2>Certifications</h2>
+      <p>Professional credentials and training</p>
+    </div>
+    <div class="card">
+      <table class="cert-table">
+        <thead>
+          <tr>
+            <th>Certification</th>
+            <th>Issuer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DP-700: Implementing Data Engineering Solutions using Microsoft Fabric</td>
+            <td>Microsoft</td>
+          </tr>
+          <tr>
+            <td>Databricks Certified Data Engineer Associate</td>
+            <td>Databricks</td>
+          </tr>
+          <tr>
+            <td>Databricks PySpark Streaming Training – 8 Weeks</td>
+            <td>Accenture</td>
+          </tr>
+          <tr>
+            <td>Google Data Analytics Professional Certificate</td>
+            <td>Coursera</td>
+          </tr>
+          <tr>
+            <td>NPTEL MIS</td>
+            <td>IIT Madras</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
+  <section id="contact">
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p>Let's connect and build something great</p>
+    </div>
+    <div class="card">
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 12px; color: var(--text-secondary);">
+          <strong>Email:</strong> <a href="mailto:sasidharmopuru@gmail.com" style="color: var(--accent);">sasidharmopuru@gmail.com</a>
+        </li>
+        <li style="margin-bottom: 12px; color: var(--text-secondary);">
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener" style="color: var(--accent);">linkedin.com/in/sasidhar-mopuru-417a03233</a>
+        </li>
+        <li style="margin-bottom: 12px; color: var(--text-secondary);">
+          <strong>GitHub:</strong> <a href="https://github.com/Sasireddy001" target="_blank" rel="noopener" style="color: var(--accent);">@Sasireddy001</a>
+        </li>
+        <li style="margin-bottom: 12px; color: var(--text-secondary);">
+          <strong>Location:</strong> India (Open to global remote roles)
+        </li>
+      </ul>
+    </div>
+  </section>
 </div>
+
+<footer>
+  <p>2026 Sasidhar Mopuru | Data & AI Platform Engineer</p>
+</footer>
 
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
