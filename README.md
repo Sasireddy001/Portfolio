@@ -266,5 +266,5 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 ## Blog
 
-- [My Databricks Data Engineer Associate Journey](blog/databricks-data-engineer-associate-journey.md) — Certification notes, resources, and preparation strategy.
+- [My Databricks Data Engineer Associate Journey](https://sasireddy001.github.io/Portfolio/blog/databricks-data-engineer-associate-journey.html) — Certification notes, resources, and preparation strategy.
 

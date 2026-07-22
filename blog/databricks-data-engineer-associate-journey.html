@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Databricks Data Engineer Associate certification journey by Sasidhar Mopuru.">
+  <title>Databricks Data Engineer Associate Journey | Sasidhar Mopuru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0B1020;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.8);
+      --text-primary: #ffffff;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent: #2563EB;
+      --accent-light: #3b82f6;
+      --secondary: #06B6D4;
+      --accent-purple: #8B5CF6;
+      --border: rgba(255, 255, 255, 0.1);
+      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+      --glass: rgba(255, 255, 255, 0.05);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(12px);
+      background: rgba(11, 16, 32, 0.85);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .back-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .back-link:hover { color: var(--text-primary); }
+
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px 40px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(37, 99, 235, 0.1) 0%, transparent 100%);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-purple) 100%);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 48px;
+      padding: 28px;
+      border-radius: 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--border-hover, rgba(255,255,255,0.2));
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: var(--text-primary);
+      border-left: 4px solid var(--accent);
+      padding-left: 14px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 20px 0 10px;
+      color: var(--secondary);
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    p { margin-bottom: 14px; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li { margin-bottom: 10px; }
+
+    .status-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      border-radius: 12px;
+      background: rgba(37, 99, 235, 0.1);
+      border: 1px solid rgba(37, 99, 235, 0.25);
+      margin-top: 24px;
+    }
+
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 10px #22c55e;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    .status-label {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr 1fr; }
+      h1 { font-size: 3rem; }
+    }
+
+    .resource-link {
+      display: inline-block;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      background: var(--bg-secondary);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="../index.html" class="logo">Sasidhar Mopuru</a>
+    <a href="../index.html" class="back-link">Back to Portfolio</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <span class="badge">Certification Journey</span>
+  <h1>Databricks Data Engineer Associate Journey</h1>
+  <p class="subtitle">A hands-on path from production data platforms to the Lakehouse certification, covering PySpark, Delta Lake, and real-world exam strategy.</p>
+</section>
+
+<main>
+
+  <section>
+    <h2>Why This Certification</h2>
+    <p>As a <strong>Data Platform Engineer</strong> working daily with <strong>PySpark</strong>, <strong>Delta Lake</strong>, and <strong>Databricks</strong>, I wanted a credential that validates production-grade skills, not just theory. The Databricks Data Engineer Associate exam focuses on the Lakehouse Platform, ETL with Apache Spark, Delta Lake operations, and production workflows — the exact stack I use at Accenture.</p>
+  </section>
+
+  <section>
+    <h2>What the Exam Covers</h2>
+    <ul>
+      <li>Databricks Lakehouse Platform and workspace fundamentals</li>
+      <li>ETL with Apache Spark on Databricks</li>
+      <li>Delta Lake: tables, time travel, optimization, and governance</li>
+      <li>Relational entities and data modeling in the lakehouse</li>
+      <li>Production workloads, jobs, and orchestration</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>My Preparation Path</h2>
+    <ol>
+      <li>Completed the Databricks Academy learning path and hands-on labs.</li>
+      <li>Applied lakehouse concepts on real Accenture projects using PySpark, Delta Lake, and CI/CD pipelines.</li>
+      <li>Built side projects to reinforce Delta Lake and Structured Streaming patterns.</li>
+      <li>Took practice assessments to identify and close knowledge gaps.</li>
+    </ol>
+  </section>
+
+  <div class="grid-2">
+    <section>
+      <h2>Resources That Helped</h2>
+      <ul>
+        <li><a href="https://www.databricks.com/learn/training" target="_blank" rel="noopener">Databricks Academy</a> free learning plan</li>
+        <li>Official exam guide and sample questions</li>
+        <li>Hands-on Databricks Community Edition labs</li>
+        <li>Real-world production scenarios from my current role</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Key Lessons</h2>
+      <ul>
+        <li><strong>Practice Delta Lake operations</strong> — MERGE, OPTIMIZE, ZORDER, and time travel are exam-heavy.</li>
+        <li><strong>Understand Spark internals</strong> — lazy evaluation, transformations vs actions, and cluster configs.</li>
+        <li><strong>Know Unity Catalog basics</strong> — data governance is a recurring theme.</li>
+        <li><strong>Time management matters</strong> — flag uncertain questions and review later.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section>
+    <h2>What's Next</h2>
+    <p>I am extending into the <strong>Databricks Data Engineer Professional</strong> and advanced streaming certifications, while applying these patterns to production data platforms.</p>
+    <div class="status-box">
+      <div class="status-dot"></div>
+      <div>
+        <span class="status-label">Status:</span>
+        <span style="color: var(--text-secondary);">Certification journey in progress — coming soon.</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Built by Sasidhar Mopuru · <a href="../index.html">Return to portfolio</a></p>
+</footer>
+
+</body>
+</html>
