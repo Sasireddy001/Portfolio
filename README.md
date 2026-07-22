@@ -40,13 +40,13 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 *Feb 2024 – Present*
 
 - Built configuration-driven Core Data Product (CDP) platform reducing deployment time by **70%**.
-- Designed end-to-end data flows from source systems to SDP and CDP layers for **90+ production PySpark ETL jobs**.
+- Designed end-to-end data flows from source systems to SDP and CDP layers for **90+ production PySpark ETL jobs** across 4 E2E supply-chain sub-domains.
 - Developed PySpark pipelines with JSON-based job definitions achieving **99.5% pipeline uptime**.
 - Containerized Spark jobs with Docker and deployed through GitLab CI/CD across dev, sit, perf, prod environments.
 - Integrated Kafka eventing and S3A-compatible object storage into pipeline workflows.
 - Managed secrets and credentials securely using HashiCorp Vault and enterprise certificate stores.
 - Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.
-- Implemented comprehensive testing strategy with **60+ unit test suites** achieving 85% code coverage.
+- Implemented comprehensive testing strategy with **60+ unit test suites** achieving **97% overall code coverage**.
 - Created DDL scripts and configuration-driven workflows using Git.
 - Performed data validation, debugging, and performance optimization reducing latency by 30%.
 - Worked under strict NDA and enterprise data governance standards.
@@ -56,11 +56,11 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 ### Enterprise Configuration-Driven Data Platform
 *Feb 2024 – Present*
 
-- Built and operated enterprise-grade configuration-driven data platform with **90+ production PySpark ETL jobs**, comprehensive CI/CD automation, and multi-environment deployment infrastructure.
+- Built and operated enterprise-grade configuration-driven data platform with **90+ production PySpark ETL jobs** across 4 E2E supply-chain sub-domains (site, supplier, item, product), comprehensive CI/CD automation, and multi-environment deployment infrastructure. Collaborated with a 10+ person cross-functional team (Accenture and client).
 - Designed dynamic CI/CD configuration generator with **YAML-based job definitions** enabling non-technical users to configure data pipelines without code changes.
 - Implemented parent-child **GitLab CI/CD pipeline architecture** with dynamic child pipeline generation for scalable deployment orchestration.
 - Integrated **HashiCorp Vault** for enterprise secrets management and implemented secure logging decorators with sensitive data sanitization.
-- Created comprehensive testing strategy with **60+ unit test suites** achieving 85%+ code coverage on critical pipeline components.
+- Created comprehensive testing strategy with **60+ unit test suites** achieving **97% overall code coverage** on pipeline components.
 - Achieved **99.5% deployment success rate** and **99.5% pipeline uptime** across 4 environments (dev, sit, perf, prod).
 - Reduced pipeline configuration time by **70%** and production incidents by **60%** through automation and comprehensive testing.
 

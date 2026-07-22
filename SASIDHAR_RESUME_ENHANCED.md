@@ -39,12 +39,12 @@ Actively expanding into cloud-native deployment, Kubernetes, Terraform, and prod
 *Bengaluru, India*
 
 - **Built Configuration-Driven CDP Platform:** Designed and developed a Core Data Product (CDP) platform using PySpark, Docker, and GitLab CI/CD. Built dynamic CI/CD configuration generator with YAML-based job definitions enabling non-technical users to configure data pipelines without code changes. Reduced deployment time by 70% and improved pipeline reliability.
-- **End-to-End Data Engineering:** Designed and implemented complete data flows from source systems to Source Data Product (SDP) and Core Data Product (CDP) layers. Successfully delivered 90+ production PySpark ETL jobs across batch and streaming architectures with 99.5% deployment success rate.
+- **End-to-End Data Engineering:** Designed and implemented complete data flows from source systems to Source Data Product (SDP) and Core Data Product (CDP) layers. Successfully delivered 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains (site, supplier, item, product) with 99.5% deployment success rate.
 - **PySpark Pipeline Development:** Built modular, reusable PySpark pipelines with comprehensive error handling, retry mechanisms, and schema validation. Developed Python utilities for logging, credential extraction, and data quality checks. Achieved 99.5% pipeline uptime.
 - **Containerization & CI/CD:** Containerized Spark jobs using Docker (base image: harbor.dell.com/customer-lakehouse/spark-py:3.5.5-v14-python3.12) and established GitLab CI/CD pipelines for automated deployment across dev, sit, perf, and prod environments. Reduced manual deployment effort by 60%.
 - **Streaming Integration:** Integrated Apache Kafka and S3A-compatible object storage into pipeline workflows for real-time event processing. Implemented exactly-once semantics using checkpointing and idempotent sinks.
 - **Security & Secrets Management:** Implemented secure credential management using HashiCorp Vault and enterprise certificate stores. Ensured compliance with enterprise data governance standards and NDA requirements.
-- **Testing & Quality Assurance:** Implemented comprehensive testing strategy with 60+ unit test suites using pytest and mocking. Achieved 85% code coverage for critical pipeline components and reduced production incidents by 60%.
+- **Testing & Quality Assurance:** Implemented comprehensive testing strategy with 60+ unit test suites using pytest and mocking. Achieved 97% overall code coverage for pipeline components and reduced production incidents by 60%.
 - **Performance Optimization:** Performed data validation, debugging, and performance optimization on production pipelines. Reduced data processing latency by 30% through partitioning and caching strategies.
 - **Infrastructure as Code:** Created DDL scripts and configuration-driven workflows using Git. Established version control for all data pipeline configurations and database schemas.
 
@@ -55,7 +55,7 @@ Actively expanding into cloud-native deployment, Kubernetes, Terraform, and prod
 ### Enterprise Configuration-Driven Data Platform
 *PySpark · GitLab CI/CD · Docker · YAML · Python · HashiCorp Vault · pytest*
 
-Built and operated enterprise-grade configuration-driven data platform with 90+ production PySpark ETL jobs, comprehensive CI/CD automation, and multi-environment deployment infrastructure.
+Built and operated enterprise-grade configuration-driven data platform with 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains (site, supplier, item, product), comprehensive CI/CD automation, and multi-environment deployment infrastructure. Collaborated with a 10+ person cross-functional team (Accenture and client).
 
 **Key Features:**
 - Dynamic CI/CD configuration generator with YAML-based job definitions
@@ -71,7 +71,7 @@ Built and operated enterprise-grade configuration-driven data platform with 90+ 
 - Enabled non-technical users to configure deployments via YAML without code changes
 - Achieved 99.5% deployment success rate and 99.5% pipeline uptime
 - Reduced production incidents by 60% through comprehensive testing
-- Achieved 85%+ code coverage on critical pipeline components
+- Achieved 97% overall code coverage across 60+ test suites
 - Eliminated hardcoded credentials and achieved enterprise security compliance
 
 **Skills:** PySpark, Apache Spark, GitLab CI/CD, Docker, YAML, Python, HashiCorp Vault, pytest, CI/CD, Configuration-Driven Design, Data Engineering, ETL, Data Pipelines

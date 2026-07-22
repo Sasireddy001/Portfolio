@@ -20,14 +20,16 @@ Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake �
 
 I build real-time, reliable data platforms that turn high-velocity event streams into analytics and AI-ready datasets.
 
-At Accenture, my current focus is building and operating a configuration-driven **Core Data Product (CDP) platform**. I designed dynamic CI/CD configuration generator with YAML-based job definitions, enabling non-technical users to configure data pipelines without code changes. I operate 90+ production PySpark ETL jobs with comprehensive CI/CD automation across dev, sit, perf, and prod environments, achieving 99.5% deployment success rate and 99.5% pipeline uptime.
+At Accenture, my current focus is building and operating a configuration-driven **Core Data Product (CDP) platform**. I designed dynamic CI/CD configuration generator with YAML-based job definitions, enabling non-technical users to configure data pipelines without code changes. I operate 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains (site, supplier, item, product) with comprehensive CI/CD automation across dev, sit, perf, and prod environments, achieving 99.5% deployment success rate and 99.5% pipeline uptime. I also collaborate with a 10+ person cross-functional team (Accenture and client) to manage end-to-end delivery.
 
 Featured work:
-• Enterprise Configuration-Driven Data Platform: Built dynamic CI/CD configuration generator reducing pipeline configuration time by 70%. Implemented parent-child GitLab CI/CD pipeline architecture, integrated HashiCorp Vault for secrets management, and created comprehensive testing strategy with 60+ unit test suites achieving 85%+ code coverage.
+• Enterprise Configuration-Driven Data Platform: Built dynamic CI/CD configuration generator reducing pipeline configuration time by 70%. Implemented parent-child GitLab CI/CD pipeline architecture, integrated HashiCorp Vault for secrets management, and created comprehensive testing strategy with 60+ unit test suites achieving 97% overall code coverage across 4 E2E supply-chain sub-domains.
 • Production-Style Kafka → PySpark → Delta Lake pipeline: schema enforcement, watermark-based deduplication, checkpointing, and 31k–45k rows/s throughput on a 4-core laptop.
 • RAG Document QA Chatbot: FastAPI + Streamlit app using sentence-transformers, ChromaDB, and OpenAI/Ollama LLMs for grounded document Q&A.
 
 I am expanding into cloud-native deployment, Kubernetes, Terraform, and production LLM evaluation — the next layer for high-scale data platforms.
+
+**Team Context:** I work within a 10+ person cross-functional team (Accenture and client) managing E2E supply-chain data products across site, supplier, item, and product domains.
 
 Portfolio: https://sasireddy001.github.io/Portfolio/
 Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
