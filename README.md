@@ -32,6 +32,16 @@
 
 
 
+## Latest Updates
+
+
+
+- **AWS cloud deployment** added to the Kafka → PySpark → Delta Lake pipeline (MSK Serverless + EMR Serverless + S3 + Terraform).
+- **Architecture and System Design docs** published for all major projects with Mermaid diagrams, scalability, fault tolerance, and tradeoff analysis.
+- **New technical blog articles** on Kafka/PySpark/Delta Lake, RAG with FastAPI/ChromaDB, and the Databricks DE Associate journey.
+- **10 ready-to-post LinkedIn technical posts** and a public cloud-native project roadmap.
+- **One-page impact-driven resume** with a regenerated PDF.
+
 ## About Me
 
 
