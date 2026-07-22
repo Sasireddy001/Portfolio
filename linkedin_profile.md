@@ -62,7 +62,7 @@ I am expanding into cloud-native deployment, Kubernetes, Terraform, and producti
 
 Portfolio: https://sasireddy001.github.io/Portfolio/
 
-Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
+Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.html
 
 GitHub: https://github.com/Sasireddy001
 
@@ -316,7 +316,7 @@ Add a second custom profile button for your resume:
 
 - Label: Resume
 
-- URL: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
+- URL: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.html
 
 
 
