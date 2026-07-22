@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How I Passed the Databricks Data Engineer Associate Exam</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; --code:#1e293b; --border:#334155; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); margin:0; line-height:1.75; }
+    header { background: var(--card); padding:1rem 1.5rem; border-bottom:1px solid var(--border); }
+    header a { color: var(--accent); text-decoration:none; font-weight:600; }
+    main { max-width:760px; margin:0 auto; padding:3rem 1.5rem 4rem; }
+    h1 { font-size:2.2rem; line-height:1.2; margin-bottom:1rem; }
+    h2 { color: var(--accent); border-bottom:1px solid var(--border); padding-bottom:.4rem; margin-top:2.5rem; font-size:1.5rem; }
+    h3 { margin-top:2rem; }
+    p, li { color: var(--text); }
+    a { color: var(--accent); }
+    code { background: var(--code); padding:.15rem .35rem; border-radius:.25rem; font-size:.9rem; }
+    pre { background: var(--code); padding:1rem; border-radius:.5rem; overflow-x:auto; }
+    pre code { background: transparent; padding:0; }
+    blockquote { border-left: 3px solid var(--accent); margin:0; padding-left:1rem; color: var(--muted); }
+    table { width:100%; border-collapse: collapse; margin:1.5rem 0; }
+    th, td { border:1px solid var(--border); padding:.5rem .75rem; text-align:left; }
+    th { background: var(--code); }
+    .mermaid { background: transparent; padding:0; text-align:center; }
+    .mermaid:not([data-processed="true"]) { visibility: hidden; }
+    footer { text-align:center; padding:2rem; color: var(--muted); border-top:1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <header><a href="https://sasireddy001.github.io/Portfolio/">← Back to Portfolio</a></header>
+  <main>
+    <h1>How I Passed the Databricks Data Engineer Associate Exam</h1>
+<p><strong>Sasidhar Mopuru</strong> · Data &amp; AI Platform Engineer · <a href="https://sasireddy001.github.io/Portfolio/">Portfolio</a></p>
+<hr />
+<h2>Why This Certification</h2>
+<p>Databricks is the dominant lakehouse platform for large-scale data engineering. The <strong>Databricks Data Engineer Associate</strong> certification validates that you can build ETL pipelines, manage Delta Lake tables, and operate within the Databricks workspace. For anyone working in PySpark, Delta Lake, or Lakehouse architecture, it is a strong credential.</p>
+<p>I passed the exam in 2024. Here is what worked for me, what did not, and how I would prepare if I were taking it today.</p>
+<h2>What the Exam Covers</h2>
+<p>The exam is divided into roughly six areas:</p>
+<ol>
+<li><strong>Databricks Lakehouse Platform</strong> — workspace, clusters, notebooks, DBFS, Unity Catalog basics.</li>
+<li><strong>ETL with Spark SQL and PySpark</strong> — reading and writing data, transformations, joins, aggregations.</li>
+<li><strong>Delta Lake</strong> — Delta tables, ACID transactions, <code>OPTIMIZE</code>, <code>VACUUM</code>, time travel, <code>MERGE</code>.</li>
+<li><strong>Relational Entities</strong> — databases, tables, views, and access control in Databricks.</li>
+<li><strong>Incremental Data Processing</strong> — Structured Streaming, Auto Loader, checkpoints.</li>
+<li><strong>Production Pipelines</strong> — Jobs, clusters, task orchestration, error handling.</li>
+</ol>
+<p>Most questions are scenario-based. You are not asked to memorize syntax; you are asked to choose the right approach for a given data engineering problem.</p>
+<h2>My Study Plan</h2>
+<p>I spent <strong>three weeks</strong> preparing, averaging <strong>1.5–2 hours per day</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week 1</td>
+<td>Lakehouse platform + Delta Lake theory</td>
+</tr>
+<tr>
+<td>Week 2</td>
+<td>PySpark transformations, Delta CRUD, time travel</td>
+</tr>
+<tr>
+<td>Week 3</td>
+<td>Structured Streaming, practice exams, weak-topic review</td>
+</tr>
+</tbody>
+</table>
+<h3>Resources I Used</h3>
+<ul>
+<li><strong>Databricks Academy free learning path</strong> — the official material closely maps to the exam.</li>
+<li><strong>Databricks documentation</strong> — especially the Delta Lake and Structured Streaming guides.</li>
+<li><strong>Practice tests</strong> — I used the Databricks practice exam plus third-party question banks to identify gaps.</li>
+<li><strong>Hands-on notebooks</strong> — I recreated common Delta Lake scenarios in a community edition workspace.</li>
+</ul>
+<h2>Topics That Tripped Me Up</h2>
+<h3>Delta Lake command order</h3>
+<p>Commands like <code>OPTIMIZE</code>, <code>VACUUM</code>, <code>DELETE</code>, and <code>MERGE</code> have specific semantics. Questions often ask which order or cadence is correct for a maintenance workflow.</p>
+<h3>Structured Streaming output modes</h3>
+<p>Know when to use <code>append</code>, <code>complete</code>, and <code>update</code> output modes. The wrong mode in a streaming question is a common trap.</p>
+<h3>Unity Catalog vs. Hive metastore</h3>
+<p>Understand the difference in ownership, grants, and securables. Several questions test this directly.</p>
+<h3>Spark SQL vs. PySpark behavior</h3>
+<p>Be ready to compare the same operation in SQL and PySpark, especially around <code>null</code> handling and column references.</p>
+<h2>Practical Tips for Exam Day</h2>
+<ul>
+<li><strong>Read the question twice.</strong> Scenario exams often hide the right detail in the wording.</li>
+<li><strong>Eliminate wrong answers first.</strong> Even if you are unsure, removing one or two options improves your odds.</li>
+<li><strong>Do not overthink syntax.</strong> The exam tests concepts, not exact function signatures.</li>
+<li><strong>Flag and move on.</strong> Time is enough, but reviewing flagged questions at the end helped me catch two mistakes.</li>
+</ul>
+<h2>How It Helped My Career</h2>
+<p>The certification reinforced concepts I use daily: Delta Lake transaction logs, streaming checkpoints, and lakehouse governance. It also gave me a common vocabulary with Databricks-focused teams and recruiters.</p>
+<p>Within a month of passing, I took on more Databricks-related work at Accenture and started contributing to a configuration-driven CDP platform that runs PySpark jobs at scale.</p>
+<h2>Should You Take It?</h2>
+<p>Yes, if you are:
+- A Data Engineer working with PySpark or Delta Lake
+- Preparing for Databricks-focused interviews
+- Looking for a credential that validates lakehouse skills</p>
+<p>It is not a replacement for hands-on experience, but it is a clear signal of competence.</p>
+<h2>Final Advice</h2>
+<p>Spend more time in a <strong>real Databricks workspace</strong> than in theory. Certification exams reward understanding, and the fastest way to understand is to break, fix, and re-run code.</p>
+<p>Good luck if you are preparing.</p>
+  </main>
+  <footer>© Sasidhar Mopuru · Data & AI Platform Engineer</footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true, theme:'dark'});</script>
+</body>
+</html>
