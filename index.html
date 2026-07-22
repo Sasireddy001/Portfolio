@@ -1,1581 +1,2980 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="Portfolio of Sasidhar Mopuru, Data & AI Platform Engineer">
+
   <title>Sasidhar Mopuru | Data & AI Platform Engineer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
+
     :root {
+
       --bg-primary: #0B1020;
+
       --bg-secondary: #111827;
+
       --bg-card: rgba(17, 24, 39, 0.8);
+
       --bg-card-hover: rgba(31, 41, 55, 0.9);
+
       --text-primary: #ffffff;
+
       --text-secondary: #a1a1aa;
+
       --text-muted: #71717a;
+
       --accent: #2563EB;
+
       --accent-light: #3b82f6;
+
       --accent-dark: #1d4ed8;
+
       --secondary: #06B6D4;
+
       --accent-purple: #8B5CF6;
+
       --border: rgba(255, 255, 255, 0.1);
+
       --border-hover: rgba(255, 255, 255, 0.2);
+
       --gradient-1: linear-gradient(135deg, #2563EB 0%, #8B5CF6 100%);
+
       --gradient-2: linear-gradient(135deg, #06B6D4 0%, #2563EB 100%);
+
       --gradient-subtle: linear-gradient(180deg, rgba(37, 99, 235, 0.1) 0%, transparent 100%);
+
       --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+
       --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+
       --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+
       --glass: rgba(255, 255, 255, 0.05);
+
       --glass-border: rgba(255, 255, 255, 0.1);
+
     }
+
+
 
     * {
+
       box-sizing: border-box;
+
       margin: 0;
+
       padding: 0;
+
     }
+
+
 
     html {
+
       scroll-behavior: smooth;
+
     }
+
+
 
     body {
+
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
       background: var(--bg-primary);
+
       color: var(--text-primary);
+
       line-height: 1.6;
+
       overflow-x: hidden;
+
     }
+
+
 
     .container {
+
       max-width: 1000px;
+
       margin: 0 auto;
+
       padding: 0 24px;
+
     }
+
+
 
     /* Navigation */
+
     nav {
+
       position: fixed;
+
       top: 0;
+
       left: 0;
+
       right: 0;
+
       z-index: 1000;
+
       background: rgba(10, 10, 10, 0.8);
+
       backdrop-filter: blur(20px);
+
       border-bottom: 1px solid var(--border);
+
       padding: 16px 0;
+
     }
+
+
 
     nav .container {
+
       display: flex;
+
       justify-content: space-between;
+
       align-items: center;
+
     }
+
+
 
     nav .logo {
+
       font-weight: 700;
+
       font-size: 1.1rem;
+
       color: var(--text-primary);
+
     }
+
+
 
     nav .nav-links {
+
       display: flex;
+
       gap: 32px;
+
     }
+
+
 
     nav a {
+
       color: var(--text-secondary);
+
       text-decoration: none;
+
       font-size: 0.9rem;
+
       font-weight: 500;
+
       transition: color 0.2s ease;
+
     }
+
+
 
     nav a:hover {
+
       color: var(--text-primary);
+
     }
+
+
 
     nav .nav-links a[href="#kpi"] {
+
       color: var(--accent);
+
     }
+
+
 
     /* Hero Section */
+
     .hero {
+
       min-height: 100vh;
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       padding: 120px 24px 80px;
+
       position: relative;
+
       overflow: hidden;
+
     }
+
+
 
     .hero::before {
+
       content: '';
+
       position: absolute;
+
       top: -50%;
+
       right: -30%;
+
       width: 800px;
+
       height: 800px;
+
       background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+
       border-radius: 50%;
+
       pointer-events: none;
+
     }
+
+
 
     .hero::after {
+
       content: '';
+
       position: absolute;
+
       bottom: -30%;
+
       left: -20%;
+
       width: 600px;
+
       height: 600px;
+
       background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+
       border-radius: 50%;
+
       pointer-events: none;
+
     }
+
+
 
     .hero-content {
+
       text-align: center;
+
       max-width: 800px;
+
       position: relative;
+
       z-index: 1;
+
     }
+
+
 
     .hero-badge {
+
       display: inline-flex;
+
       align-items: center;
+
       gap: 8px;
+
       background: var(--glass);
+
       border: 1px solid var(--border);
+
       padding: 8px 16px;
+
       border-radius: 100px;
+
       font-size: 0.85rem;
+
       color: var(--text-secondary);
+
       margin-bottom: 32px;
+
     }
+
+
 
     .hero-badge .dot {
+
       width: 8px;
+
       height: 8px;
+
       background: var(--accent);
+
       border-radius: 50%;
+
       animation: pulse 2s ease-in-out infinite;
+
     }
+
+
 
     @keyframes pulse {
+
       0%, 100% { opacity: 1; }
+
       50% { opacity: 0.5; }
+
     }
+
+
 
     .hero h1 {
+
       font-size: clamp(2.5rem, 5vw, 4rem);
+
       font-weight: 800;
+
       letter-spacing: -0.02em;
+
       margin-bottom: 16px;
+
       background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+
       -webkit-background-clip: text;
+
       -webkit-text-fill-color: transparent;
+
       background-clip: text;
+
     }
+
+
 
     .hero-title {
+
       font-size: clamp(1.1rem, 2vw, 1.3rem);
+
       color: var(--text-secondary);
+
       margin-bottom: 16px;
+
       font-weight: 500;
+
     }
+
+
 
     .hero-value {
+
       font-size: clamp(1rem, 1.5vw, 1.15rem);
+
       color: var(--text-muted);
+
       max-width: 600px;
+
       margin: 0 auto 40px;
+
       line-height: 1.7;
+
     }
+
+
 
     .hero-cta {
+
       display: flex;
+
       gap: 16px;
+
       justify-content: center;
+
       flex-wrap: wrap;
+
     }
+
+
 
     .btn {
+
       display: inline-flex;
+
       align-items: center;
+
       gap: 8px;
+
       padding: 14px 28px;
+
       border-radius: 8px;
+
       font-weight: 600;
+
       font-size: 0.95rem;
+
       text-decoration: none;
+
       transition: all 0.2s ease;
+
       cursor: pointer;
+
     }
+
+
 
     .btn-primary {
+
       background: var(--gradient-1);
+
       color: white;
+
       border: none;
+
       box-shadow: var(--shadow-md);
+
     }
+
+
 
     .btn-primary:hover {
+
       transform: translateY(-2px);
+
       box-shadow: var(--shadow-lg);
+
     }
+
+
 
     .btn-secondary {
+
       background: var(--glass);
+
       color: var(--text-primary);
+
       border: 1px solid var(--border);
+
     }
+
+
 
     .btn-secondary:hover {
+
       background: var(--glass-border);
+
       border-color: var(--border-hover);
+
     }
+
+
 
     /* Sections */
+
     section {
+
       padding: 80px 0;
+
     }
+
+
 
     .section-header {
+
       margin-bottom: 48px;
+
     }
+
+
 
     .section-header h2 {
+
       font-size: 2rem;
+
       font-weight: 700;
+
       letter-spacing: -0.01em;
+
       margin-bottom: 12px;
+
     }
+
+
 
     .section-header p {
+
       color: var(--text-secondary);
+
       font-size: 1.1rem;
+
     }
+
+
 
     /* Cards */
+
     .card {
+
       background: var(--bg-card);
+
       border: 1px solid var(--border);
+
       border-radius: 16px;
+
       padding: 32px;
+
       backdrop-filter: blur(10px);
+
       transition: all 0.3s ease;
+
     }
+
+
 
     .card:hover {
+
       border-color: var(--border-hover);
+
       background: var(--bg-card-hover);
+
       transform: translateY(-2px);
+
     }
+
+
 
     /* Skills Grid */
+
     .skills-grid {
+
       display: grid;
+
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+
       gap: 12px;
+
     }
+
+
 
     .skill-tag {
+
       background: var(--glass);
+
       border: 1px solid var(--border);
+
       padding: 12px 16px;
+
       border-radius: 8px;
+
       text-align: center;
+
       font-size: 0.9rem;
+
       font-weight: 500;
+
       color: var(--text-secondary);
+
       transition: all 0.2s ease;
+
     }
+
+
 
     .skill-tag:hover {
+
       border-color: var(--accent);
+
       color: var(--text-primary);
+
     }
+
+
 
     /* Project Cards */
+
     .projects-grid {
+
       display: grid;
+
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
       gap: 24px;
+
     }
+
+
 
     .project-card {
+
       background: var(--bg-card);
+
       border: 1px solid var(--border);
+
       border-radius: 16px;
+
       padding: 28px;
+
       backdrop-filter: blur(10px);
+
       transition: all 0.3s ease;
+
     }
+
+
 
     .project-card:hover {
+
       border-color: var(--border-hover);
+
       background: var(--bg-card-hover);
+
       transform: translateY(-4px);
+
     }
+
+
 
     .project-card h3 {
+
       font-size: 1.25rem;
+
       font-weight: 600;
+
       margin-bottom: 8px;
+
     }
+
+
 
     .project-card .meta {
+
       color: var(--text-muted);
+
       font-size: 0.9rem;
+
       margin-bottom: 16px;
+
     }
+
+
 
     .project-card ul {
+
       list-style: none;
+
       padding: 0;
+
       margin-bottom: 20px;
+
     }
+
+
 
     .project-card li {
+
       color: var(--text-secondary);
+
       font-size: 0.95rem;
+
       margin-bottom: 8px;
+
       padding-left: 20px;
+
       position: relative;
+
     }
+
+
 
     .project-card li::before {
+
       content: '→';
+
       position: absolute;
+
       left: 0;
+
       color: var(--accent);
+
     }
+
+
 
     .project-card a {
+
       color: var(--accent);
+
       text-decoration: none;
+
       font-weight: 500;
+
       font-size: 0.95rem;
+
     }
+
+
 
     .project-card a:hover {
+
       text-decoration: underline;
+
     }
+
+
 
     /* Experience Section */
+
     .experience-item {
+
       background: var(--bg-card);
+
       border: 1px solid var(--border);
+
       border-radius: 16px;
+
       padding: 32px;
+
       margin-bottom: 24px;
+
       backdrop-filter: blur(10px);
+
     }
+
+
 
     .experience-item h3 {
+
       font-size: 1.3rem;
+
       font-weight: 600;
+
       margin-bottom: 4px;
+
     }
+
+
 
     .experience-item .meta {
+
       color: var(--text-muted);
+
       font-size: 0.95rem;
+
       margin-bottom: 20px;
+
     }
+
+
 
     .experience-item ul {
+
       list-style: none;
+
       padding: 0;
+
     }
+
+
 
     .experience-item li {
+
       color: var(--text-secondary);
+
       margin-bottom: 12px;
+
       padding-left: 24px;
+
       position: relative;
+
     }
+
+
 
     .experience-item li::before {
+
       content: '•';
+
       position: absolute;
+
       left: 0;
+
       color: var(--accent);
+
       font-weight: bold;
+
     }
+
+
 
     /* Certifications Table */
+
     .cert-table {
+
       width: 100%;
+
       border-collapse: collapse;
+
     }
+
+
 
     .cert-table th,
+
     .cert-table td {
+
       padding: 16px;
+
       text-align: left;
+
       border-bottom: 1px solid var(--border);
+
     }
+
+
 
     .cert-table th {
+
       color: var(--text-primary);
+
       font-weight: 600;
+
       font-size: 0.9rem;
+
       text-transform: uppercase;
+
       letter-spacing: 0.05em;
+
     }
+
+
 
     .cert-table td {
+
       color: var(--text-secondary);
+
     }
+
+
 
     .cert-table tr:last-child td {
+
       border-bottom: none;
+
     }
+
+
 
     /* Badges */
+
     .badges {
+
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 12px;
+
       justify-content: center;
+
       margin-top: 40px;
+
     }
+
+
 
     .badges img {
+
       height: 24px;
+
       border-radius: 4px;
+
     }
+
+
 
     /* Mermaid Diagram */
+
     .mermaid {
+
       background: var(--bg-card);
+
       border: 1px solid var(--border);
+
       border-radius: 12px;
+
       padding: 24px;
+
       margin: 24px 0;
+
     }
+
+
 
     /* KPI Metrics Section */
+
     .kpi-grid {
+
       display: grid;
+
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
       gap: 20px;
+
       margin-bottom: 40px;
+
     }
+
+
 
     .kpi-card {
+
       background: var(--bg-card);
+
       border: 1px solid var(--border);
+
       border-radius: 12px;
+
       padding: 24px;
+
       text-align: center;
+
       transition: all 0.3s ease;
+
     }
+
+
 
     .kpi-card:hover {
+
       border-color: var(--accent);
+
       transform: translateY(-4px);
+
     }
+
+
 
     .kpi-value {
+
       font-size: 2rem;
+
       font-weight: 700;
+
       color: var(--accent);
+
       margin-bottom: 8px;
+
     }
+
+
 
     .kpi-label {
+
       font-size: 0.9rem;
+
       color: var(--text-secondary);
+
     }
+
+
 
     /* Why Hire Me Section */
+
     .why-hire-grid {
+
       display: grid;
+
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
       gap: 16px;
+
     }
+
+
 
     .why-hire-item {
+
       display: flex;
+
       align-items: center;
+
       gap: 12px;
+
       background: var(--glass);
+
       border: 1px solid var(--border);
+
       padding: 16px;
+
       border-radius: 8px;
+
     }
+
+
 
     .why-hire-item .check {
+
       color: var(--secondary);
+
       font-size: 1.2rem;
+
       font-weight: bold;
+
     }
+
+
 
     .why-hire-item span {
+
       color: var(--text-secondary);
+
       font-size: 0.95rem;
+
     }
+
+
 
     /* Skill Groups */
+
     .skill-group {
+
       margin-bottom: 24px;
+
     }
+
+
 
     .skill-group-title {
+
       font-size: 1rem;
+
       font-weight: 600;
+
       color: var(--accent);
+
       margin-bottom: 12px;
+
       text-transform: uppercase;
+
       letter-spacing: 0.05em;
+
     }
+
+
 
     /* Career Roadmap */
+
     .roadmap {
+
       display: grid;
+
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
       gap: 24px;
+
     }
+
+
 
     .roadmap-stage {
+
       background: var(--bg-card);
+
       border: 1px solid var(--border);
+
       border-radius: 12px;
+
       padding: 24px;
+
     }
+
+
 
     .roadmap-stage .stage-title {
+
       font-size: 1.1rem;
+
       font-weight: 600;
+
       color: var(--text-primary);
+
       margin-bottom: 16px;
+
       display: flex;
+
       align-items: center;
+
       gap: 8px;
+
     }
+
+
 
     .roadmap-stage .stage-icon {
+
       width: 32px;
+
       height: 32px;
+
       background: var(--gradient-1);
+
       border-radius: 8px;
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       font-size: 0.9rem;
+
     }
+
+
 
     .roadmap-stage ul {
+
       list-style: none;
+
       padding: 0;
+
     }
+
+
 
     .roadmap-stage li {
+
       color: var(--text-secondary);
+
       font-size: 0.9rem;
+
       margin-bottom: 8px;
+
       padding-left: 16px;
+
       position: relative;
+
     }
+
+
 
     .roadmap-stage li::before {
+
       content: '•';
+
       position: absolute;
+
       left: 0;
+
       color: var(--accent);
+
     }
+
+
 
     /* Blog Section */
+
     .blog-grid {
+
       display: grid;
+
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
       gap: 20px;
+
     }
+
+
 
     .blog-card {
+
       background: var(--bg-card);
+
       border: 1px solid var(--border);
+
       border-radius: 12px;
+
       padding: 24px;
+
       transition: all 0.3s ease;
+
     }
+
+
 
     .blog-card:hover {
+
       border-color: var(--border-hover);
+
       transform: translateY(-2px);
+
     }
+
+
 
     .blog-card h4 {
+
       font-size: 1.1rem;
+
       font-weight: 600;
+
       margin-bottom: 8px;
+
       color: var(--text-primary);
+
     }
+
+
 
     .blog-card .blog-meta {
+
       font-size: 0.85rem;
+
       color: var(--text-muted);
+
       margin-bottom: 12px;
+
     }
+
+
 
     .blog-card .blog-status {
+
       display: inline-block;
+
       background: var(--glass);
+
       padding: 4px 12px;
+
       border-radius: 100px;
+
       font-size: 0.8rem;
+
       color: var(--text-muted);
+
     }
+
+
 
     /* Certification Cards */
+
     .cert-grid {
+
       display: grid;
+
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
       gap: 20px;
+
     }
+
+
 
     .cert-card {
+
       background: var(--bg-card);
+
       border: 1px solid var(--border);
+
       border-radius: 12px;
+
       padding: 24px;
+
       transition: all 0.3s ease;
+
     }
+
+
 
     .cert-card.featured {
+
       border-color: var(--accent);
+
       background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, var(--bg-card) 100%);
+
     }
+
+
 
     .cert-card:hover {
+
       border-color: var(--border-hover);
+
       transform: translateY(-2px);
+
     }
+
+
 
     .cert-card h4 {
+
       font-size: 1.1rem;
+
       font-weight: 600;
+
       margin-bottom: 8px;
+
       color: var(--text-primary);
+
     }
+
+
 
     .cert-card .cert-issuer {
+
       color: var(--accent);
+
       font-size: 0.9rem;
+
       margin-bottom: 12px;
+
     }
+
+
 
     .cert-card .cert-date {
+
       color: var(--text-muted);
+
       font-size: 0.85rem;
+
     }
+
+
 
     /* Experience Tech Badges */
+
     .tech-badges {
+
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 8px;
+
       margin-top: 16px;
+
     }
+
+
 
     .tech-badge {
+
       background: var(--glass);
+
       border: 1px solid var(--border);
+
       padding: 6px 12px;
+
       border-radius: 6px;
+
       font-size: 0.8rem;
+
       color: var(--text-secondary);
+
     }
+
+
 
     /* Project Case Study */
+
     .case-study {
+
       background: var(--bg-card);
+
       border: 1px solid var(--border);
+
       border-radius: 16px;
+
       padding: 32px;
+
       margin-bottom: 32px;
+
     }
+
+
 
     .case-study-header {
+
       display: flex;
+
       justify-content: space-between;
+
       align-items: flex-start;
+
       margin-bottom: 24px;
+
       flex-wrap: wrap;
+
       gap: 16px;
+
     }
+
+
 
     .case-study h3 {
+
       font-size: 1.5rem;
+
       font-weight: 700;
+
       margin-bottom: 8px;
+
     }
+
+
 
     .case-study-section {
+
       margin-bottom: 24px;
+
     }
+
+
 
     .case-study-section h4 {
+
       font-size: 1rem;
+
       font-weight: 600;
+
       color: var(--accent);
+
       margin-bottom: 12px;
+
       text-transform: uppercase;
+
       letter-spacing: 0.05em;
+
     }
+
+
 
     .case-study-section p,
-    .case-study-section ul {
-      color: var(--text-secondary);
-      font-size: 0.95rem;
-      line-height: 1.7;
-    }
 
     .case-study-section ul {
-      padding-left: 20px;
+
+      color: var(--text-secondary);
+
+      font-size: 0.95rem;
+
+      line-height: 1.7;
+
     }
+
+
+
+    .case-study-section ul {
+
+      padding-left: 20px;
+
+    }
+
+
 
     .case-study-section li {
+
       margin-bottom: 8px;
+
     }
+
+
 
     /* Footer */
+
     footer {
+
       text-align: center;
+
       padding: 60px 24px;
+
       border-top: 1px solid var(--border);
+
       color: var(--text-muted);
+
       font-size: 0.9rem;
+
     }
+
+
 
     /* Mobile Responsive */
+
     @media (max-width: 768px) {
+
       nav .nav-links {
+
         display: none;
+
       }
+
+
 
       .hero {
+
         padding: 100px 24px 60px;
+
       }
+
+
 
       .hero-cta {
+
         flex-direction: column;
+
         align-items: stretch;
+
       }
+
+
 
       .btn {
+
         justify-content: center;
+
       }
+
+
 
       .projects-grid {
+
         grid-template-columns: 1fr;
+
       }
+
+
 
       .skills-grid {
+
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+
       }
+
+
 
       section {
+
         padding: 60px 0;
+
       }
+
     }
+
+
 
     /* Smooth Scroll */
+
     @media (prefers-reduced-motion: no-preference) {
+
       html {
+
         scroll-behavior: smooth;
+
       }
+
     }
+
   </style>
+
 </head>
+
 <body>
 
+
+
 <nav>
+
   <div class="container">
+
     <div class="logo">Sasidhar Mopuru</div>
+
     <div class="nav-links">
+
       <a href="#about">About</a>
+
       <a href="#kpi">Metrics</a>
+
       <a href="#why-hire">Why Hire Me</a>
+
       <a href="#experience">Experience</a>
+
       <a href="#projects">Projects</a>
+
       <a href="#skills">Skills</a>
+
       <a href="#roadmap">Roadmap</a>
+
       <a href="#blog">Blog</a>
+
       <a href="#contact">Contact</a>
+
     </div>
+
   </div>
+
 </nav>
 
+
+
 <section class="hero">
+
   <div class="hero-content">
+
     <div class="hero-badge">
+
       <span class="dot"></span>
+
       Available for opportunities
+
     </div>
+
     <h1>Sasidhar Mopuru</h1>
+
     <p class="hero-title">Data Platform Engineer | Databricks Certified</p>
+
     <p class="hero-value">Building Real-Time Streaming & AI-Ready Data Systems using PySpark, Kafka, Delta Lake, and Python.</p>
+
     <div class="hero-cta">
+
       <a href="https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+
         Download Resume
+
       </a>
+
       <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener" class="btn btn-secondary">
+
         LinkedIn
+
       </a>
+
       <a href="https://github.com/Sasireddy001" target="_blank" rel="noopener" class="btn btn-secondary">
+
         GitHub
+
       </a>
+
     </div>
+
     <div class="badges">
+
       <a href="https://www.python.org" target="_blank" rel="noopener">
+
         <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+
       </a>
+
       <a href="https://spark.apache.org" target="_blank" rel="noopener">
+
         <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=white" alt="Apache Spark">
+
       </a>
+
       <a href="https://databricks.com" target="_blank" rel="noopener">
+
         <img src="https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white" alt="Databricks">
+
       </a>
+
       <a href="https://kafka.apache.org" target="_blank" rel="noopener">
+
         <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white" alt="Apache Kafka">
+
       </a>
+
       <a href="https://delta.io" target="_blank" rel="noopener">
+
         <img src="https://img.shields.io/badge/Delta%20Lake-00ADD8?logo=delta&logoColor=white" alt="Delta Lake">
+
       </a>
+
     </div>
+
   </div>
+
 </section>
 
+
+
 <div class="container">
+
   <section id="about">
+
     <div class="section-header">
+
       <h2>About Me</h2>
+
       <p>Data & AI Platform Engineer building production-grade streaming systems</p>
+
     </div>
+
     <div class="card">
+
       <p>
+
         Currently, I am a <strong>Data Engineer at Accenture</strong> building and operating a configuration-driven <strong>Core Data Product (CDP) platform</strong>. I design Source-to-Core Data Product pipelines with PySpark, deploy Dockerized Spark jobs through GitLab CI/CD across dev, sit, perf, and prod, and integrate Kafka, S3A-compatible object storage, and HashiCorp Vault into secure, production-grade data workflows.
+
       </p>
+
       <p style="margin-top: 16px;">
+
         I am a <strong>Data & AI Platform Engineer</strong> with 2+ years of experience building production-grade streaming data products and lakehouse systems. I specialize in turning high-velocity event data into reliable, AI-ready data platforms. My core work spans configuration-driven PySpark pipelines, Kafka → PySpark → Delta Lake streaming systems, Databricks lakehouse architectures, Dockerized deployments, GitLab CI/CD, data quality, and automated testing. I am actively expanding into Cloud, DevOps, Platform Engineering, and AI/LLM systems.
+
       </p>
+
     </div>
+
   </section>
+
+
 
   <section id="kpi">
+
     <div class="section-header">
+
       <h2>Key Metrics</h2>
+
       <p>Quantified impact and technical achievements</p>
+
     </div>
+
     <div class="kpi-grid">
+
       <div class="kpi-card">
+
         <div class="kpi-value">45K+</div>
+
         <div class="kpi-label">Rows/sec Processed</div>
+
       </div>
+
       <div class="kpi-card">
+
         <div class="kpi-value">99.5%</div>
+
         <div class="kpi-label">Pipeline Uptime</div>
+
       </div>
+
       <div class="kpi-card">
-        <div class="kpi-value">70%</div>
+
+        <div class="kpi-value">40%</div>
+
         <div class="kpi-label">Deployment Time Reduced</div>
+
       </div>
+
       <div class="kpi-card">
+
         <div class="kpi-value">60%</div>
+
         <div class="kpi-label">Manual Effort Saved</div>
+
       </div>
+
       <div class="kpi-card">
+
         <div class="kpi-value">30%</div>
+
         <div class="kpi-label">Latency Improved</div>
+
       </div>
+
       <div class="kpi-card">
-        <div class="kpi-value">95%+</div>
+
+        <div class="kpi-value">85%</div>
+
         <div class="kpi-label">Test Coverage</div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section id="why-hire">
+
     <div class="section-header">
+
       <h2>Why Hire Me</h2>
+
       <p>What makes me the right choice for your data platform</p>
+
     </div>
+
     <div class="card">
+
       <div class="why-hire-grid">
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>Databricks Certified Data Engineer Associate</span>
+
         </div>
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>Enterprise Data Engineering Experience at Accenture</span>
+
         </div>
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>Real-Time Streaming Systems with Kafka & PySpark</span>
+
         </div>
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>Delta Lake Lakehouse Architecture Expertise</span>
+
         </div>
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>Strong Testing & CI/CD Culture (pytest, GitLab CI)</span>
+
         </div>
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>AI-Ready Data Platform Foundations (RAG, LLM)</span>
+
         </div>
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>Configuration-Driven Pipeline Architecture</span>
+
         </div>
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>Strong Documentation and Architecture Skills</span>
+
         </div>
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>Security-First (HashiCorp Vault, Enterprise Certificates)</span>
+
         </div>
+
         <div class="why-hire-item">
+
           <span class="check">✓</span>
+
           <span>Multi-Environment Deployment (dev, sit, perf, prod)</span>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section id="experience">
+
     <div class="section-header">
+
       <h2>Professional Experience</h2>
+
       <p>Building enterprise data products at scale</p>
+
     </div>
+
     <div class="experience-item">
+
       <h3>Data Engineer – Accenture</h3>
+
       <p class="meta">Feb 2024 – Present | Bengaluru, India</p>
+
       <ul>
-        <li>Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 70%</li>
-        <li>Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs, supporting 67 SDPs and 120+ CDPs across 4 E2E supply-chain sub-domains</li>
+
+        <li>Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 40%</li>
+
+        <li>Designed end-to-end data flows from source systems to SDP and CDP layers for 5+ enterprise data products</li>
+
         <li>Developed PySpark pipelines with JSON-based job definitions achieving 99.5% pipeline uptime</li>
+
         <li>Containerized Spark jobs with Docker and deployed through GitLab CI/CD across dev, sit, perf, prod environments</li>
+
         <li>Integrated Kafka eventing and S3A-compatible object storage into pipeline workflows</li>
+
         <li>Managed secrets and credentials securely using HashiCorp Vault and enterprise certificate stores</li>
+
         <li>Built Kafka-based JSON ingestion pipelines into a lakehouse architecture</li>
-        <li>Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage</li>
+
+        <li>Implemented unit test frameworks for Python-based data pipelines achieving 85% code coverage</li>
+
         <li>Created DDL scripts and configuration-driven workflows using Git</li>
+
         <li>Performed data validation, debugging, and performance optimization reducing latency by 30%</li>
+
         <li>Worked under strict NDA and enterprise data governance standards</li>
+
       </ul>
+
       <div class="tech-badges">
+
         <span class="tech-badge">PySpark</span>
+
         <span class="tech-badge">Apache Kafka</span>
+
         <span class="tech-badge">Delta Lake</span>
+
         <span class="tech-badge">Databricks</span>
+
         <span class="tech-badge">Docker</span>
+
         <span class="tech-badge">GitLab CI/CD</span>
+
         <span class="tech-badge">HashiCorp Vault</span>
+
         <span class="tech-badge">pytest</span>
+
         <span class="tech-badge">Python</span>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section id="projects">
+
     <div class="section-header">
+
       <h2>Featured Projects</h2>
+
       <p>Production-ready systems demonstrating core competencies</p>
+
     </div>
 
-    <div class="case-study">
-      <div class="case-study-header">
-        <div>
-          <h3>Enterprise Configuration-Driven Data Platform</h3>
-          <p class="meta">Feb 2024 – Present | Enterprise Data Engineering</p>
-        </div>
-      </div>
 
-      <div class="case-study-section">
-        <h4>Problem</h4>
-        <p>Building and operating an enterprise data platform spanning 4 E2E supply-chain sub-domains required managing 90+ PySpark ETL jobs, 67 Source Data Products (SDPs), and 120+ Core Data Products (CDPs) across multiple environments. The team needed a scalable, configuration-driven way to manage STG, Active, and Historical job patterns while maintaining security, observability, and high test coverage.</p>
-      </div>
-
-      <div class="case-study-section">
-        <h4>Architecture</h4>
-        <pre class="mermaid">
-graph LR
-    A[YAML Job Definitions] --> B[Python Config Generator]
-    B --> C[GitLab CI/CD]
-    C --> D[Child Pipelines]
-    D --> E[PySpark Jobs]
-    E --> F[Data Sources]
-    G[HashiCorp Vault] --> E
-    H[Observability] --> E
-        </pre>
-      </div>
-
-      <div class="case-study-section">
-        <h4>Technologies</h4>
-        <div class="tech-badges">
-          <span class="tech-badge">PySpark</span>
-          <span class="tech-badge">GitLab CI/CD</span>
-          <span class="tech-badge">Docker</span>
-          <span class="tech-badge">YAML</span>
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">HashiCorp Vault</span>
-          <span class="tech-badge">pytest</span>
-        </div>
-      </div>
-
-      <div class="case-study-section">
-        <h4>Challenges</h4>
-        <ul>
-          <li>Managing 90+ production ETL jobs across 4 E2E supply-chain sub-domains (site, supplier, item, product) and multiple environments</li>
-          <li>Supporting 67 SDPs and 120+ CDPs with STG, Active, and Historical job patterns</li>
-          <li>Eliminating manual pipeline configuration errors</li>
-          <li>Implementing enterprise security with secrets management</li>
-          <li>Achieving 95%+ overall test coverage across 60+ test suites for complex data pipelines</li>
-          <li>Enabling non-technical users to configure deployments</li>
-          <li>Coordinating with a 10+ person cross-functional team (Accenture and client)</li>
-        </ul>
-      </div>
-
-      <div class="case-study-section">
-        <h4>Solution</h4>
-        <ul>
-          <li>Built dynamic CI/CD configuration generator with YAML-based job definitions</li>
-          <li>Implemented parent-child GitLab CI/CD pipeline architecture</li>
-          <li>Designed STG, Active, and Historical job patterns for 67 SDPs and 120+ CDPs</li>
-          <li>Implemented Kafka-driven streaming ingestion for SDP stage jobs</li>
-          <li>Integrated HashiCorp Vault for enterprise secrets management</li>
-          <li>Created comprehensive testing strategy with 60+ unit test suites achieving 95%+ coverage</li>
-          <li>Implemented secure logging decorators with sensitive data sanitization</li>
-          <li>Added data lineage tracking and observability integration</li>
-        </ul>
-      </div>
-
-      <div class="case-study-section">
-        <h4>Business Value</h4>
-        <ul>
-          <li>Reduced pipeline configuration time by 70% through automation</li>
-          <li>Achieved 99.5% deployment success rate across 4 environments</li>
-          <li>Reduced production incidents by 60% through comprehensive testing</li>
-          <li>Enabled 90+ production jobs with standardized deployment patterns</li>
-          <li>Eliminated hardcoded credentials and achieved enterprise security compliance</li>
-        </ul>
-      </div>
-
-      <div class="case-study-section">
-        <h4>Performance Metrics</h4>
-        <ul>
-          <li>Production Jobs: 90+ PySpark ETL jobs supporting 67 SDPs and 120+ CDPs</li>
-          <li>Test Suites: 60+ unit test files</li>
-          <li>Test Coverage: 95%+ overall across 60+ test suites</li>
-          <li>Deployment Success Rate: 99.5%</li>
-          <li>Pipeline Uptime: 99.5%</li>
-          <li>Configuration Time Reduction: 70%</li>
-        </ul>
-      </div>
-    </div>
 
     <div class="case-study">
+
       <div class="case-study-header">
+
         <div>
+
           <h3>Production-Style Kafka PySpark Delta Pipeline</h3>
+
           <p class="meta">Jul 2026 | Streaming Data Engineering</p>
+
         </div>
+
         <a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline" target="_blank" rel="noopener" class="btn btn-secondary">View Repository</a>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Problem</h4>
+
         <p>Building a production-grade streaming data pipeline that can handle high-velocity JSON events from Kafka with exactly-once processing semantics, schema enforcement, and fault tolerance.</p>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Architecture</h4>
+
         <pre class="mermaid">
+
 graph LR
+
     A[Kafka Topics] --> B[PySpark Structured Streaming]
+
     B --> C[Schema Validation]
+
     C --> D[Watermark Deduplication]
+
     D --> E[Delta Lake Sink]
+
     F[Checkpointing] --> B
+
         </pre>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Technologies</h4>
+
         <div class="tech-badges">
+
           <span class="tech-badge">Apache Kafka</span>
+
           <span class="tech-badge">PySpark</span>
+
           <span class="tech-badge">Delta Lake</span>
+
           <span class="tech-badge">Databricks</span>
+
           <span class="tech-badge">GitHub Actions</span>
+
           <span class="tech-badge">pytest</span>
+
         </div>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Challenges</h4>
+
         <ul>
+
           <li>Ensuring exactly-once processing semantics in streaming scenarios</li>
+
           <li>Implementing robust schema validation for JSON events</li>
+
           <li>Handling broker failures and network partitions gracefully</li>
+
           <li>Achieving high throughput while maintaining data quality</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Solution</h4>
+
         <ul>
+
           <li>Implemented environment-driven configuration (dev/staging/prod)</li>
+
           <li>JSON schema enforcement with automatic validation</li>
+
           <li>Checkpointing with exactly-once semantics using Delta Lake transaction logs</li>
+
           <li>Watermark-based deduplication for handling late-arriving data</li>
+
           <li>Automatic retry with exponential backoff for transient failures</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Business Value</h4>
+
         <ul>
+
           <li>Processed 1M+ events per hour in production workloads</li>
+
           <li>Achieved 99.9% data accuracy with exactly-once semantics</li>
+
           <li>Reduced data pipeline development time by 50%</li>
+
           <li>Enabled real-time analytics and ML model training</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Performance Metrics</h4>
+
         <ul>
+
           <li>Throughput: 1M+ events/hour</li>
+
           <li>Latency: < 5 seconds end-to-end</li>
+
           <li>Test Coverage: 90%</li>
+
           <li>Uptime: 99.9%</li>
+
         </ul>
+
       </div>
+
     </div>
 
+
+
     <div class="case-study">
+
       <div class="case-study-header">
+
         <div>
+
           <h3>RAG Document QA Chatbot</h3>
+
           <p class="meta">Jul 2026 | AI/LLM Engineering</p>
+
         </div>
+
         <a href="https://github.com/Sasireddy001/rag-document-qa" target="_blank" rel="noopener" class="btn btn-secondary">View Repository</a>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Problem</h4>
+
         <p>Building a production-ready retrieval-augmented generation (RAG) system that can ingest documents, create embeddings, and answer questions with high accuracy while being modular and testable.</p>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Architecture</h4>
+
         <pre class="mermaid">
+
 graph LR
+
     A[Document Ingestion] --> B[Text Chunking]
+
     B --> C[Sentence Transformers]
+
     C --> D[ChromaDB Vector Store]
+
     D --> E[Dense Retrieval]
+
     E --> F[LLM Generation]
+
         </pre>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Technologies</h4>
+
         <div class="tech-badges">
+
           <span class="tech-badge">FastAPI</span>
+
           <span class="tech-badge">Streamlit</span>
+
           <span class="tech-badge">ChromaDB</span>
+
           <span class="tech-badge">Sentence-Transformers</span>
+
           <span class="tech-badge">OpenAI</span>
+
           <span class="tech-badge">pytest</span>
+
         </div>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Challenges</h4>
+
         <ul>
+
           <li>Implementing efficient document chunking with context preservation</li>
+
           <li>Achieving high retrieval accuracy with dense vector search</li>
+
           <li>Building modular architecture for easy extension</li>
+
           <li>Testing LLM components without expensive API calls</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Solution</h4>
+
         <ul>
+
           <li>Document ingestion supporting PDF, DOCX, and TXT formats</li>
+
           <li>Intelligent text chunking with sliding window overlap</li>
+
           <li>Dense vector retrieval using ChromaDB and sentence-transformers</li>
+
           <li>Multiple LLM backends (OpenAI GPT, local LLaMA)</li>
+
           <li>Comprehensive pytest tests with mocked components</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Business Value</h4>
+
         <ul>
+
           <li>Achieved 85% retrieval accuracy on test documents</li>
+
           <li>Reduced API calls by 70% through intelligent caching</li>
+
           <li>Enabled rapid prototyping of RAG applications</li>
+
           <li>Demonstrated AI/LLM engineering capabilities</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Performance Metrics</h4>
+
         <ul>
+
           <li>Retrieval Accuracy: 85%</li>
+
           <li>API Call Reduction: 70%</li>
+
           <li>Test Coverage: 85%</li>
+
           <li>Response Time: < 2 seconds</li>
+
         </ul>
+
       </div>
+
     </div>
+
+
 
     <div class="case-study">
+
       <div class="case-study-header">
+
         <div>
+
           <h3>Cloud-Native Streaming Data Platform</h3>
+
           <p class="meta">Jul 2026 | Cloud Infrastructure</p>
+
         </div>
+
         <a href="https://github.com/Sasireddy001/Cloud-data-platform" target="_blank" rel="noopener" class="btn btn-secondary">View Repository</a>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Problem</h4>
+
         <p>Designing and implementing a cloud-native streaming data platform on Azure with infrastructure as code, multi-environment support, and production-grade reliability.</p>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Architecture</h4>
+
         <pre class="mermaid">
+
 graph LR
+
     A[Azure Event Hubs] --> B[Databricks Streaming]
+
     B --> C[ADLS Gen2]
+
     C --> D[Delta Lake]
+
     E[Terraform] --> A
+
     E --> B
+
     E --> C
+
         </pre>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Technologies</h4>
+
         <div class="tech-badges">
+
           <span class="tech-badge">Azure Event Hubs</span>
+
           <span class="tech-badge">Databricks</span>
+
           <span class="tech-badge">ADLS Gen2</span>
+
           <span class="tech-badge">Delta Lake</span>
+
           <span class="tech-badge">Terraform</span>
+
           <span class="tech-badge">PySpark</span>
+
         </div>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Challenges</h4>
+
         <ul>
+
           <li>Designing modular Terraform architecture for multi-environment support</li>
+
           <li>Implementing streaming deduplication at cloud scale</li>
+
           <li>Optimizing costs through auto-scaling and spot instances</li>
+
           <li>Ensuring data quality and schema evolution</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Solution</h4>
+
         <ul>
+
           <li>Multi-environment Terraform modules (dev/prod) for infrastructure as code</li>
+
           <li>GitHub Actions CI/CD for automated testing and deployment</li>
+
           <li>Exactly-once semantics using Delta Lake transaction logs</li>
+
           <li>Automatic schema evolution and data quality checks</li>
+
           <li>Cost optimization through auto-scaling and spot instances</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Business Value</h4>
+
         <ul>
+
           <li>Reduced infrastructure setup time by 50%</li>
+
           <li>Achieved 99.9% data accuracy in production workloads</li>
+
           <li>Demonstrated cloud-native platform engineering skills</li>
+
           <li>Enabled scalable, cost-effective streaming infrastructure</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="case-study-section">
+
         <h4>Performance Metrics</h4>
+
         <ul>
+
           <li>Infrastructure Setup Time: 50% reduction</li>
+
           <li>Data Accuracy: 99.9%</li>
+
           <li>Cost Savings: 30% through spot instances</li>
+
           <li>Deployment Time: < 10 minutes</li>
+
         </ul>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section id="skills">
+
     <div class="section-header">
+
       <h2>Technical Skills</h2>
+
       <p>Technologies and tools I work with daily</p>
+
     </div>
+
     <div class="card">
+
       <div class="skill-group">
+
         <div class="skill-group-title">Data Engineering</div>
+
         <div class="skills-grid">
+
           <div class="skill-tag">PySpark</div>
+
           <div class="skill-tag">Apache Spark</div>
+
           <div class="skill-tag">Delta Lake</div>
+
           <div class="skill-tag">Apache Kafka</div>
+
           <div class="skill-tag">Databricks</div>
+
           <div class="skill-tag">Microsoft Fabric</div>
+
           <div class="skill-tag">Azure Event Hubs</div>
+
           <div class="skill-tag">ETL/ELT</div>
+
           <div class="skill-tag">Data Quality</div>
+
           <div class="skill-tag">CDC</div>
+
         </div>
+
       </div>
 
+
+
       <div class="skill-group">
+
         <div class="skill-group-title">Cloud & Infrastructure</div>
+
         <div class="skills-grid">
+
           <div class="skill-tag">Azure</div>
+
           <div class="skill-tag">AWS</div>
+
           <div class="skill-tag">GCP</div>
+
           <div class="skill-tag">Terraform</div>
+
           <div class="skill-tag">Docker</div>
+
           <div class="skill-tag">Kubernetes</div>
+
           <div class="skill-tag">Ansible</div>
+
           <div class="skill-tag">Linux</div>
+
         </div>
+
       </div>
 
+
+
       <div class="skill-group">
+
         <div class="skill-group-title">AI / LLM</div>
+
         <div class="skills-grid">
+
           <div class="skill-tag">RAG</div>
+
           <div class="skill-tag">LLM</div>
+
           <div class="skill-tag">FastAPI</div>
+
           <div class="skill-tag">Streamlit</div>
+
           <div class="skill-tag">ChromaDB</div>
+
           <div class="skill-tag">Vector DBs</div>
+
           <div class="skill-tag">OpenAI</div>
+
           <div class="skill-tag">Sentence-Transformers</div>
+
         </div>
+
       </div>
 
+
+
       <div class="skill-group">
+
         <div class="skill-group-title">Testing & DevOps</div>
+
         <div class="skills-grid">
+
           <div class="skill-tag">pytest</div>
+
           <div class="skill-tag">unittest</div>
+
           <div class="skill-tag">GitHub Actions</div>
+
           <div class="skill-tag">GitLab CI/CD</div>
+
           <div class="skill-tag">Git</div>
+
           <div class="skill-tag">HashiCorp Vault</div>
+
         </div>
+
       </div>
 
+
+
       <div class="skill-group">
+
         <div class="skill-group-title">Languages & Databases</div>
+
         <div class="skills-grid">
+
           <div class="skill-tag">Python</div>
+
           <div class="skill-tag">SQL</div>
+
           <div class="skill-tag">YAML</div>
+
           <div class="skill-tag">JSON</div>
+
           <div class="skill-tag">Oracle</div>
+
           <div class="skill-tag">SingleStore</div>
+
           <div class="skill-tag">MongoDB</div>
+
           <div class="skill-tag">MySQL</div>
+
           <div class="skill-tag">PostgreSQL</div>
+
         </div>
+
       </div>
 
+
+
       <div class="skill-group">
+
         <div class="skill-group-title">System Design</div>
+
         <div class="skills-grid">
+
           <div class="skill-tag">System Design</div>
+
           <div class="skill-tag">OOP</div>
+
           <div class="skill-tag">Design Patterns</div>
+
           <div class="skill-tag">Modular Coding</div>
+
           <div class="skill-tag">Architecture</div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section id="certifications">
+
     <div class="section-header">
+
       <h2>Certifications</h2>
+
       <p>Professional credentials and training</p>
+
     </div>
+
     <div class="cert-grid">
+
       <div class="cert-card featured">
+
         <h4>Databricks Certified Data Engineer Associate</h4>
+
         <div class="cert-issuer">Databricks</div>
+
         <div class="cert-date">2024</div>
+
       </div>
+
       <div class="cert-card">
+
         <h4>DP-700: Implementing Data Engineering Solutions using Microsoft Fabric</h4>
+
         <div class="cert-issuer">Microsoft</div>
+
         <div class="cert-date">2024</div>
+
       </div>
+
       <div class="cert-card">
+
         <h4>Databricks PySpark Streaming Training – 8 Weeks</h4>
+
         <div class="cert-issuer">Accenture</div>
+
         <div class="cert-date">2024</div>
+
       </div>
+
       <div class="cert-card">
+
         <h4>Google Data Analytics Professional Certificate</h4>
+
         <div class="cert-issuer">Coursera</div>
+
         <div class="cert-date">2023</div>
+
       </div>
+
       <div class="cert-card">
+
         <h4>NPTEL MIS</h4>
+
         <div class="cert-issuer">IIT Madras</div>
+
         <div class="cert-date">2023</div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section id="roadmap">
+
     <div class="section-header">
+
       <h2>Career Roadmap</h2>
+
       <p>My growth trajectory and learning path</p>
+
     </div>
+
     <div class="roadmap">
+
       <div class="roadmap-stage">
+
         <div class="stage-title">
+
           <div class="stage-icon">✓</div>
+
           <span>Current Mastery</span>
+
         </div>
+
         <ul>
+
           <li>PySpark Streaming & Batch Processing</li>
+
           <li>Apache Kafka Event Streaming</li>
+
           <li>Delta Lake Lakehouse Architecture</li>
+
           <li>Databricks Platform</li>
+
           <li>Configuration-Driven Pipelines</li>
+
           <li>Enterprise Data Engineering</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="roadmap-stage">
+
         <div class="stage-title">
+
           <div class="stage-icon">→</div>
+
           <span>Currently Learning</span>
+
         </div>
+
         <ul>
+
           <li>Docker & Container Orchestration</li>
+
           <li>Azure Cloud Services (Event Hubs, ADLS)</li>
+
           <li>Terraform Infrastructure as Code</li>
+
           <li>Kubernetes for Data Platforms</li>
+
           <li>Production LLM Evaluation</li>
+
           <li>RAG System Optimization</li>
+
         </ul>
+
       </div>
 
+
+
       <div class="roadmap-stage">
+
         <div class="stage-title">
+
           <div class="stage-icon">★</div>
+
           <span>Future Focus</span>
+
         </div>
+
         <ul>
+
           <li>Cloud-Native Data Platforms</li>
+
           <li>Platform Engineering</li>
+
           <li>AI Systems at Scale</li>
+
           <li>Real-Time ML Pipelines</li>
+
           <li>Data Mesh Architecture</li>
+
           <li>Observability for Data Systems</li>
+
         </ul>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section id="blog">
+
     <div class="section-header">
+
       <h2>Articles & Writing</h2>
+
       <p>Technical insights and learnings</p>
+
     </div>
+
     <div class="blog-grid">
+
       <div class="blog-card">
+
         <h4>Building a Kafka → Delta Pipeline</h4>
+
         <div class="blog-meta">Streaming Data Engineering</div>
+
         <div class="blog-status">Coming Soon</div>
+
       </div>
+
       <div class="blog-card">
+
         <h4>RAG with ChromaDB: A Practical Guide</h4>
+
         <div class="blog-meta">AI/LLM Engineering</div>
+
         <div class="blog-status">Coming Soon</div>
+
       </div>
+
       <div class="blog-card">
+
         <h4>Databricks Data Engineer Associate Journey</h4>
+
         <div class="blog-meta">Certification</div>
+
         <div class="blog-status">Coming Soon</div>
+
       </div>
+
       <div class="blog-card">
+
         <h4>PySpark Streaming Best Practices</h4>
+
         <div class="blog-meta">Data Engineering</div>
+
         <div class="blog-status">Coming Soon</div>
+
       </div>
+
       <div class="blog-card">
+
         <h4>Data Platform Engineering Roadmap</h4>
+
         <div class="blog-meta">Platform Engineering</div>
+
         <div class="blog-status">Coming Soon</div>
+
       </div>
+
       <div class="blog-card">
+
         <h4>Configuration-Driven Data Pipelines</h4>
+
         <div class="blog-meta">Architecture</div>
+
         <div class="blog-status">Coming Soon</div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section id="contact">
+
     <div class="section-header">
+
       <h2>Contact</h2>
+
       <p>Let's connect and build something great</p>
+
     </div>
+
     <div class="card">
+
       <ul style="list-style: none; padding: 0;">
+
         <li style="margin-bottom: 12px; color: var(--text-secondary);">
+
           <strong>Email:</strong> <a href="mailto:sasidharmopuru@gmail.com" style="color: var(--accent);">sasidharmopuru@gmail.com</a>
+
         </li>
+
         <li style="margin-bottom: 12px; color: var(--text-secondary);">
+
           <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener" style="color: var(--accent);">linkedin.com/in/sasidhar-mopuru-417a03233</a>
+
         </li>
+
         <li style="margin-bottom: 12px; color: var(--text-secondary);">
+
           <strong>GitHub:</strong> <a href="https://github.com/Sasireddy001" target="_blank" rel="noopener" style="color: var(--accent);">@Sasireddy001</a>
+
         </li>
+
         <li style="margin-bottom: 12px; color: var(--text-secondary);">
+
           <strong>Location:</strong> India (Open to global remote roles)
+
         </li>
+
       </ul>
+
     </div>
+
   </section>
+
 </div>
 
+
+
 <footer>
+
   <p>2026 Sasidhar Mopuru | Data & AI Platform Engineer</p>
+
 </footer>
 
+
+
 <script type="module">
+
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
   mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+
 </script>
+
 </body>
+
 </html>
+
