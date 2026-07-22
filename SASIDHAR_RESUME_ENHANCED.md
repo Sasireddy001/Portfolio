@@ -44,15 +44,15 @@ Specializes in turning high-velocity event data into reliable, AI-ready data pla
 
 **Key Achievements:**
 
-- Built configuration-driven CDP platform reducing deployment time by 40%
+- Built configuration-driven CDP platform reducing deployment time by 70%
 
 - Achieved 99.5% pipeline uptime for production data products
 
-- Delivered 5+ enterprise data products across batch and streaming architectures
+- Operated 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, contributing to 67 Source Data Products (SDPs) and 120+ Core Data Products (CDPs)
 
 - Implemented CI/CD pipelines across dev, sit, perf, and prod environments
 
-- Achieved 85% test coverage on critical pipeline components
+- Achieved 95%+ overall test coverage across 60+ unit test suites
 
 - Reduced data processing latency by 30% through optimization strategies
 
@@ -78,9 +78,9 @@ Actively expanding into cloud-native deployment, Kubernetes, Terraform, and prod
 
 
 
-- **Built Configuration-Driven CDP Platform:** Designed and developed a Core Data Product (CDP) platform using PySpark, Docker, and GitLab CI/CD. Implemented JSON-based job definitions enabling non-technical users to configure data pipelines without code changes. Reduced deployment time by 40% and improved pipeline reliability.
+- **Built Configuration-Driven CDP Platform:** Designed and developed a Core Data Product (CDP) platform using PySpark, Docker, and GitLab CI/CD. Implemented JSON-based job definitions enabling non-technical users to configure data pipelines without code changes. Reduced deployment time by 70% and improved pipeline reliability.
 
-- **End-to-End Data Engineering:** Designed and implemented complete data flows from source systems to Source Data Product (SDP) and Core Data Product (CDP) layers. Successfully delivered 5+ enterprise data products across batch and streaming architectures.
+- **End-to-End Data Engineering:** Designed and implemented complete data flows from source systems to Source Data Product (SDP) and Core Data Product (CDP) layers. Successfully delivered 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains (site, supplier, item, product), supporting 67 Source Data Products (SDPs) and 120+ Core Data Products (CDPs) with 99.5% deployment success rate.
 
 - **PySpark Pipeline Development:** Built modular, reusable PySpark pipelines with comprehensive error handling, retry mechanisms, and schema validation. Developed Python utilities for logging, credential extraction, and data quality checks. Achieved 99.5% pipeline uptime.
 
@@ -90,7 +90,7 @@ Actively expanding into cloud-native deployment, Kubernetes, Terraform, and prod
 
 - **Security & Secrets Management:** Implemented secure credential management using HashiCorp Vault and enterprise certificate stores. Ensured compliance with enterprise data governance standards and NDA requirements.
 
-- **Testing & Quality Assurance:** Implemented unit test frameworks for Python-based data pipelines using pytest and mocking. Achieved 85% code coverage for critical pipeline components.
+- **Testing & Quality Assurance:** Implemented comprehensive testing strategy with 60+ unit test suites using pytest and mocking, achieving 95%+ overall code coverage for pipeline components and reducing production incidents by 60%.
 
 - **Performance Optimization:** Performed data validation, debugging, and performance optimization on production pipelines. Reduced data processing latency by 30% through partitioning and caching strategies.
 
@@ -370,7 +370,7 @@ A live portfolio site showcasing data engineering experience, certifications, te
 
 - **DP-700: Implementing Data Engineering Solutions using Microsoft Fabric:** Certified in Microsoft Fabric data engineering
 
-- **Enterprise Data Product Delivery:** Successfully delivered 5+ production data products at Accenture
+- **Enterprise Data Product Delivery:** Successfully operated 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains at Accenture, supporting 67 SDPs and 120+ CDPs
 
 - **Pipeline Optimization:** Reduced data processing latency by 30% through optimization strategies
 

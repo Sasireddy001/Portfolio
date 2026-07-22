@@ -80,13 +80,13 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 
 
-- Developed multiple enterprise data products across batch and streaming architectures.
+- Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 70%. Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs. Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage.
 
 - Designed end-to-end data flows from source systems to SDP and CDP layers.
 
 - Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.
 
-- Implemented unit test frameworks for Python-based data pipelines.
+- Implemented unit test frameworks for Python-based data pipelines using pytest and mocking, achieving 95%+ overall code coverage across 60+ test suites.
 
 - Created DDL scripts and configuration-driven workflows using Git.
 
