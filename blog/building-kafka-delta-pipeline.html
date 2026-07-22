@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Building a production Kafka to Delta Lake pipeline with PySpark Structured Streaming by Sasidhar Mopuru.">
+  <title>Building a Kafka → Delta Pipeline | Sasidhar Mopuru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0B1020;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.8);
+      --text-primary: #ffffff;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent: #2563EB;
+      --accent-light: #3b82f6;
+      --secondary: #06B6D4;
+      --accent-purple: #8B5CF6;
+      --border: rgba(255, 255, 255, 0.1);
+      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(12px);
+      background: rgba(11, 16, 32, 0.85);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .back-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .back-link:hover { color: var(--text-primary); }
+
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px 40px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(37, 99, 235, 0.1) 0%, transparent 100%);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-purple) 100%);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 48px;
+      padding: 28px;
+      border-radius: 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section:hover { box-shadow: var(--shadow-lg); }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: var(--text-primary);
+      border-left: 4px solid var(--accent);
+      padding-left: 14px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 20px 0 10px;
+      color: var(--secondary);
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    p { margin-bottom: 14px; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li { margin-bottom: 10px; }
+
+    code {
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--secondary);
+    }
+
+    .tip {
+      margin-top: 18px;
+      padding: 16px 20px;
+      border-radius: 12px;
+      background: rgba(37, 99, 235, 0.1);
+      border-left: 4px solid var(--accent);
+    }
+
+    .tip strong { color: var(--text-primary); }
+
+    .diagram {
+      padding: 20px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      text-align: center;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+      color: var(--text-secondary);
+      margin: 20px 0;
+    }
+
+    @media (min-width: 768px) {
+      h1 { font-size: 3rem; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      background: var(--bg-secondary);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="../index.html" class="logo">Sasidhar Mopuru</a>
+    <a href="../index.html" class="back-link">Back to Portfolio</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <span class="badge">Streaming Data Engineering</span>
+  <h1>Building a Kafka → Delta Pipeline</h1>
+  <p class="subtitle">A hands-on guide to building a production-grade streaming data pipeline with Apache Kafka, PySpark Structured Streaming, and Delta Lake.</p>
+</section>
+
+<main>
+
+  <section>
+    <h2>Architecture Overview</h2>
+    <div class="diagram">Kafka Topic → Spark Structured Streaming → Transformations → Delta Lake Sink</div>
+    <p>This pattern is the core of modern lakehouse streaming. Kafka acts as the durable, scalable event bus. Spark reads micro-batches, applies business logic, and writes to Delta Lake with exactly-once guarantees.</p>
+  </section>
+
+  <section>
+    <h2>Step 1: Kafka Source Configuration</h2>
+    <ul>
+      <li>Use <code>subscribe</code> or <code>subscribePattern</code> to define the Kafka topics.</li>
+      <li>Set <code>startingOffsets</code> to <code>latest</code> for fresh starts or <code>earliest</code> for backfills.</li>
+      <li>Specify <code>failOnDataLoss=false</code> only when you understand the trade-off.</li>
+      <li>Use SSL / SASL configs for enterprise security.</li>
+    </ul>
+    <div class="tip"><strong>Tip:</strong> Keep the number of Spark partitions equal to Kafka topic partitions for best throughput and parallelism.</div>
+  </section>
+
+  <section>
+    <h2>Step 2: Schema & Parsing</h2>
+    <ul>
+      <li>Define a strict schema in PySpark instead of inferring from JSON strings.</li>
+      <li>Parse the Kafka <code>value</code> field from binary to string/JSON first, then apply the schema.</li>
+      <li>Route malformed records to a dead-letter stream or log-and-drop path.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Step 3: Transformations & State</h2>
+    <ul>
+      <li>Use <code>withWatermark</code> on event time before aggregations to bound state.</li>
+      <li>Deduplicate with <code>dropDuplicates</code> using a composite key (event ID + source timestamp).</li>
+      <li>Keep transformation functions pure and unit-testable with pytest and in-memory Spark.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Step 4: Delta Lake Sink</h2>
+    <ul>
+      <li>Write in <code>append</code> mode for immutable streams and <code>complete</code> mode for aggregations.</li>
+      <li>Use a <code>checkpointLocation</code> for reliable offset tracking across restarts.</li>
+      <li>For idempotent upserts, use <code>foreachBatch</code> with a Delta Lake <code>MERGE</code>.</li>
+      <li>Partition by logical keys (date, region) to optimize downstream reads.</li>
+    </ul>
+    <div class="tip"><strong>Tip:</strong> A robust pipeline combines checkpointing for offset recovery with Delta Lake merge keys for idempotent writes.</div>
+  </section>
+
+  <section>
+    <h2>Step 5: Operational Concerns</h2>
+    <ul>
+      <li>Enable structured streaming listener metrics to track input rate, batch duration, and state store size.</li>
+      <li>Right-size cluster cores and executor memory for the trigger interval.</li>
+      <li>Handle skewed keys with salting or adaptive query execution where applicable.</li>
+      <li>Keep secrets out of code — use Vault or environment-backed configuration.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Putting It Together</h2>
+    <p>A production Kafka → Delta pipeline is more than code. It is a combination of schema discipline, exactly-once semantics, state management, and operational observability. Get these right, and the system scales from thousands to millions of events per hour.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Built by Sasidhar Mopuru · <a href="../index.html">Return to portfolio</a></p>
+</footer>
+
+</body>
+</html>
