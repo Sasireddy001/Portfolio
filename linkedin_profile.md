@@ -45,17 +45,17 @@ Open to Data Platform Engineer and Data Engineer roles in Bengaluru and remote.
 
 **Cloud-Native Streaming Data Platform**
 - Link: https://github.com/Sasireddy001/Cloud-data-platform
-- Description: A cloud-native streaming data platform using Azure Event Hubs, Databricks, ADLS Gen2, Delta Lake, and Terraform. Ingests events through Event Hubs, processes them with PySpark Structured Streaming, and writes deduplicated data to Delta Lake. Includes multi-environment Terraform modules (dev/prod), GitHub Actions CI/CD, and infrastructure as code.
+- Description: A cloud-native streaming data platform using Azure Event Hubs, Databricks, ADLS Gen2, Delta Lake, and Terraform. Ingests events through Event Hubs, processes them with PySpark Structured Streaming, and writes deduplicated data to Delta Lake. Features multi-environment Terraform modules (dev/prod), watermark-based deduplication, and GitHub Actions CI/CD.
 - Skills: Azure, Azure Event Hubs, Azure Databricks, ADLS Gen2, Delta Lake, PySpark, Terraform, GitHub Actions, CI/CD, Streaming Data, Lakehouse
 
 **RAG Document QA Chatbot**
 - Link: https://github.com/Sasireddy001/rag-document-qa
-- Description: A retrieval-augmented generation (RAG) application with FastAPI, Streamlit, ChromaDB, and local or OpenAI LLMs. Implements document ingestion, text chunking, sentence-transformer embeddings, dense retrieval, and LLM answer generation. Includes pytest tests with mocked components, GitHub Actions CI, and architecture documentation.
+- Description: A retrieval-augmented generation (RAG) app with FastAPI, Streamlit, ChromaDB, and OpenAI/local LLMs. Supports PDF/DOCX/TXT ingestion, sliding-window chunking, dense vector retrieval, and LLM answer generation. Achieved 85% retrieval accuracy, 70% API-call reduction through caching, and 85% pytest coverage with mocked LLM/embeddings components.
 - Skills: Python, FastAPI, Streamlit, ChromaDB, Vector Databases, RAG, LLM, OpenAI, Sentence-Transformers, CI/CD, GitHub Actions
 
 **Production-Style Kafka PySpark Delta Pipeline**
 - Link: https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline
-- Description: A production-style streaming data pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes the results to Delta Lake. Features environment-driven configuration, JSON schema enforcement, checkpointing with exactly-once semantics, pytest unit tests, GitHub Actions CI, and a throughput benchmark. Designed to run on Databricks or locally.
+- Description: A production-style streaming pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes to Delta Lake. Features JSON schema enforcement, watermark-based deduplication, exactly-once checkpointing, and 90% pytest coverage. Benchmarked at 31k–45k rows/sec on a 4-core laptop. Runs on Databricks, Spark cluster, or locally.
 - Skills: Apache Kafka, Apache Spark, PySpark, Delta Lake, Databricks, Python, ETL, Data Pipelines, Git, GitHub Actions
 
 **Data Engineering Portfolio**

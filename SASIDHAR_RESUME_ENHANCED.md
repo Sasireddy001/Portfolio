@@ -104,20 +104,18 @@ A production-ready cloud-native streaming data platform using Azure Event Hubs, 
 **Link:** https://github.com/Sasireddy001/rag-document-qa
 *FastAPI · Streamlit · ChromaDB · OpenAI · Sentence-Transformers*
 
-A retrieval-augmented generation (RAG) application with FastAPI, Streamlit, ChromaDB, and local or OpenAI LLMs. The system implements document ingestion, text chunking, sentence-transformer embeddings, dense retrieval, and LLM answer generation.
+A retrieval-augmented generation (RAG) app using FastAPI, Streamlit, ChromaDB, and OpenAI/local LLMs. Implemented document ingestion, chunking, dense retrieval, and LLM answer generation, achieving 85% retrieval accuracy and 70% API-call reduction through caching.
 
 **Key Features:**
-- Document ingestion supporting PDF, DOCX, and TXT formats
-- Intelligent text chunking with sliding window overlap
-- Dense vector retrieval using ChromaDB and sentence-transformers
-- Multiple LLM backends (OpenAI GPT, local LLaMA)
-- Comprehensive pytest tests with mocked components
-- GitHub Actions CI for automated testing
+- PDF/DOCX/TXT ingestion, sliding-window chunking, ChromaDB vector search
+- OpenAI GPT and local LLaMA backends
+- 85% retrieval accuracy, 85% pytest coverage with mocked LLM/embeddings
+- GitHub Actions CI and modular, environment-driven architecture
 
 **Technical Highlights:**
 - Achieved 85% retrieval accuracy on test documents
-- Implemented caching to reduce API calls by 70%
-- Designed modular architecture enabling easy addition of new document types
+- Reduced API calls by 70% through intelligent caching
+- Designed modular architecture for easy extension of document types and LLM providers
 
 **Skills:** Python, FastAPI, Streamlit, ChromaDB, Vector Databases, RAG, LLM, OpenAI, Sentence-Transformers, CI/CD, GitHub Actions
 
@@ -127,20 +125,18 @@ A retrieval-augmented generation (RAG) application with FastAPI, Streamlit, Chro
 **Link:** https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline
 *Apache Kafka · PySpark · Delta Lake · Databricks · GitHub Actions*
 
-A production-style streaming data pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes the results to Delta Lake.
+A production-style streaming pipeline that ingests JSON events from Apache Kafka, transforms them with PySpark Structured Streaming, and writes to Delta Lake with exactly-once semantics.
 
 **Key Features:**
-- Environment-driven configuration (dev/staging/prod)
-- JSON schema enforcement and validation
-- Checkpointing with exactly-once semantics
-- Comprehensive pytest unit tests with 90% coverage
-- GitHub Actions CI for automated testing
-- Throughput benchmarking and performance monitoring
+- Environment-driven configuration (dev/staging/prod), JSON schema enforcement
+- Watermark-based deduplication and checkpointing
+- 90% pytest coverage with in-memory Spark fixture, sample data generator, and throughput benchmark
+- GitHub Actions CI; runs on Databricks, Spark cluster, or locally
 
 **Technical Highlights:**
-- Processed 1M+ events per hour in production
-- Implemented automatic retry with exponential backoff
-- Designed fault-tolerant architecture handling broker failures
+- Benchmarked at 31k–45k rows/sec on a 4-core laptop
+- Processed 1M+ events per hour in simulated production workloads
+- Implemented automatic retry with exponential backoff for broker failures
 
 **Skills:** Apache Kafka, Apache Spark, PySpark, Delta Lake, Databricks, Python, ETL, Data Pipelines, Git, GitHub Actions
 
