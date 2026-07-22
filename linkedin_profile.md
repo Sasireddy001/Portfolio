@@ -20,16 +20,16 @@ Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake �
 
 I build real-time, reliable data platforms that turn high-velocity event streams into analytics and AI-ready datasets.
 
-At Accenture, my current focus is building and operating a configuration-driven **Core Data Product (CDP) platform**. I designed dynamic CI/CD configuration generator with YAML-based job definitions, enabling non-technical users to configure data pipelines without code changes. I operate 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains (site, supplier, item, product) with comprehensive CI/CD automation across dev, sit, perf, and prod environments, achieving 99.5% deployment success rate and 99.5% pipeline uptime. I also collaborate with a 10+ person cross-functional team (Accenture and client) to manage end-to-end delivery.
+At Accenture, my current focus is building and operating a configuration-driven **Core Data Product (CDP) platform**. I designed a dynamic CI/CD configuration generator with YAML-based job definitions, enabling non-technical users to configure data pipelines without code changes. I operate 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains (site, supplier, item, product), supporting **67 Source Data Products (SDPs)** and **120+ Core Data Products (CDPs)** with STG, Active, Historical, and view-based patterns. Kafka-driven streaming ingestion powers SDP stage jobs, and the platform achieves **99.5% deployment success rate** and **99.5% pipeline uptime** across dev, sit, perf, and prod. I also collaborate with a 10+ person cross-functional team (Accenture and client) to manage end-to-end delivery.
 
 Featured work:
-• Enterprise Configuration-Driven Data Platform: Built dynamic CI/CD configuration generator reducing pipeline configuration time by 70%. Implemented parent-child GitLab CI/CD pipeline architecture, integrated HashiCorp Vault for secrets management, and created comprehensive testing strategy with 60+ unit test suites achieving 97% overall code coverage across 4 E2E supply-chain sub-domains.
+• Enterprise Configuration-Driven Data Platform: Built dynamic CI/CD configuration generator reducing pipeline configuration time by 70%. Implemented parent-child GitLab CI/CD pipeline architecture, integrated HashiCorp Vault for secrets management, and created comprehensive testing strategy with 60+ unit test suites achieving **95%+ overall code coverage**. Supported 67 SDPs and 120+ CDPs across 4 E2E supply-chain sub-domains with STG, Active, Historical, and view-based job patterns.
 • Production-Style Kafka → PySpark → Delta Lake pipeline: schema enforcement, watermark-based deduplication, checkpointing, and 31k–45k rows/s throughput on a 4-core laptop.
 • RAG Document QA Chatbot: FastAPI + Streamlit app using sentence-transformers, ChromaDB, and OpenAI/Ollama LLMs for grounded document Q&A.
 
 I am expanding into cloud-native deployment, Kubernetes, Terraform, and production LLM evaluation — the next layer for high-scale data platforms.
 
-**Team Context:** I work within a 10+ person cross-functional team (Accenture and client) managing E2E supply-chain data products across site, supplier, item, and product domains.
+**Team Context:** I work within a 10+ person cross-functional team (Accenture and client) managing E2E supply-chain data products across site, supplier, item, and product domains. Every main PySpark module has a corresponding unit test script, and physical data products follow STG, Active, and Historical job patterns with view-based CDPs built on top.
 
 Portfolio: https://sasireddy001.github.io/Portfolio/
 Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
@@ -71,12 +71,12 @@ Feb 2024 – Present
 
 - Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 70%.
 - Designed dynamic CI/CD configuration generator with YAML-based job definitions enabling non-technical users to configure data pipelines without code changes.
-- Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains with 99.5% deployment success rate.
+- Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs with STG, Active, Historical, and view-based patterns. Achieved 99.5% deployment success rate.
 - Built modular, reusable PySpark pipelines with comprehensive error handling, retry mechanisms, and schema validation achieving 99.5% pipeline uptime.
 - Containerized Spark jobs with Docker and deployed through GitLab CI/CD across dev, sit, perf, prod environments.
 - Integrated Kafka eventing and S3A-compatible object storage into pipeline workflows.
 - Managed secrets and credentials securely using HashiCorp Vault and enterprise certificate stores.
-- Implemented comprehensive testing strategy with 60+ unit test suites achieving 97% overall code coverage on pipeline components.
+- Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage on pipeline components. Created unit test scripts for every main PySpark module to ensure component-level reliability.
 - Created DDL scripts and configuration-driven workflows using Git.
 - Performed data validation, debugging, and performance optimization reducing latency by 30%.
 - Worked under strict NDA and enterprise data governance standards.
