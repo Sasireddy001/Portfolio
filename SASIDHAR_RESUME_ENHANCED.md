@@ -38,14 +38,13 @@ Actively expanding into cloud-native deployment, Kubernetes, Terraform, and prod
 **Feb 2024 – Present**
 *Bengaluru, India*
 
-- **Built Configuration-Driven CDP Platform:** Designed and developed a Core Data Product (CDP) platform using PySpark, Docker, and GitLab CI/CD. Implemented JSON-based job definitions enabling non-technical users to configure data pipelines without code changes. Reduced deployment time by 40% and improved pipeline reliability.
-- **End-to-End Data Engineering:** Designed and implemented complete data flows from source systems to Source Data Product (SDP) and Core Data Product (CDP) layers. Successfully delivered 5+ enterprise data products across batch and streaming architectures.
-- **PySpark Pipeline Development:** Built modular, reusable PySpark pipelines with comprehensive error handling, retry mechanisms, and schema validation. Developed Python utilities for logging, credential extraction, and data quality checks. Achieved 99.5% pipeline uptime.
-- **Containerization & CI/CD:** Containerized Spark jobs using Docker (base image: harbor.dell.com/customer-lakehouse/spark-py:3.5.5-v14-python3.12) and established GitLab CI/CD pipelines for automated deployment across dev, sit, perf, and prod environments. Reduced manual deployment effort by 60%.
-- **Streaming Integration:** Integrated Apache Kafka and S3A-compatible object storage into pipeline workflows for real-time event processing. Implemented exactly-once semantics using checkpointing and idempotent sinks.
-- **Security & Quality:** Implemented secure credential management with HashiCorp Vault and enterprise certificate stores; achieved 95%+ test coverage across pipeline components.
-- **Data Quality Engineering:** Owned end-to-end data quality and platform validation for 3–4 sprint releases as the primary validation resource, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers and preparing SQL-based reconciliation evidence for clean production sign-off.
-- **Performance Optimization:** Performed data validation, debugging, and performance optimization on production pipelines. Reduced data processing latency by 30% through partitioning and caching strategies.
+- **Data Product Engineering:** Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs through Python development, JSON configuration, and DDL development. Reduced deployment time by 40% with configuration-driven pipeline definitions and reusable Python utilities.
+- **Pipeline Reliability:** Built modular, reusable PySpark pipelines with error handling, retry mechanisms, schema validation, and data quality checks; achieved 99.5% pipeline uptime.
+- **Testing & Coverage:** Maintained 95%+ overall test coverage across 60+ pytest suites with mocked components and integration patterns.
+- **Streaming & Kafka Validation:** Developed Kafka consumer and validation workflows for real-time event processing, schema validation, and end-to-end data verification across Kafka → Stage → Raw → HAST/CDP layers.
+- **Data Quality Engineering:** Owned end-to-end data quality and platform validation for 3–4 sprint releases as the primary validation resource, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records, and prepared SQL-based reconciliation evidence for clean production sign-off.
+- **Database & DDL Development:** Developed DDL scripts, database object definitions, validation queries, and reconciliation queries for SDP/CDP layers using Python, SQL, and Git.
+- **Performance & Operations:** Improved data processing latency by 30% through partitioning, caching, and performance tuning; monitored and troubleshot production pipelines, performing job monitoring and data-load validation.
 
 ---
 

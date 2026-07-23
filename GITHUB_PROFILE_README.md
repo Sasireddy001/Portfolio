@@ -129,10 +129,10 @@ Explore the latest designs: [Cloud Platform](https://github.com/Sasireddy001/Clo
 
 **Data Engineer — Accenture** · Feb 2024 – Present · Bengaluru, India
 
-- Delivered 90+ production PySpark ETL jobs across 67 source data products and 120+ core data products
-- Reduced deployment time by 40% with a configuration-driven CDP platform
-- Achieved 99.5% pipeline uptime and cut production incidents by 60%
-- Reduced manual deployment effort by 60% through Dockerized Spark jobs and GitLab CI/CD
+- Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs through Python, JSON configuration, and DDL development
+- Reduced deployment time by 40% by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform
+- Achieved 99.5% pipeline uptime through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks
+- Maintained 95%+ overall test coverage across 60+ pytest suites with mocked components
 - Owned end-to-end data quality and platform validation for 3–4 sprint releases across Kafka → Stage → Raw → HAST/CDP layers
 
 ---

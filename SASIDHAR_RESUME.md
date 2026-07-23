@@ -17,14 +17,15 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 
 ### **Data Engineer — Accenture** | *Feb 2024 – Present | Bengaluru, India*
 
-- **Delivered** 90+ production PySpark ETL jobs across 4 end-to-end supply-chain sub-domains, supporting **67 SDPs** and **120+ CDPs**.
-- **Reduced deployment time by 40%** by building a configuration-driven Core Data Product (CDP) platform using JSON job definitions, Docker, and parent-child GitLab CI/CD pipelines.
-- **Achieved 99.5% pipeline uptime** and reduced production incidents by 60% through modular Python utilities, schema validation, retry mechanisms, and comprehensive data quality checks.
-- **Operated 95%+ overall test coverage** across 60+ pytest suites with mocked components and integration patterns.
-- **Cut manual deployment effort by 60%** by containerizing Spark jobs and automating multi-environment (dev/sit/perf/prod) releases.
-- **Reduced data processing latency by 30%** through partitioning, caching, and performance tuning on production pipelines.
-- **Implemented secure credential management** with HashiCorp Vault and enterprise certificate stores; achieved 95%+ test coverage across pipeline components.
-- **Owned end-to-end data quality and platform validation** for 3–4 sprint releases as the primary validation resource, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
+- **Delivered** 90+ production PySpark ETL jobs across 4 end-to-end supply-chain sub-domains, supporting **67 SDPs** and **120+ CDPs** through Python development, JSON configuration, and DDL development.
+- **Reduced deployment time by 40%** by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.
+- **Achieved 99.5% pipeline uptime** through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.
+- **Maintained 95%+ overall test coverage** across 60+ pytest suites with mocked components and integration patterns.
+- **Improved data processing latency by 30%** through partitioning, caching, and performance tuning on production pipelines.
+- **Owned end-to-end data quality and platform validation** for 3–4 sprint releases as the primary validation resource, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and preparing SQL-based reconciliation evidence for clean production sign-off.
+- **Developed Kafka consumer and validation workflows** for real-time event processing, schema validation, and end-to-end data verification using Kafka topic messages.
+- **Developed DDL scripts, database object definitions, and validation queries** for SDP/CDP layers using Python, SQL, and Git.
+- **Monitored and troubleshot production data pipelines**, performing job monitoring, data-load validation, and production issue analysis.
 
 ---
 

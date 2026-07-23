@@ -42,7 +42,7 @@ I build real-time, reliable data platforms that turn high-velocity event streams
 
 
 
-At Accenture, my current focus is building and operating a configuration-driven **Core Data Product (CDP) platform**. I design Source-to-Core Data Product pipelines with PySpark, deploy Dockerized Spark jobs through GitLab CI/CD across dev, sit, perf, and prod, and integrate Kafka, S3A-compatible object storage, and HashiCorp Vault for secure, production-grade data workflows.
+At Accenture, I develop and validate configuration-driven **Core Data Product (CDP)** pipelines. I build Source-to-Core Data Product flows with PySpark, define JSON-based job configurations and reusable Python utilities, and validate data across Kafka → Stage → Raw → HAST/CDP layers. I use Dockerized Spark jobs and GitLab CI/CD pipelines within the platform team's approved development environment, and I work with credentials and secrets supplied by platform/security teams.
 
 I also own end-to-end data quality and platform validation for sprint releases, acting as the primary validation resource for SDP and CDP data products. I validate schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and I prepare test evidence and SQL-based reconciliation reports that support clean production sign-off.
 
@@ -50,7 +50,7 @@ I also own end-to-end data quality and platform validation for sprint releases, 
 
 Featured work:
 
-• Configuration-driven CDP platform at Accenture: PySpark, Docker, GitLab CI/CD, Kafka, and Vault — building reusable utilities for logging, retry, schema validation, and credential extraction.
+• Configuration-driven CDP platform at Accenture: PySpark, JSON configurations, Kafka, and SQL validation — building reusable Python utilities for logging, retry, schema validation, and data-quality checks.
 
 • Production-Style Kafka → PySpark → Delta Lake pipeline: schema enforcement, watermark-based deduplication, checkpointing, and 31k–45k rows/s throughput on a 4-core laptop.
 
@@ -138,24 +138,13 @@ Feb 2024 – Present
 
 
 
-- Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 70%. Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs. Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage.
-
-- Designed end-to-end data flows from source systems to SDP and CDP layers.
-
-- Built configuration-driven PySpark pipelines with JSON-based job definitions and reusable Python utilities for logging, retry, schema validation, and credential extraction.
-
-- Containerized Spark jobs with Docker and deployed them through GitLab CI/CD across dev, sit, perf, and prod environments.
-
-- Integrated Kafka eventing and S3A-compatible object storage into pipeline workflows.
-
-- Managed secrets and credentials securely using HashiCorp Vault and enterprise certificate stores.
-
-- Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage on pipeline components.
-
-- Created DDL scripts and configuration-driven workflows using Git.
-
-- Performed data validation, debugging, and performance optimization.
-
+- Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs through Python development, JSON configuration, and DDL development.
+- Reduced deployment time by 40% by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.
+- Achieved 99.5% pipeline uptime through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.
+- Maintained 95%+ overall test coverage across 60+ pytest suites with mocked components and integration patterns.
+- Improved data processing latency by 30% through partitioning, caching, and performance tuning.
+- Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
+- Developed Kafka consumer and validation workflows, DDL scripts, and validation/reconciliation queries for real-time SDP/CDP data processing, and monitored and troubleshot production pipelines.
 - Worked under strict NDA and enterprise data governance standards.
 
 

@@ -82,26 +82,17 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 ## Professional Experience
 
-
-
 ### Data Engineer – Accenture
 
 *Feb 2024 – Present*
 
-
-
-- Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 40%. Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs. Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage.
-
-
-- Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.
-
-
-- Created DDL scripts and configuration-driven workflows using Git.
-
-
-- Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers.
-
-
+- Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs through Python development, JSON configuration, and DDL development.
+- Reduced deployment time by 40% by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.
+- Achieved 99.5% pipeline uptime through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.
+- Maintained 95%+ overall test coverage across 60+ pytest suites with mocked components and integration patterns.
+- Improved data processing latency by 30% through partitioning, caching, and performance tuning.
+- Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
+- Developed Kafka consumer and validation workflows, DDL scripts, and validation/reconciliation queries for real-time SDP/CDP data processing, and monitored/troubleshot production pipelines.
 
 ## Selected Projects
 
