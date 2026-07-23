@@ -34,23 +34,23 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 ### **Cloud-Native Streaming Data Platform** | [GitHub](https://github.com/Sasireddy001/Cloud-data-platform)
 *Azure Event Hubs · Databricks · ADLS Gen2 · Delta Lake · Terraform*
 
-- **Designed** a fully Terraform-managed streaming platform with multi-environment (dev/prod) modules and GitHub Actions CI/CD.
-- **Processed** events through Azure Event Hubs into PySpark Structured Streaming with watermark-based deduplication and Delta Lake checkpointing.
-- **Achieved 99.9% data accuracy** and cut infrastructure setup time by 50% through modular IaC.
+- **Designed** modular Terraform templates for multi-environment (dev/prod) infrastructure and a PySpark Structured Streaming job that ingests Azure Event Hubs events, applies watermark-based deduplication, and writes to Delta Lake with checkpointing.
+- **Automated** Terraform plan/apply pipelines through GitHub Actions for dev and prod environments.
+- **Validated** streaming output with schema checks and row-level data quality checks.
 
 ### **Production-Style Kafka PySpark Delta Pipeline** | [GitHub](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline)
 *Apache Kafka · PySpark · Delta Lake · Databricks · GitHub Actions*
 
 - **Ingested** JSON events from Kafka, enforced schemas, and wrote exactly-once to Delta Lake using checkpointing and idempotent writes.
 - **Benchmarked** 31k–45k rows/sec on a 4-core laptop for 100k–1M row workloads.
-- **Maintained 95%+ pytest coverage** with an in-memory Spark fixture and continuous integration.
+- **Maintained** pytest test coverage with an in-memory Spark fixture and continuous integration.
 
 ### **RAG Document QA Chatbot** | [GitHub](https://github.com/Sasireddy001/rag-document-qa)
 *FastAPI · Streamlit · ChromaDB · OpenAI · Sentence-Transformers*
 
-- **Built** a retrieval-augmented generation application with document ingestion, chunking, dense vector retrieval, and LLM answer generation.
-- **Achieved 85% retrieval accuracy** and reduced API calls by 70% through response caching.
-- **Shipped** 85% pytest coverage with mocked LLM/embedding calls, FastAPI endpoints, and a Streamlit chat UI.
+- **Built** a retrieval-augmented generation application with document ingestion, chunking, dense vector retrieval, response caching, and LLM answer generation.
+- **Implemented** response caching to reduce redundant LLM API calls and a configurable, environment-driven architecture.
+- **Shipped** pytest tests with mocked LLM/embedding calls, FastAPI endpoints, and a Streamlit chat UI.
 
 ---
 
@@ -75,7 +75,7 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 
 - **Languages:** Python, SQL
 - **Data Engineering:** PySpark, Apache Spark, Delta Lake, Apache Kafka, ETL/ELT, Data Modeling, Data Quality, Schema Validation
-- **Cloud & Platforms:** Databricks, Microsoft Fabric, Azure Event Hubs, ADLS Gen2, AWS (S3, EC2, Lambda), GCP (BigQuery, GKE)
-- **DevOps:** GitLab CI/CD, GitHub Actions, Docker, Kubernetes, Terraform, HashiCorp Vault, Linux
+- **Cloud & Platforms:** Databricks, Microsoft Fabric, Azure Event Hubs, ADLS Gen2, AWS (S3, EMR Serverless, MSK Serverless)
+- **DevOps:** GitLab CI/CD, GitHub Actions, Docker, Terraform, Linux
 - **AI / LLM:** RAG, LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, OpenAI, Sentence-Transformers
 - **Testing:** pytest, unittest, mocking, test-driven development

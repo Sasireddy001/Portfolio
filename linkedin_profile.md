@@ -247,15 +247,10 @@ Add these to the Skills section (top 50):
 
 - Terraform
 
-- Kubernetes
 
-- HashiCorp Vault
 
-- Oracle
 
-- SingleStore
 
-- MongoDB
 
 - Jupyter
 

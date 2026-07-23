@@ -188,15 +188,15 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 - **AI / LLM / App Development:** RAG, LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, GenAI, AI Agents
 
-- **Data Platforms:** Databricks, Apache Spark, Delta Lake, SingleStore, Relational Databases
+- **Data Platforms:** Databricks, Apache Spark, Delta Lake, Relational Databases
 
 - **Quality & Testing:** Pytest, Unittest, Mocking, Data Validation, Schema Validation
 
-- **DevOps & Tools:** Git, CI/CD Pipelines, Docker, Jira, Agile Scrum
+- **DevOps & Tools:** Git, CI/CD Pipelines, Docker, Terraform, Jira, Agile Scrum
 
 - **Architecture:** Object-Oriented Programming, Modular Coding, YAML/JSON, Logging, Exception Handling, System Design
 
-- **Building Toward:** Cloud (AWS/Azure), Kubernetes, Terraform, Docker, Platform Engineering, Observability
+- **Building Toward:** Cloud (AWS/Azure), Kubernetes, Platform Engineering, Observability
 
 
 
