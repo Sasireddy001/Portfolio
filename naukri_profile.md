@@ -89,7 +89,7 @@ Expanding into cloud-native deployment, Kubernetes, Terraform, and production LL
 **Data Engineer – Accenture**
 Feb 2024 – Present
 
-- Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 70%. Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs. Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage.
+- Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 40%. Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs. Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage.
 - Designed end-to-end data flows from source systems to SDP and CDP layers.
 - Built configuration-driven PySpark pipelines with JSON-based job definitions and reusable Python utilities for logging, retry, schema validation, and credential extraction.
 - Containerized Spark jobs with Docker and deployed them through GitLab CI/CD across dev, sit, perf, and prod environments.
