@@ -12,14 +12,14 @@ Sasidhar Mopuru
 
 ## Resume Headline / Profile Title
 
-Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Streaming & RAG Data Systems
+Data & AI Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Building Real-Time Streaming & AI-Ready Data Systems
 
 ---
 
 ## Contact Information
 
 - Email: sasidharmopuru@gmail.com
-- Phone: <add your mobile number>
+- Phone: +91 63029 60712
 - LinkedIn: https://www.linkedin.com/in/sasidhar-mopuru-417a03233
 - GitHub: https://github.com/Sasireddy001
 - Portfolio: https://sasireddy001.github.io/Portfolio/

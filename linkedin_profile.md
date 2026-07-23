@@ -26,7 +26,7 @@ Sasidhar Mopuru
 
 
 
-Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Streaming & RAG Data Systems
+Data & AI Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Building Real-Time Streaming & AI-Ready Data Systems
 
 
 

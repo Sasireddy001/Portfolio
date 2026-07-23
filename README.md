@@ -6,7 +6,7 @@
 
 
 
-### Data & AI Platform Engineer | Databricks Certified | Kafka · PySpark · Delta Lake · Python
+### Data & AI Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Building Real-Time Streaming & AI-Ready Data Systems
 
 
 
@@ -24,7 +24,7 @@
 
 [![GitHub  Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
-[![Resume](https://img.shields.io/badge/Resume-PDF-critical?logo=adobeacrobatreader&logoColor=white)](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf)
+[![Resume](https://img.shields.io/badge/Resume-View-2563EB)](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.html)
 
 
 
@@ -90,7 +90,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 
 
-- Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 70%. Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs. Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage.
+- Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 40%. Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs. Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage.
 
 - Designed end-to-end data flows from source systems to SDP and CDP layers.
 
