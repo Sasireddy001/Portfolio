@@ -43,7 +43,7 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 
 - **Ingested** JSON events from Kafka, enforced schemas, and wrote exactly-once to Delta Lake using checkpointing and idempotent writes.
 - **Benchmarked** 31k–45k rows/sec on a 4-core laptop for 100k–1M row workloads.
-- **Maintained 90%+ pytest coverage** with an in-memory Spark fixture and continuous integration.
+- **Maintained 95%+ pytest coverage** with an in-memory Spark fixture and continuous integration.
 
 ### **RAG Document QA Chatbot** | [GitHub](https://github.com/Sasireddy001/rag-document-qa)
 *FastAPI · Streamlit · ChromaDB · OpenAI · Sentence-Transformers*

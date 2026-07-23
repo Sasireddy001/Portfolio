@@ -108,7 +108,7 @@ A production-style streaming data pipeline that ingests JSON events from Apache 
 - Environment-driven configuration (dev/staging/prod)
 - JSON schema enforcement and validation
 - Checkpointing with exactly-once semantics
-- Comprehensive pytest unit tests with 90% coverage
+- Comprehensive pytest unit tests with 95% coverage
 - GitHub Actions CI for automated testing
 - Throughput benchmarking and performance monitoring
 
