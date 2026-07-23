@@ -31,11 +31,11 @@ I am a **Data & AI Platform Engineer** with 2+ years of production experience bu
 
 What I bring to a team:
 
-- End-to-end data platform design from ingestion to serving layer
+- End-to-end data pipeline development and validation from ingestion to serving layer
 - Exactly-once stream processing with Kafka and PySpark Structured Streaming
-- Configuration-driven, CI/CD-enabled data product platforms
-- Production-grade testing, observability, and cost optimization
-- RAG and LLM-integrated data foundations
+- Configuration-driven data pipelines integrated with CI/CD workflows
+- Production-grade testing and data validation
+- RAG and LLM-integrated prototypes and data foundations
 
 ---
 
@@ -58,9 +58,11 @@ What I bring to a team:
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![GitLab CI/CD](https://img.shields.io/badge/GitLab%20CI/CD-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+
+### Familiar With
+`Kubernetes` · `GCP` · `Ansible` · `HashiCorp Vault`
 
 ### AI / LLM
 
@@ -84,20 +86,20 @@ A production-grade streaming pipeline with JSON schema enforcement, bounded wate
 
 ### [Cloud-Native Streaming Data Platform](https://github.com/Sasireddy001/Cloud-data-platform)
 
-A fully Terraform-managed, multi-cloud streaming data platform that ingests events from Azure Event Hubs / AWS MSK, processes them with PySpark Structured Streaming, and writes to Delta Lake.
+A Terraform-managed streaming data platform that ingests events from Azure Event Hubs / AWS MSK, processes them with PySpark Structured Streaming, and writes to Delta Lake.
 
-- 99.9% data accuracy with exactly-once delivery
+- Exactly-once streaming with Delta Lake checkpointing
 - Multi-environment Terraform modules and GitHub Actions CI/CD
-- Infrastructure cost optimization with auto-scaling and spot instances
+- PySpark Structured Streaming with schema and data quality checks
 - [Architecture](https://github.com/Sasireddy001/Cloud-data-platform/blob/main/ARCHITECTURE.md) · [System Design](https://github.com/Sasireddy001/Cloud-data-platform/blob/main/SYSTEM_DESIGN.md)
 
 ### [RAG Document QA Chatbot](https://github.com/Sasireddy001/rag-document-qa)
 
 A retrieval-augmented generation application for PDF, DOCX, and TXT documents with dense vector retrieval, reranking, and LLM answer generation.
 
-- 85% retrieval accuracy with response caching
+- Response caching to reduce redundant LLM API calls
 - Modular LLM backends and hosted vector-store swap
-- FastAPI + Streamlit front end with full pytest coverage
+- FastAPI + Streamlit front end with pytest tests
 - [System Design](https://github.com/Sasireddy001/rag-document-qa/blob/main/SYSTEM_DESIGN.md)
 
 ---

@@ -307,7 +307,7 @@
     <section>
       <h2>Professional Summary</h2>
       <p class="summary">
-        Data &amp; AI Platform Engineer with 2+ years building production-grade streaming data products and lakehouse systems at Accenture. Databricks Certified Data Engineer Associate and Microsoft DP-700. Core stack: PySpark, Kafka, Delta Lake, Databricks, Docker, Terraform. Delivered 5+ enterprise data products, achieved 99.5% pipeline uptime, and reduced deployment time by 40%.
+        Data &amp; AI Platform Engineer with 2+ years building and validating production-grade streaming data pipelines and lakehouse systems at Accenture. Databricks Certified Data Engineer Associate and Microsoft DP-700. Core stack: PySpark, Kafka, Delta Lake, Databricks, Python, SQL. Delivered 90+ production PySpark ETL jobs, achieved 99.5% pipeline uptime, and reduced deployment time by 40%.
       </p>
     </section>
 
@@ -329,10 +329,10 @@
         <div class="skill-items">PySpark, Apache Spark, Delta Lake, Apache Kafka, Azure Event Hubs, ETL/ELT, SQL, Data Modeling, Schema Validation, Data Quality</div>
 
         <div class="skill-label">Cloud &amp; Platforms</div>
-        <div class="skill-items">Databricks, Microsoft Fabric, Azure, AWS (S3, EC2, Lambda), GCP (BigQuery, GKE), SingleStore</div>
+        <div class="skill-items">Databricks, Microsoft Fabric, Azure, AWS (S3, EMR Serverless, MSK Serverless)</div>
 
         <div class="skill-label">DevOps &amp; MLOps</div>
-        <div class="skill-items">Docker, Kubernetes, Terraform, GitLab CI/CD, GitHub Actions, HashiCorp Vault, Linux, pytest</div>
+        <div class="skill-items">Docker, Terraform, GitLab CI/CD, GitHub Actions, Linux, pytest</div>
 
         <div class="skill-label">AI / LLM</div>
         <div class="skill-items">RAG, OpenAI, ChromaDB, Vector Databases, Sentence-Transformers, FastAPI, Streamlit</div>
@@ -368,8 +368,8 @@
         <div class="project-title">Cloud-Native Streaming Data Platform</div>
         <div class="project-sub">github.com/Sasireddy001/Cloud-data-platform</div>
         <ul class="compact-list">
-          <li><strong>Impact:</strong> 99.9% data accuracy, exactly-once streaming, modular Terraform reducing setup time by 50%</li>
-          <li><strong>Highlights:</strong> Multi-environment IaC, auto-scaling, spot-instance cost optimization, schema evolution</li>
+          <li><strong>Impact:</strong> Exactly-once streaming with Delta Lake checkpointing, modular Terraform modules for dev/prod environments</li>
+          <li><strong>Highlights:</strong> Multi-environment IaC, PySpark Structured Streaming, schema validation</li>
         </ul>
       </div>
 
@@ -377,8 +377,8 @@
         <div class="project-title">RAG Document QA Chatbot</div>
         <div class="project-sub">github.com/Sasireddy001/rag-document-qa</div>
         <ul class="compact-list">
-          <li><strong>Impact:</strong> 85% retrieval accuracy, 70% fewer API calls through intelligent caching</li>
-          <li><strong>Highlights:</strong> PDF/DOCX/TXT ingestion, modular LLM backends, comprehensive pytest coverage</li>
+          <li><strong>Impact:</strong> Dense vector retrieval with response caching to reduce redundant LLM API calls</li>
+          <li><strong>Highlights:</strong> PDF/DOCX/TXT ingestion, modular LLM backends, pytest tests with mocked components</li>
         </ul>
       </div>
 
@@ -386,7 +386,7 @@
         <div class="project-title">Kafka → PySpark → Delta Pipeline</div>
         <div class="project-sub">github.com/Sasireddy001/Kafka-pyspark-delta-pipeline</div>
         <ul class="compact-list">
-          <li><strong>Impact:</strong> 1M+ events/hour, 95%+ pytest coverage, fault-tolerant exactly-once checkpointing</li>
+          <li><strong>Impact:</strong> 31k–45k rows/sec on a 4-core laptop, 95%+ pytest coverage, fault-tolerant exactly-once checkpointing</li>
           <li><strong>Highlights:</strong> JSON schema enforcement, automatic retry with exponential backoff, AWS Terraform deployment</li>
         </ul>
       </div>

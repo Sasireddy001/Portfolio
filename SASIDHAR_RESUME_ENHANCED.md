@@ -16,17 +16,16 @@
 
 ## PROFESSIONAL SUMMARY
 
-Data & AI Platform Engineer with 2+ years of experience building production-grade streaming data products and lakehouse systems at Accenture. Currently building and operating a configuration-driven Core Data Product (CDP) platform using PySpark, Docker, GitLab CI/CD, Kafka, and HashiCorp Vault.
+Data & AI Platform Engineer with 2+ years of experience building and validating production-grade data pipelines and lakehouse systems at Accenture. I develop configuration-driven Core Data Product (CDP) pipelines using PySpark, JSON configurations, Kafka, and SQL, and use Dockerized Spark jobs and GitLab CI/CD within the platform team's approved environment.
 
 Specializes in turning high-velocity event data into reliable, AI-ready data platforms. Core expertise spans configuration-driven PySpark pipelines, Kafka → PySpark → Delta Lake streaming systems, Databricks lakehouse architectures, Dockerized deployments, GitLab CI/CD, data quality, and automated testing.
 
 **Key Achievements:**
-- Built configuration-driven CDP platform reducing deployment time by 40%
-- Achieved 99.5% pipeline uptime for production data products
-- Delivered 5+ enterprise data products across batch and streaming architectures
-- Implemented CI/CD pipelines across dev, sit, perf, and prod environments
-- 95%+ coverage by the unittest scripts for all the files
-- Reduced data processing latency by 30% through optimization strategies
+- Delivered 90+ production PySpark ETL jobs supporting 67 SDPs and 120+ CDPs
+- Reduced deployment time by 40% with configuration-driven pipeline definitions and reusable Python utilities
+- Achieved 99.5% pipeline uptime through modular PySpark pipelines with data quality checks
+- Maintained 95%+ overall test coverage across 60+ pytest suites
+- Improved data processing latency by 30% through partitioning, caching, and performance tuning
 
 Actively expanding into cloud-native deployment, Kubernetes, Terraform, and production LLM evaluation for high-scale data platforms. Passionate about building scalable, maintainable data systems that drive business value.
 
@@ -58,15 +57,15 @@ A production-ready cloud-native streaming data platform using Azure Event Hubs, 
 
 **Key Features:**
 - Multi-environment Terraform modules (dev/prod) for infrastructure as code
-- GitHub Actions CI/CD for automated testing and deployment
-- Exactly-once semantics using Delta Lake transaction logs
-- Automatic schema evolution and data quality checks
-- Cost optimization through auto-scaling and spot instances
+- GitHub Actions CI/CD for automated Terraform plan/apply and testing
+- PySpark Structured Streaming ingestion from Azure Event Hubs
+- Exactly-once semantics using Delta Lake checkpointing
+- Schema and row-level validation checks
 
 **Technical Highlights:**
-- Designed modular Terraform architecture reducing infrastructure setup time by 50%
-- Implemented streaming deduplication using Delta Lake's merge operations
-- Achieved 99.9% data accuracy in production workloads
+- Implemented streaming deduplication using Delta Lake merge operations
+- Configured environment-driven deployments for dev and prod
+- Added schema and data quality checks in the streaming job and validation notebooks
 
 **Skills:** Azure, Azure Event Hubs, Azure Databricks, ADLS Gen2, Delta Lake, PySpark, Terraform, GitHub Actions, CI/CD, Streaming Data, Lakehouse
 
@@ -87,9 +86,9 @@ A retrieval-augmented generation (RAG) application with FastAPI, Streamlit, Chro
 - GitHub Actions CI for automated testing
 
 **Technical Highlights:**
-- Achieved 85% retrieval accuracy on test documents
-- Implemented caching to reduce API calls by 70%
+- Implemented response caching to reduce redundant LLM API calls
 - Designed modular architecture enabling easy addition of new document types
+- Used sentence-transformer embeddings and ChromaDB for dense vector retrieval
 
 **Skills:** Python, FastAPI, Streamlit, ChromaDB, Vector Databases, RAG, LLM, OpenAI, Sentence-Transformers, CI/CD, GitHub Actions
 
@@ -110,7 +109,7 @@ A production-style streaming data pipeline that ingests JSON events from Apache 
 - Throughput benchmarking and performance monitoring
 
 **Technical Highlights:**
-- Processed 1M+ events per hour in production
+- Benchmarked throughput against 100k–1M row sample workloads
 - Implemented automatic retry with exponential backoff
 - Designed fault-tolerant architecture handling broker failures
 
@@ -161,9 +160,9 @@ A live portfolio site showcasing data engineering experience, certifications, te
 - **Data Engineering:** ETL / ELT, Data Pipelines, Data Modeling, Data Quality, Schema Validation, Data Validation, CDC (Change Data Capture)
 - **Testing:** Unit Testing (pytest, unittest, mocking), Integration Testing, Test-Driven Development
 - **System Design:** System Design, Object-Oriented Programming, Modular Coding, Design Patterns
-- **DevOps:** CI/CD (GitHub Actions, GitLab CI), Git, Linux, Docker, Kubernetes, Terraform, Ansible, HashiCorp Vault
-- **Cloud Platforms:** Azure (Event Hubs, Databricks, ADLS Gen2, Functions), AWS (S3, EC2, Lambda), GCP (BigQuery, GKE)
-- **Databases:** Oracle, SingleStore, MongoDB, MySQL, PostgreSQL
+- **DevOps:** CI/CD (GitHub Actions, GitLab CI), Git, Linux, Docker, Terraform
+- **Cloud Platforms:** Azure (Event Hubs, Databricks, ADLS Gen2), AWS (S3, EMR Serverless, MSK Serverless)
+- **Databases:** SQL, PostgreSQL, MySQL, MongoDB
 - **Tools:** Jupyter, VS Code, PyCharm, Jira, Confluence, Agile / Scrum
 - **AI/ML:** Machine Learning, Data Analysis, Cloud Data Engineering Concepts, RAG / LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, OpenAI, Sentence-Transformers
 
@@ -182,10 +181,8 @@ A live portfolio site showcasing data engineering experience, certifications, te
 - **JEE Mains – 94.14 Percentile:** Ranked in top 6% nationally among 1M+ candidates
 - **Databricks Certified Data Engineer Associate:** Validated expertise in Databricks and Lakehouse architecture
 - **DP-700: Implementing Data Engineering Solutions using Microsoft Fabric:** Certified in Microsoft Fabric data engineering
-- **Enterprise Data Product Delivery:** Successfully delivered 5+ production data products at Accenture
-- **Pipeline Optimization:** Reduced data processing latency by 30% through optimization strategies
-- **Automation Success:** Reduced manual deployment effort by 60% through CI/CD automation
 - **High Uptime:** Achieved 99.5% pipeline uptime for production data products
+- **Pipeline Optimization:** Improved data processing latency by 30% through partitioning, caching, and performance tuning
 
 ---
 
