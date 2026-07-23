@@ -43,8 +43,7 @@ Actively expanding into cloud-native deployment, Kubernetes, Terraform, and prod
 - **PySpark Pipeline Development:** Built modular, reusable PySpark pipelines with comprehensive error handling, retry mechanisms, and schema validation. Developed Python utilities for logging, credential extraction, and data quality checks. Achieved 99.5% pipeline uptime.
 - **Containerization & CI/CD:** Containerized Spark jobs using Docker (base image: harbor.dell.com/customer-lakehouse/spark-py:3.5.5-v14-python3.12) and established GitLab CI/CD pipelines for automated deployment across dev, sit, perf, and prod environments. Reduced manual deployment effort by 60%.
 - **Streaming Integration:** Integrated Apache Kafka and S3A-compatible object storage into pipeline workflows for real-time event processing. Implemented exactly-once semantics using checkpointing and idempotent sinks.
-- **Security & Secrets Management:** Implemented secure credential management using HashiCorp Vault and enterprise certificate stores. Ensured compliance with enterprise data governance standards and NDA requirements.
-- **Testing & Quality Assurance:** Implemented unit test frameworks for Python-based data pipelines using pytest and mocking. Achieved 85% code coverage for critical pipeline components.
+- **Security & Quality:** Implemented secure credential management with HashiCorp Vault and enterprise certificate stores; 85% pytest coverage on critical pipeline components.
 - **Performance Optimization:** Performed data validation, debugging, and performance optimization on production pipelines. Reduced data processing latency by 30% through partitioning and caching strategies.
 - **Infrastructure as Code:** Created DDL scripts and configuration-driven workflows using Git. Established version control for all data pipeline configurations and database schemas.
 
