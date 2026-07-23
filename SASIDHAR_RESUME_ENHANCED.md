@@ -152,7 +152,7 @@ A live portfolio site showcasing data engineering experience, certifications, te
 - **Databricks Certified Data Engineer Associate** – Databricks (Dec 2024)
 - **Databricks PySpark Streaming Training (8 Weeks)** – Accenture (Dec 2023 - Feb 2024)
 - **Google Data Analytics Professional Certificate** – Coursera (2023)
-- **NPTEL MIS** – IIT Madras (2023)
+- **NPTEL Management Information System (MIS)** – Elite · 73% · IIT Kharagpur (Jul–Oct 2022)
 
 ---
 

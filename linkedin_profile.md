@@ -190,7 +190,7 @@ Feb 2024 – Present
 
 - [Google Data Analytics Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/DAZFH4EUB7LG?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Ds12n) – Coursera
 
-- NPTEL MIS – IIT Madras
+- [NPTEL Management Information System (MIS)](https://nptel.ac.in/noc/E_Certificate/NPTEL22MG100S5435012910114355) – Elite · 73% · IIT Kharagpur (Jul–Oct 2022)
 
 
 
