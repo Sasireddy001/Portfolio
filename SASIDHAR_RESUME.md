@@ -23,9 +23,8 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 - **Operated 95%+ overall test coverage** across 60+ pytest suites with mocked components and integration patterns.
 - **Cut manual deployment effort by 60%** by containerizing Spark jobs and automating multi-environment (dev/sit/perf/prod) releases.
 - **Reduced data processing latency by 30%** through partitioning, caching, and performance tuning on production pipelines.
-- **Implemented secure credential management** with HashiCorp Vault and enterprise certificate stores; 95%+ coverage by the unittest scripts for all the files.
-- **Owned end-to-end data quality and platform validation** for 3–4 sprint releases as the primary validation resource, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers.
-- **Drove production data assurance** for SDP and CDP data products through SQL-based reconciliation, data load verification, and documented test evidence enabling clean production sign-off.
+- **Implemented secure credential management** with HashiCorp Vault and enterprise certificate stores; achieved 95%+ test coverage across pipeline components.
+- **Owned end-to-end data quality and platform validation** for 3–4 sprint releases as the primary validation resource, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
 
 ---
 

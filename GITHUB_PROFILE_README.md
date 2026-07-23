@@ -73,6 +73,15 @@ What I bring to a team:
 
 ## Featured Projects
 
+### [Production-Style Kafka → PySpark → Delta Pipeline](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline)
+
+A production-grade streaming pipeline with JSON schema enforcement, bounded watermark deduplication, and idempotent Delta Lake writes.
+
+- 31k–45k rows/sec on a 4-core laptop
+- 95%+ unit test coverage with in-memory Spark fixture
+- AWS MSK Serverless + EMR Serverless Terraform deployment
+- [Architecture](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/ARCHITECTURE.md) · [System Design](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/SYSTEM_DESIGN.md)
+
 ### [Cloud-Native Streaming Data Platform](https://github.com/Sasireddy001/Cloud-data-platform)
 
 A fully Terraform-managed, multi-cloud streaming data platform that ingests events from Azure Event Hubs / AWS MSK, processes them with PySpark Structured Streaming, and writes to Delta Lake.
@@ -81,15 +90,6 @@ A fully Terraform-managed, multi-cloud streaming data platform that ingests even
 - Multi-environment Terraform modules and GitHub Actions CI/CD
 - Infrastructure cost optimization with auto-scaling and spot instances
 - [Architecture](https://github.com/Sasireddy001/Cloud-data-platform/blob/main/ARCHITECTURE.md) · [System Design](https://github.com/Sasireddy001/Cloud-data-platform/blob/main/SYSTEM_DESIGN.md)
-
-### [Production-Style Kafka → PySpark → Delta Pipeline](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline)
-
-A production-grade streaming pipeline with JSON schema enforcement, bounded watermark deduplication, and idempotent Delta Lake writes.
-
-- 31k–45k rows/sec on a 4-core laptop
-- ≥ 95% unit test coverage with in-memory Spark fixture
-- AWS MSK Serverless + EMR Serverless Terraform deployment
-- [Architecture](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/ARCHITECTURE.md) · [System Design](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/SYSTEM_DESIGN.md)
 
 ### [RAG Document QA Chatbot](https://github.com/Sasireddy001/rag-document-qa)
 
@@ -133,6 +133,7 @@ Explore the latest designs: [Cloud Platform](https://github.com/Sasireddy001/Clo
 - Reduced deployment time by 40% with a configuration-driven CDP platform
 - Achieved 99.5% pipeline uptime and cut production incidents by 60%
 - Reduced manual deployment effort by 60% through Dockerized Spark jobs and GitLab CI/CD
+- Owned end-to-end data quality and platform validation for 3–4 sprint releases across Kafka → Stage → Raw → HAST/CDP layers
 
 ---
 

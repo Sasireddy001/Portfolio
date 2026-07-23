@@ -40,7 +40,7 @@
 - **Architecture and System Design docs** published for all major projects with Mermaid diagrams, scalability, fault tolerance, and tradeoff analysis.
 - **New technical blog articles** on Kafka/PySpark/Delta Lake, RAG with FastAPI/ChromaDB, and the Databricks DE Associate journey.
 - **10 ready-to-post LinkedIn technical posts** and a public cloud-native project roadmap.
-- **One-page impact-driven resume** with a regenerated PDF.
+- **One-page impact-driven HTML resume** with live certification verification links.
 
 ## About Me
 
@@ -92,17 +92,14 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 - Built configuration-driven Core Data Product (CDP) platform reducing deployment time by 40%. Designed end-to-end data flows from source systems to SDP and CDP layers for 90+ production PySpark ETL jobs across 4 E2E supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs. Implemented comprehensive testing strategy with 60+ unit test suites achieving 95%+ overall code coverage.
 
-- Designed end-to-end data flows from source systems to SDP and CDP layers.
 
 - Built Kafka-based JSON ingestion pipelines into a lakehouse architecture.
 
-- Implemented unit test frameworks for Python-based data pipelines using pytest and mocking, achieving 95%+ overall code coverage across 60+ test suites.
 
 - Created DDL scripts and configuration-driven workflows using Git.
 
-- Performed data validation, debugging, and performance optimization.
 
-- Worked under strict NDA and enterprise data governance standards.
+- Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers.
 
 
 
