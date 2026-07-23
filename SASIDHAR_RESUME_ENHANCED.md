@@ -44,6 +44,8 @@ Actively expanding into cloud-native deployment, Kubernetes, Terraform, and prod
 - **Containerization & CI/CD:** Containerized Spark jobs using Docker (base image: harbor.dell.com/customer-lakehouse/spark-py:3.5.5-v14-python3.12) and established GitLab CI/CD pipelines for automated deployment across dev, sit, perf, and prod environments. Reduced manual deployment effort by 60%.
 - **Streaming Integration:** Integrated Apache Kafka and S3A-compatible object storage into pipeline workflows for real-time event processing. Implemented exactly-once semantics using checkpointing and idempotent sinks.
 - **Security & Quality:** Implemented secure credential management with HashiCorp Vault and enterprise certificate stores; 95%+ coverage by the unittest scripts for all the files.
+- **Data Quality Engineering:** Owned end-to-end data quality and platform validation for 3–4 sprint releases as the primary validation resource, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers.
+- **Production Data Assurance:** Drove data load verification, SQL-based reconciliation, and test evidence documentation for SDP and CDP data products, enabling clean production sign-off and reducing release risk.
 - **Performance Optimization:** Performed data validation, debugging, and performance optimization on production pipelines. Reduced data processing latency by 30% through partitioning and caching strategies.
 - **Infrastructure as Code:** Created DDL scripts and configuration-driven workflows using Git. Established version control for all data pipeline configurations and database schemas.
 
