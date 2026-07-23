@@ -23,7 +23,7 @@ Data Platform Engineer with 2.7 years of experience building production-grade da
 - **Operated 95%+ overall test coverage** across 60+ pytest suites with mocked components and integration patterns.
 - **Cut manual deployment effort by 60%** by containerizing Spark jobs and automating multi-environment (dev/sit/perf/prod) releases.
 - **Reduced data processing latency by 30%** through partitioning, caching, and performance tuning on production pipelines.
-- **Implemented secure credential management** with HashiCorp Vault and enterprise certificate stores; 85% pytest coverage on critical pipeline components.
+- **Implemented secure credential management** with HashiCorp Vault and enterprise certificate stores; 95%+ coverage by the unittest scripts for all the files.
 
 ---
 
