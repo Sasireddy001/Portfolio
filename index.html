@@ -592,18 +592,18 @@
       <div class="section-header reveal">
         <div class="eyebrow">About</div>
         <h2>Engineering Data Platforms at Scale</h2>
-        <p>I specialize in turning high-velocity event streams into reliable, AI-ready data products. With hands-on experience across the full data lifecycle, I design, build, and operate production-grade platforms.</p>
+        <p>I specialize in turning high-velocity event streams into reliable, AI-ready data products. With hands-on experience across the full data lifecycle, I design, build, and support production-grade data platforms.</p>
       </div>
       <div class="about-grid reveal">
         <div class="about-text">
           <p>I am a <strong>Data & AI Platform Engineer</strong> with 2+ years of experience building production-grade streaming data products and lakehouse systems at Accenture.</p>
           <p>My core focus is on configuration-driven data platforms, real-time pipelines, lakehouse architectures, and the engineering discipline that makes production systems reliable — testing, CI/CD, observability, and security.</p>
           <ul class="about-list">
-            <li>Built a configuration-driven CDP platform that reduced deployment time by 40%</li>
-            <li>Delivered 5+ enterprise data products across batch and streaming architectures</li>
-            <li>Achieved 99.5% pipeline uptime for production data products</li>
-            <li>95%+ coverage by the unittest scripts for all the files</li>
-            <li>Reduced data processing latency by 30% through partitioning and caching strategies</li>
+            <li>Delivered 90+ production PySpark ETL jobs supporting 67 SDPs and 120+ CDPs through Python, JSON configuration, and DDL</li>
+            <li>Reduced deployment time by 40% with configuration-driven pipeline definitions and reusable Python utilities</li>
+            <li>Achieved 99.5% pipeline uptime through modular PySpark pipelines with schema validation and data quality checks</li>
+            <li>Maintained 95%+ test coverage across 60+ pytest suites with mocked components</li>
+            <li>Owned end-to-end data quality and platform validation for 3–4 sprint releases across Kafka → Stage → Raw → HAST/CDP layers</li>
           </ul>
         </div>
         <div class="about-visual">
@@ -630,7 +630,7 @@
       <div class="section-header reveal">
         <div class="eyebrow">Experience</div>
         <h2>Accenture — Enterprise Data Engineering</h2>
-        <p>Hands-on ownership of a configuration-driven Core Data Product platform serving end-to-end supply-chain data products.</p>
+        <p>Hands-on development and validation of a configuration-driven Core Data Product platform serving end-to-end supply-chain data products.</p>
       </div>
       <div class="exp-grid reveal">
         <div class="card exp-card">
@@ -639,18 +639,16 @@
             <h3>Data Engineer</h3>
             <div class="exp-meta">Accenture · Feb 2024 – Present · Bengaluru, India</div>
             <ul class="exp-list">
-              <li>Built and operated a configuration-driven Core Data Product (CDP) platform using PySpark, Docker, and GitLab CI/CD, reducing deployment time by 40%.</li>
-              <li>Delivered 5+ enterprise data products across batch and streaming architectures with end-to-end SDP and CDP data flows.</li>
-              <li>Developed modular, reusable PySpark pipelines with comprehensive error handling, retry mechanisms, and schema validation, achieving 99.5% pipeline uptime.</li>
-              <li>Containerized Spark jobs using Docker and established GitLab CI/CD for dev, sit, perf, and prod, reducing manual deployment effort by 60%.</li>
-              <li>Integrated Apache Kafka and S3A-compatible object storage for real-time event processing with exactly-once semantics.</li>
-              <li>Implemented secure credential management with HashiCorp Vault and enterprise certificate stores; 95%+ coverage by the unittest scripts for all the files.</li>
-              <li>Owned end-to-end data quality and platform validation for 3–4 sprint releases as the primary validation resource, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers.</li>
-              <li>Drove production data assurance for SDP and CDP data products through SQL-based reconciliation, data load verification, and documented test evidence enabling clean production sign-off.</li>
-              <li>Optimized production pipelines through partitioning and caching, reducing data processing latency by 30%.</li>
+              <li>Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs through Python development, JSON configuration, and DDL development.</li>
+              <li>Reduced deployment time by 40% by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.</li>
+              <li>Achieved 99.5% pipeline uptime through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.</li>
+              <li>Maintained 95%+ overall test coverage across 60+ pytest suites with mocked components and integration patterns.</li>
+              <li>Improved data processing latency by 30% through partitioning, caching, and performance tuning on production pipelines.</li>
+              <li>Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and prepared SQL-based reconciliation evidence for clean production sign-off.</li>
+              <li>Developed Kafka consumer and validation workflows, DDL scripts, and validation/reconciliation queries for real-time SDP/CDP data processing, and monitored and troubleshot production pipelines.</li>
             </ul>
             <div class="exp-tags">
-              <span>PySpark</span><span>Kafka</span><span>Delta Lake</span><span>Databricks</span><span>GitLab CI/CD</span><span>Vault</span><span>Python</span>
+              <span>PySpark</span><span>Kafka</span><span>Delta Lake</span><span>Databricks</span><span>GitLab CI/CD</span><span>Python</span>
             </div>
           </div>
         </div>
