@@ -30,8 +30,8 @@
       margin: 0;
       padding: 0;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 9.5pt;
-      line-height: 1.35;
+      font-size: 9pt;
+      line-height: 1.25;
       color: var(--ink);
       background: #F1F5F9;
     }
@@ -40,7 +40,7 @@
       width: 210mm;
       min-height: 297mm;
       margin: 0 auto;
-      padding: 10mm 12mm;
+      padding: 7mm 9mm;
       background: var(--bg);
       box-shadow: 0 0 0 1px var(--rule);
     }
@@ -48,12 +48,12 @@
     /* Header */
     header {
       border-bottom: 2px solid var(--accent);
-      padding-bottom: 6px;
-      margin-bottom: 10px;
+      padding-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     .name {
-      font-size: 26pt;
+      font-size: 23pt;
       font-weight: 700;
       letter-spacing: -0.5px;
       color: var(--ink);
@@ -69,7 +69,7 @@
     }
 
     .role {
-      font-size: 12pt;
+      font-size: 11pt;
       font-weight: 600;
       color: var(--accent);
     }
@@ -87,8 +87,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px 16px;
-      margin-top: 4px;
-      font-size: 9pt;
+      margin-top: 2px;
+      font-size: 8.5pt;
       color: var(--muted);
     }
 
@@ -99,7 +99,7 @@
 
     /* Sections */
     section {
-      margin-bottom: 8px;
+      margin-bottom: 5px;
       page-break-inside: avoid;
     }
 
@@ -110,33 +110,33 @@
       letter-spacing: 1.2px;
       color: var(--ink);
       border-bottom: 1px solid var(--rule);
-      padding-bottom: 3px;
-      margin: 0 0 5px 0;
+      padding-bottom: 2px;
+      margin: 0 0 2px 0;
     }
 
     p {
-      margin: 0 0 4px 0;
+      margin: 0 0 2px 0;
     }
 
     .summary {
       color: var(--muted);
-      font-size: 9.5pt;
-      line-height: 1.35;
+      font-size: 9pt;
+      line-height: 1.25;
     }
 
     /* Lists */
     ul {
-      margin: 3px 0 0 0;
-      padding-left: 16px;
+      margin: 2px 0 0 0;
+      padding-left: 14px;
     }
 
     li {
-      margin-bottom: 2px;
+      margin-bottom: 1px;
     }
 
     /* Experience */
     .job {
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .job-head {
@@ -171,9 +171,9 @@
     .skill-grid {
       display: grid;
       grid-template-columns: 100px 1fr;
-      row-gap: 3px;
+      row-gap: 1px;
       column-gap: 8px;
-      font-size: 9pt;
+      font-size: 8.5pt;
     }
 
     .skill-label {
@@ -187,12 +187,12 @@
 
     /* Projects */
     .project {
-      margin-bottom: 6px;
+      margin-bottom: 3px;
     }
 
     .project-title {
       font-weight: 700;
-      font-size: 10.5pt;
+      font-size: 10pt;
       color: var(--accent);
       margin: 0;
     }
@@ -222,27 +222,27 @@
     }
 
     .compact-list {
-      margin: 2px 0 0 0;
-      padding-left: 14px;
-      font-size: 9pt;
+      margin: 1px 0 0 0;
+      padding-left: 12px;
+      font-size: 8.5pt;
       color: var(--muted);
     }
 
     .compact-list li {
-      margin-bottom: 1px;
+      margin-bottom: 0;
     }
 
     /* Certs */
     .cert-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4px 10px;
-      font-size: 9pt;
+      gap: 2px 8px;
+      font-size: 8.5pt;
     }
 
     .cert-item {
       border-left: 3px solid var(--accent);
-      padding: 3px 6px;
+      padding: 2px 5px;
       background: var(--subtle);
       border-radius: 4px;
       color: var(--muted);
@@ -257,7 +257,7 @@
     .edu-line {
       display: flex;
       justify-content: space-between;
-      font-size: 9.5pt;
+      font-size: 9pt;
     }
 
     @media print {
@@ -353,9 +353,7 @@
           <li><span class="metric">Reduced deployment time by 40%</span> by building a configuration-driven CDP platform with PySpark, Docker, and GitLab CI/CD. <span class="tech">(PySpark, Docker, CI/CD, Databricks)</span></li>
           <li><span class="metric">Delivered 5+ enterprise data products</span> across batch and streaming architectures with end-to-end SDP and CDP data flows. <span class="tech">(Azure, AWS, Delta Lake)</span></li>
           <li><span class="metric">Achieved 99.5% pipeline uptime</span> through modular PySpark pipelines with error handling, retry mechanisms, and schema validation. <span class="tech">(PySpark, Kafka, Delta Lake)</span></li>
-          <li><span class="metric">Reduced manual deployment effort by 60%</span> by containerizing Spark jobs and automating CI/CD across dev, sit, perf, and prod. <span class="tech">(Docker, GitLab CI/CD, Vault)</span></li>
           <li><span class="metric">Reduced data processing latency by 30%</span> through partitioning, caching, and performance optimization strategies. <span class="tech">(PySpark, Delta Lake, SQL)</span></li>
-          <li>Integrated Apache Kafka and S3A-compatible object storage for real-time event processing with exactly-once semantics.</li>
           <li>Implemented secure credential management with HashiCorp Vault and enterprise certificate stores; achieved 95%+ test coverage across pipeline components.</li>
           <li><span class="metric">Owned end-to-end data quality and platform validation</span> for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers and preparing SQL-based reconciliation evidence for clean production sign-off. <span class="tech">(SQL, Kafka, Data Quality, Platform Validation)</span></li>
         </ul>
@@ -369,7 +367,6 @@
         <div class="project-title">Cloud-Native Streaming Data Platform</div>
         <div class="project-sub">github.com/Sasireddy001/Cloud-data-platform</div>
         <ul class="compact-list">
-          <li><strong>Stack:</strong> Azure Event Hubs · Databricks · ADLS Gen2 · Delta Lake · Terraform · GitHub Actions</li>
           <li><strong>Impact:</strong> 99.9% data accuracy, exactly-once streaming, modular Terraform reducing setup time by 50%</li>
           <li><strong>Highlights:</strong> Multi-environment IaC, auto-scaling, spot-instance cost optimization, schema evolution</li>
         </ul>
@@ -379,7 +376,6 @@
         <div class="project-title">RAG Document QA Chatbot</div>
         <div class="project-sub">github.com/Sasireddy001/rag-document-qa</div>
         <ul class="compact-list">
-          <li><strong>Stack:</strong> FastAPI · Streamlit · ChromaDB · OpenAI · Sentence-Transformers</li>
           <li><strong>Impact:</strong> 85% retrieval accuracy, 70% fewer API calls through intelligent caching</li>
           <li><strong>Highlights:</strong> PDF/DOCX/TXT ingestion, modular LLM backends, comprehensive pytest coverage</li>
         </ul>
@@ -389,7 +385,6 @@
         <div class="project-title">Kafka → PySpark → Delta Pipeline</div>
         <div class="project-sub">github.com/Sasireddy001/Kafka-pyspark-delta-pipeline</div>
         <ul class="compact-list">
-          <li><strong>Stack:</strong> Apache Kafka · PySpark · Delta Lake · Databricks · GitHub Actions</li>
           <li><strong>Impact:</strong> 1M+ events/hour, 95%+ pytest coverage, fault-tolerant exactly-once checkpointing</li>
           <li><strong>Highlights:</strong> JSON schema enforcement, automatic retry with exponential backoff, AWS Terraform deployment</li>
         </ul>
