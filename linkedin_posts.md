@@ -13,7 +13,7 @@ What that means in numbers:
 - 67 Source Data Products (SDPs) and 120+ Core Data Products (CDPs)
 - 95%+ test coverage across 60+ pytest suites
 - 99.5% pipeline uptime
-- 70% faster deployments after moving to JSON-based job definitions and parent-child GitLab CI/CD pipelines
+- 40% faster deployments after moving to JSON-based job definitions and parent-child GitLab CI/CD pipelines
 
 The biggest lesson? Production data engineering is not just about writing PySpark. It is about modular Python utilities, schema validation, retry logic, secrets management with HashiCorp Vault, and testing discipline.
 
@@ -32,7 +32,7 @@ What it includes:
 - Watermark-based deduplication with exactly-once semantics
 - Checkpointing and Delta Lake idempotent writes
 - Environment-driven configuration for Databricks / local / EMR Serverless
-- 90%+ pytest coverage with an in-memory Spark fixture
+- 95%+ pytest coverage with an in-memory Spark fixture
 - Throughput benchmark: 31k–45k rows/sec on a 4-core laptop
 
 I also added an AWS deployment using MSK Serverless + EMR Serverless + S3, fully managed with Terraform and GitHub Actions.

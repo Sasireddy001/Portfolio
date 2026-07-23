@@ -23,15 +23,15 @@
 
     @page {
       size: A4;
-      margin: 10mm 12mm;
+      margin: 8mm 10mm;
     }
 
     body {
       margin: 0;
       padding: 0;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 10pt;
-      line-height: 1.45;
+      font-size: 9.5pt;
+      line-height: 1.35;
       color: var(--ink);
       background: #F1F5F9;
     }
@@ -40,7 +40,7 @@
       width: 210mm;
       min-height: 297mm;
       margin: 0 auto;
-      padding: 12mm 14mm;
+      padding: 10mm 12mm;
       background: var(--bg);
       box-shadow: 0 0 0 1px var(--rule);
     }
@@ -48,14 +48,14 @@
     /* Header */
     header {
       border-bottom: 2px solid var(--accent);
-      padding-bottom: 8px;
-      margin-bottom: 12px;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     .name {
-      font-size: 30pt;
+      font-size: 26pt;
       font-weight: 700;
-      letter-spacing: -0.8px;
+      letter-spacing: -0.5px;
       color: var(--ink);
       line-height: 1.1;
       margin: 0;
@@ -87,8 +87,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px 16px;
-      margin-top: 6px;
-      font-size: 9.5pt;
+      margin-top: 4px;
+      font-size: 9pt;
       color: var(--muted);
     }
 
@@ -99,18 +99,19 @@
 
     /* Sections */
     section {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      page-break-inside: avoid;
     }
 
     h2 {
-      font-size: 11pt;
+      font-size: 10pt;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1.2px;
       color: var(--ink);
       border-bottom: 1px solid var(--rule);
       padding-bottom: 3px;
-      margin: 0 0 7px 0;
+      margin: 0 0 5px 0;
     }
 
     p {
@@ -119,23 +120,23 @@
 
     .summary {
       color: var(--muted);
-      font-size: 10.2pt;
-      line-height: 1.45;
+      font-size: 9.5pt;
+      line-height: 1.35;
     }
 
     /* Lists */
     ul {
-      margin: 4px 0 0 0;
+      margin: 3px 0 0 0;
       padding-left: 16px;
     }
 
     li {
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
     /* Experience */
     .job {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .job-head {
@@ -170,9 +171,9 @@
     .skill-grid {
       display: grid;
       grid-template-columns: 100px 1fr;
-      row-gap: 4px;
+      row-gap: 3px;
       column-gap: 8px;
-      font-size: 9.5pt;
+      font-size: 9pt;
     }
 
     .skill-label {
@@ -186,12 +187,12 @@
 
     /* Projects */
     .project {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .project-title {
       font-weight: 700;
-      font-size: 10.2pt;
+      font-size: 10.5pt;
       color: var(--accent);
       margin: 0;
     }
@@ -214,34 +215,36 @@
     .tags li {
       background: var(--subtle);
       color: var(--muted);
-      font-size: 8.5pt;
-      padding: 1px 7px;
+      font-size: 8pt;
+      padding: 1px 6px;
       border-radius: 4px;
       margin: 0;
     }
 
     .compact-list {
-      margin: 3px 0 0 0;
-      padding-left: 15px;
-      font-size: 9.5pt;
+      margin: 2px 0 0 0;
+      padding-left: 14px;
+      font-size: 9pt;
       color: var(--muted);
     }
 
     .compact-list li {
-      margin-bottom: 2px;
+      margin-bottom: 1px;
     }
 
     /* Certs */
     .cert-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4px 14px;
-      font-size: 9.5pt;
+      gap: 4px 10px;
+      font-size: 9pt;
     }
 
     .cert-item {
       border-left: 3px solid var(--accent);
-      padding-left: 8px;
+      padding: 3px 6px;
+      background: var(--subtle);
+      border-radius: 4px;
       color: var(--muted);
     }
 
@@ -266,6 +269,10 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        min-height: auto;
+      }
+      section, .job, .project, .cert-grid {
+        page-break-inside: avoid;
       }
       a {
         color: var(--ink);
@@ -277,7 +284,7 @@
 <body>
   <div class="page">
     <header>
-      <div class="name">Sasidhar Mopuru</div>
+      <h1 class="name">Sasidhar Mopuru</h1>
       <div class="role-row">
         <div class="role">Data & AI Platform Engineer</div>
         <div class="badge">Databricks Certified</div>

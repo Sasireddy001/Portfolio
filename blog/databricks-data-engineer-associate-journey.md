@@ -2,7 +2,7 @@
 
 ## Why I Chose This Certification
 
-As a **Data Platform Engineer** working daily with **PySpark**, **Delta Lake**, and **Databricks**, I wanted a credential that validated my production-grade skills, not just theory. The **Databricks Data Engineer Associate** exam focuses on the **Lakehouse Platform**, **ETL with Apache Spark**, **Delta Lake operations**, and production workflows — exactly the stack I use at work.
+As a **Data & AI Platform Engineer** working daily with **PySpark**, **Delta Lake**, and **Databricks**, I wanted a credential that validated my production-grade skills, not just theory. The **Databricks Data Engineer Associate** exam focuses on the **Lakehouse Platform**, **ETL with Apache Spark**, **Delta Lake operations**, and production workflows — exactly the stack I use at work.
 
 ## What the Exam Covers
 

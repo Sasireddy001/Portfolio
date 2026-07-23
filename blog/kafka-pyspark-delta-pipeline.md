@@ -68,7 +68,7 @@ Unbounded state is a common failure mode in streaming joins and `dropDuplicates`
 The same code runs locally, on Databricks, and on AWS EMR Serverless. Kafka brokers, Delta paths, and checkpoint locations are read from environment variables, making the package portable across environments.
 
 ### 4. Testing Strategy
-Core transformation logic is unit-tested with `pytest` and an in-memory Spark fixture. Mocks isolate Kafka and external state, achieving **90%+ coverage** on the transformation module.
+Core transformation logic is unit-tested with `pytest` and an in-memory Spark fixture. Mocks isolate Kafka and external state, achieving **95%+ coverage** on the transformation module.
 
 ## Performance Benchmarks
 
