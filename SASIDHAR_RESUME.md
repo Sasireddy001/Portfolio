@@ -61,7 +61,7 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 
 ## CERTIFICATIONS
 
-- [DP-700: Implementing Data Engineering Solutions using Microsoft Fabric](https://learn.microsoft.com/api/credentials/share/en-us/MopuruSasidhar-4473/13AA53E82F21D70C?sharingId=57F4CD5FCA3B941E) — Microsoft (2024)
+- [DP-700: Implementing Data Engineering Solutions using Microsoft Fabric](https://learn.microsoft.com/api/credentials/share/en-us/MopuruSasidhar-4473/13AA53E82F21D70C?sharingId=57F4CD5FCA3B941E) — Microsoft (Dec 2025)
 - [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/550e3234-a017-4afd-a236-5d695da5c212?utm_source=whatsapp&utm_medium=social) — Databricks (2024)
 - Databricks PySpark Streaming Training (8 Weeks) — Accenture (2024)
 - [Google Data Analytics Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/DAZFH4EUB7LG?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Ds12n) — Coursera (2023)

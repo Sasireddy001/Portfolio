@@ -148,7 +148,7 @@ A live portfolio site showcasing data engineering experience, certifications, te
 
 ## CERTIFICATIONS
 
-- **DP-700: Implementing Data Engineering Solutions using Microsoft Fabric** – Microsoft (2024)
+- **DP-700: Implementing Data Engineering Solutions using Microsoft Fabric** – Microsoft (Dec 2025)
 - **Databricks Certified Data Engineer Associate** – Databricks (2024)
 - **Databricks PySpark Streaming Training (8 Weeks)** – Accenture (2024)
 - **Google Data Analytics Professional Certificate** – Coursera (2023)
