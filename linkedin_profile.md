@@ -44,6 +44,8 @@ I build real-time, reliable data platforms that turn high-velocity event streams
 
 At Accenture, my current focus is building and operating a configuration-driven **Core Data Product (CDP) platform**. I design Source-to-Core Data Product pipelines with PySpark, deploy Dockerized Spark jobs through GitLab CI/CD across dev, sit, perf, and prod, and integrate Kafka, S3A-compatible object storage, and HashiCorp Vault for secure, production-grade data workflows.
 
+I also own end-to-end data quality and platform validation for sprint releases, acting as the primary validation resource for SDP and CDP data products. I validate schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and I prepare test evidence and SQL-based reconciliation reports that support clean production sign-off.
+
 
 
 Featured work:
