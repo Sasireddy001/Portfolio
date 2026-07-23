@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LinkedIn Banner</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1584px; height: 396px; overflow: hidden; }
+  body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: #0B1220;
+  }
+  .banner {
+    position: relative;
+    width: 1584px;
+    height: 396px;
+    background:
+      radial-gradient(circle at 70% 20%, rgba(37, 99, 235, 0.22) 0%, transparent 45%),
+      radial-gradient(circle at 90% 75%, rgba(6, 182, 212, 0.16) 0%, transparent 40%),
+      linear-gradient(135deg, #0B1220 0%, #14254A 50%, #0B1220 100%);
+  }
+  .abstract {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1584px;
+    height: 396px;
+    z-index: 0;
+    opacity: 0.40;
+    pointer-events: none;
+  }
+  .safe-zone {
+    position: absolute;
+    left: 580px;
+    top: 68px;
+    width: 740px;
+    z-index: 2;
+  }
+  .name {
+    font-size: 58px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -1.2px;
+    margin-bottom: 8px;
+    line-height: 1.05;
+    text-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  }
+  .title {
+    font-size: 27px;
+    font-weight: 600;
+    color: #93c5fd;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  }
+  .title .accent {
+    color: #06b6d4;
+  }
+  .skills {
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+    line-height: 1.3;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  }
+  .tagline {
+    font-size: 20px;
+    font-weight: 400;
+    color: #22d3ee;
+    letter-spacing: 0.4px;
+    line-height: 1.3;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  }
+</style>
+</head>
+<body>
+  <svg class="abstract" viewBox="0 0 1584 396" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#2563EB" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.75"/>
+        <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+      </linearGradient>
+      <radialGradient id="nodeGrad" cx="50%" cy="50%">
+        <stop offset="0%" stop-color="#06B6D4"/>
+        <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <!-- Streaming data flow kept clear of the bottom-left photo overlap -->
+    <g stroke="url(#lineGrad)" stroke-width="2.5" fill="none" stroke-dasharray="10,10" opacity="0.55">
+      <path d="M500 120 Q 850 60, 1100 120 T 1584 100" />
+      <path d="M500 170 Q 850 120, 1100 170 T 1584 150" />
+      <path d="M620 0 Q 1000 120, 1300 220 T 1584 396" />
+    </g>
+
+    <!-- Subtle distributed-systems grid concentrated top-right -->
+    <g stroke="#2563EB" stroke-width="0.8" fill="none" opacity="0.18">
+      <path d="M800 0 L800 200 M1000 0 L1000 200 M1200 0 L1200 250 M1400 0 L1400 250" />
+      <path d="M600 80 L1584 80 M600 160 L1584 160" />
+    </g>
+
+    <!-- Abstract nodes -->
+    <circle cx="850" cy="105" r="9" fill="url(#nodeGrad)" opacity="0.85" />
+    <circle cx="1120" cy="145" r="13" fill="url(#nodeGrad)" opacity="0.85" />
+    <circle cx="1320" cy="95" r="10" fill="url(#nodeGrad)" opacity="0.85" />
+    <circle cx="1500" cy="185" r="11" fill="url(#nodeGrad)" opacity="0.85" />
+
+    <!-- Connections -->
+    <line x1="850" y1="105" x2="1120" y2="145" stroke="#06B6D4" stroke-width="1.2" opacity="0.25" />
+    <line x1="1120" y1="145" x2="1320" y2="95" stroke="#06B6D4" stroke-width="1.2" opacity="0.25" />
+    <line x1="1320" y1="95" x2="1500" y2="185" stroke="#06B6D4" stroke-width="1.2" opacity="0.25" />
+  </svg>
+
+  <div class="banner">
+    <div class="safe-zone">
+      <div class="name">Sasidhar Mopuru</div>
+      <div class="title">Data &amp; AI Platform Engineer <span class="accent">|</span> Databricks Certified</div>
+      <div class="skills">PySpark &nbsp;•&nbsp; Kafka &nbsp;•&nbsp; Delta Lake &nbsp;•&nbsp; Python</div>
+      <div class="tagline">Building Real-Time Streaming &amp; AI-Ready Data Systems</div>
+    </div>
+  </div>
+</body>
+</html>
