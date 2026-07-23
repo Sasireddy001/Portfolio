@@ -1,6 +1,6 @@
 # SASIDHAR MOPURU
 
-**Data Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python**
+**Data & AI Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Building Real-Time Streaming & AI-Ready Data Systems**
 
 Bengaluru, India | +91 63029 60712 | sasidharmopuru@gmail.com  
 [LinkedIn](https://www.linkedin.com/in/sasidhar-mopuru-417a03233) | [GitHub](https://github.com/Sasireddy001) | [Portfolio](https://sasireddy001.github.io/Portfolio/)
@@ -9,7 +9,7 @@ Bengaluru, India | +91 63029 60712 | sasidharmopuru@gmail.com
 
 ## SUMMARY
 
-Data Platform Engineer with 2.7 years of experience building production-grade data pipelines, streaming platforms, and lakehouse systems at Accenture. Proven track record delivering 90+ PySpark ETL jobs across 67 source data products and 120+ core data products, with 99.5% uptime and 95%+ test coverage. Databricks DE Associate and DP-700 (Microsoft Fabric) certified. Expanding into cloud-native data platforms, RAG/LLM applications, and platform engineering.
+Data & AI Platform Engineer with 2+ years of experience building production-grade data pipelines, streaming platforms, and lakehouse systems at Accenture. Proven track record delivering 90+ PySpark ETL jobs across 67 source data products and 120+ core data products, with 99.5% uptime and 95%+ test coverage. Databricks DE Associate and DP-700 (Microsoft Fabric) certified. Expanding into cloud-native data platforms, RAG/LLM applications, and platform engineering.
 
 ---
 
@@ -18,7 +18,7 @@ Data Platform Engineer with 2.7 years of experience building production-grade da
 ### **Data Engineer — Accenture** | *Feb 2024 – Present | Bengaluru, India*
 
 - **Delivered** 90+ production PySpark ETL jobs across 4 end-to-end supply-chain sub-domains, supporting **67 SDPs** and **120+ CDPs**.
-- **Reduced deployment time by 70%** by building a configuration-driven Core Data Product (CDP) platform using JSON job definitions, Docker, and parent-child GitLab CI/CD pipelines.
+- **Reduced deployment time by 40%** by building a configuration-driven Core Data Product (CDP) platform using JSON job definitions, Docker, and parent-child GitLab CI/CD pipelines.
 - **Achieved 99.5% pipeline uptime** and reduced production incidents by 60% through modular Python utilities, schema validation, retry mechanisms, and comprehensive data quality checks.
 - **Operated 95%+ overall test coverage** across 60+ pytest suites with mocked components and integration patterns.
 - **Cut manual deployment effort by 60%** by containerizing Spark jobs and automating multi-environment (dev/sit/perf/prod) releases.
