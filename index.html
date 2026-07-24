@@ -500,6 +500,108 @@
     .text-secondary { color: var(--text-secondary); }
     .text-muted { color: var(--text-muted); }
     .mb-0 { margin-bottom: 0; }
+  /* Process Workflow */
+  .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+  .process-card { text-align: center; padding: 34px 24px; }
+  .process-step {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #fff; display: flex; align-items: center; justify-content: center;
+    font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px;
+    margin: 0 auto 18px; box-shadow: var(--glow);
+  }
+  .process-card h3 { font-size: 18px; margin-bottom: 10px; }
+  .process-card p { color: var(--text-secondary); font-size: 14px; line-height: 1.55; }
+
+  /* Core Competencies */
+  .competencies-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .competency-card { padding: 28px; text-align: center; }
+  .competency-icon {
+    width: 52px; height: 52px; border-radius: 14px;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(139, 92, 246, 0.16));
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+  }
+  .competency-icon svg { width: 26px; height: 26px; stroke: var(--secondary); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .competency-card h3 { font-size: 18px; margin-bottom: 10px; }
+  .competency-card p { color: var(--text-secondary); font-size: 14px; line-height: 1.55; }
+
+  /* Contact Form */
+  .contact-form {
+    max-width: 640px;
+    margin: 40px auto 0;
+    padding: 32px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(16px);
+    box-shadow: var(--shadow);
+  }
+  .form-row { margin-bottom: 18px; }
+  .form-row label { display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; }
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color var(--transition), box-shadow var(--transition);
+  }
+  .form-row input:focus,
+  .form-row textarea:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  }
+  .contact-form .consent { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px; font-size: 13px; color: var(--text-secondary); }
+  .contact-form .consent input { width: auto; margin-top: 3px; }
+  .contact-form .response-time { text-align: center; color: var(--text-muted); font-size: 13px; margin-top: 14px; }
+  .contact-form .form-note { text-align: center; color: var(--text-muted); font-size: 12px; margin-top: 12px; }
+
+  /* Dynamic Footer */
+  footer { padding: 60px 0 30px; border-top: 1px solid var(--border); background: rgba(11, 16, 32, 0.6); }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .footer-brand .logo { margin-bottom: 12px; display: inline-block; }
+  .footer-brand p { color: var(--text-secondary); font-size: 15px; margin-bottom: 16px; }
+  .availability-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 16px; border-radius: 999px;
+    background: rgba(34, 197, 94, 0.12); border: 1px solid rgba(34, 197, 94, 0.25);
+    color: #22c55e; font-size: 13px; font-weight: 600;
+  }
+  .availability-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 10px #22c55e; }
+  .footer-nav h4, .footer-stack h4 { font-size: 14px; color: var(--text-primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .footer-nav a { display: block; color: var(--text-secondary); font-size: 14px; margin-bottom: 10px; transition: color var(--transition); }
+  .footer-nav a:hover { color: var(--text-primary); }
+  .footer-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .footer-tags span { padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text-secondary); font-size: 13px; }
+  .footer-bottom { text-align: center; color: var(--text-muted); font-size: 14px; padding-top: 30px; border-top: 1px solid var(--border); }
+
+  /* Project link disabled state */
+  .project-link-disabled {
+    padding: 8px 14px; border-radius: 8px; background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border); color: var(--text-muted); font-size: 13px; font-weight: 600;
+  }
+
+  @media (max-width: 980px) {
+    .process-grid, .competencies-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .process-grid, .competencies-grid { grid-template-columns: 1fr; }
+    .contact-form { padding: 24px; }
+  }
+
   </style>
 </head>
 <body>
@@ -625,6 +727,38 @@
     </div>
   </section>
 
+  <section id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">Workflow</div>
+        <h2>How I Build Data Platforms</h2>
+        <p>From raw requirements to reliable, production-grade data systems.</p>
+      </div>
+      <div class="process-grid reveal">
+        <div class="card process-card">
+          <div class="process-step">1</div>
+          <h3>Research</h3>
+          <p>Understand business requirements, define data contracts, identify data sources.</p>
+        </div>
+        <div class="card process-card">
+          <div class="process-step">2</div>
+          <h3>Design</h3>
+          <p>Architecture, schema planning, and a data quality strategy that scales.</p>
+        </div>
+        <div class="card process-card">
+          <div class="process-step">3</div>
+          <h3>Develop</h3>
+          <p>PySpark pipelines, Kafka integrations, testing, and validation.</p>
+        </div>
+        <div class="card process-card">
+          <div class="process-step">4</div>
+          <h3>Deploy</h3>
+          <p>CI/CD workflows, monitoring, and production support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="experience">
     <div class="container">
       <div class="section-header reveal">
@@ -672,6 +806,7 @@
             <h3>Enterprise Configuration-Driven Data Platform</h3>
             <p>PySpark, Kafka, JSON-based job definitions, DDL, and SQL validation for Accenture SDP/CDP data products.</p>
             <div class="project-metrics"><span>90+ jobs</span><span>40% faster</span><span>99.5% uptime</span><span>95% coverage</span></div>
+            <div class="project-links"><a href="proof.html">Proof of Work →</a><a href="SASIDHAR_RESUME.html">View Resume →</a></div>
           </div>
         </div>
         <div class="card project-card">
@@ -682,7 +817,7 @@
             <h3>Cloud-Native Streaming Data Platform</h3>
             <p>Azure Event Hubs, Databricks, ADLS Gen2, and Terraform. Multi-environment IaC and exactly-once streaming with Delta Lake checkpointing.</p>
             <div class="project-metrics"><span>Azure</span><span>Terraform</span><span>Databricks</span><span>Delta Lake</span></div>
-            <div class="project-links"><a href="https://github.com/Sasireddy001/Cloud-data-platform" target="_blank" rel="noopener">View Repository →</a></div>
+            <div class="project-links"><a href="https://github.com/Sasireddy001/Cloud-data-platform" target="_blank" rel="noopener">GitHub</a><a href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener">Architecture</a><a href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/SYSTEM_DESIGN.md" target="_blank" rel="noopener">System Design</a><span class="project-link-disabled">Live Demo</span></div>
           </div>
         </div>
         <div class="card project-card">
@@ -693,7 +828,7 @@
             <h3>RAG Document QA Chatbot</h3>
             <p>FastAPI + Streamlit app with ChromaDB, sentence-transformers, and OpenAI/LLaMA backends. Response caching and configurable LLM backends.</p>
             <div class="project-metrics"><span>FastAPI</span><span>ChromaDB</span><span>RAG</span></div>
-            <div class="project-links"><a href="https://github.com/Sasireddy001/rag-document-qa" target="_blank" rel="noopener">View Repository →</a></div>
+            <div class="project-links"><a href="https://github.com/Sasireddy001/rag-document-qa" target="_blank" rel="noopener">GitHub</a><a href="https://github.com/Sasireddy001/rag-document-qa/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener">Architecture</a><a href="https://github.com/Sasireddy001/rag-document-qa/blob/main/SYSTEM_DESIGN.md" target="_blank" rel="noopener">System Design</a><span class="project-link-disabled">Live Demo</span></div>
           </div>
         </div>
         <div class="card project-card">
@@ -704,7 +839,7 @@
             <h3>Kafka → PySpark → Delta Pipeline</h3>
             <p>Production-style streaming ingestion, schema enforcement, watermark-based deduplication, and exactly-once checkpointing. Benchmarked at 31k–45k rows/sec on a 4-core laptop.</p>
             <div class="project-metrics"><span>31k–45k rows/sec</span><span>95%+ pytest coverage</span><span>Kafka + Delta</span></div>
-            <div class="project-links"><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline" target="_blank" rel="noopener">View Repository →</a></div>
+            <div class="project-links"><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline" target="_blank" rel="noopener">GitHub</a><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener">Architecture</a><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/SYSTEM_DESIGN.md" target="_blank" rel="noopener">System Design</a><span class="project-link-disabled">Live Demo</span></div>
           </div>
         </div>
       </div>
@@ -778,6 +913,46 @@
           <div class="skill-badges">
             <span>Git</span><span>GitHub Actions</span><span>GitLab CI</span><span>Docker</span><span>Terraform</span><span>Linux</span><span>pytest</span><span>Jira</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competencies">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">Competencies</div>
+        <h2>Core Skills Beyond Code</h2>
+        <p>Engineering maturity that makes a team stronger.</p>
+      </div>
+      <div class="competencies-grid reveal">
+        <div class="card competency-card">
+          <div class="competency-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </div>
+          <h3>Problem Solving</h3>
+          <p>Break down complex data problems into reliable pipelines and tests.</p>
+        </div>
+        <div class="card competency-card">
+          <div class="competency-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Data Quality Engineering</h3>
+          <p>Own validation, reconciliation, and clean production sign-off.</p>
+        </div>
+        <div class="card competency-card">
+          <div class="competency-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="8" height="8" rx="1"/><path d="M10 6h4M6 10v4M18 10v4M10 18h4"/></svg>
+          </div>
+          <h3>System Design</h3>
+          <p>Design scalable streaming and lakehouse architectures end to end.</p>
+        </div>
+        <div class="card competency-card">
+          <div class="competency-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Communication</h3>
+          <p>Translate technical work into clear validation evidence for stakeholders.</p>
         </div>
       </div>
     </div>
@@ -861,18 +1036,62 @@
         <h2>Let's Build Data Platforms Together</h2>
         <p>Open to Data & AI Platform Engineer, Data Engineer, and Cloud Data Engineering roles in Bengaluru and remote. Reach out if you are hiring or want to collaborate.</p>
         <a href="mailto:sasidharmopuru@gmail.com" class="btn btn-primary">sasidharmopuru@gmail.com</a>
+        <p class="response-time">I typically respond within 24–48 hours.</p>
         <div class="contact-links">
           <a href="https://github.com/Sasireddy001" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener">LinkedIn</a>
           <a href="SASIDHAR_RESUME.html" target="_blank" rel="noopener">Resume</a>
         </div>
       </div>
+      <form class="contact-form reveal" action="mailto:sasidharmopuru@gmail.com?subject=Portfolio%20Inquiry" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea>
+        </div>
+        <div class="consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">I give permission to contact me at this email address.</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note">Replace the mailto action with a Formspree endpoint for backend-free handling.</p>
+      </form>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2026 Sasidhar Mopuru. Built with HTML, CSS, and passion for data engineering.</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Sasidhar<span>.</span></div>
+          <p>Data & AI Platform Engineer</p>
+          <span class="availability-badge">Available for opportunities</span>
+        </div>
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-stack">
+          <h4>Core Stack</h4>
+          <div class="footer-tags">
+            <span>PySpark</span><span>Kafka</span><span>Delta Lake</span><span>Python</span><span>Databricks</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sasidhar Mopuru. Built with HTML, CSS, and passion for data engineering.</p>
+      </div>
     </div>
   </footer>
 
