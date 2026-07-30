@@ -13,6 +13,14 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 
 ---
 
+## AVAILABILITY
+
+- Based in Bengaluru, India — open to Bengaluru, hybrid, or remote opportunities
+- Notice period: 90 days
+- Target roles: Data Engineer / Data & AI Platform Engineer / Cloud Data Engineer
+
+---
+
 ## EXPERIENCE
 
 ### **Data Engineer — Accenture** | *Feb 2024 – Present | Bengaluru, India*
@@ -79,3 +87,13 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 - **DevOps:** GitLab CI/CD, GitHub Actions, Docker, Terraform, Linux
 - **AI / LLM:** RAG, LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, OpenAI, Sentence-Transformers
 - **Testing:** pytest, unittest, mocking, test-driven development
+
+---
+
+## OPEN SOURCE
+
+- **Merged:** [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) — TypeScript docs update for Fastify 5.x  
+- **Merged:** [axios/axios#11113](https://github.com/axios/axios/pull/11113) — README stream example fix  
+- **Active:** [strapi/strapi#27152](https://github.com/strapi/strapi/pull/27152), [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680), [trpc/trpc#7452](https://github.com/trpc/trpc/pull/7452), [jsdoc/jsdoc#2176](https://github.com/jsdoc/jsdoc/pull/2176), [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9)  
+- **Review:** [axios/axios#11115](https://github.com/axios/axios/pull/11115) — maintainer-style review  
+- Portfolio: https://sasireddy001.github.io/Portfolio/#oss
