@@ -158,6 +158,29 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 
 
+## Open Source Contributions
+
+### Merged
+
+| PR | Description | Merged |
+|---|---|---|
+| [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) | docs: update TypeScript docs to reference Fastify 5.x | 2026-07-29 |
+| [axios/axios#11113](https://github.com/axios/axios/pull/11113) | docs: add missing `fs` import to README stream example | 2026-07-29 |
+
+### Active
+
+| PR | Description |
+|---|---|
+| [strapi/strapi#27152](https://github.com/strapi/strapi/pull/27152) | Fix `deleteMany` not working when filter by nested entity |
+| [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680) | Add RCS AIDL services and PhoneInfo real-telephony provider |
+| [trpc/trpc#7452](https://github.com/trpc/trpc/pull/7452) | docs: add secure error reporting section |
+| [jsdoc/jsdoc#2176](https://github.com/jsdoc/jsdoc/pull/2176) | docs: align README Node.js requirement with package.json |
+| [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9) | Add `--min-severity` flag to control which findings appear in reports |
+
+### Reviews
+
+- [axios/axios#11115](https://github.com/axios/axios/pull/11115) — maintainer-style review of a documentation/bug fix.
+
 ## Certifications
 
 
@@ -180,37 +203,27 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 ## Technical Skills
 
-
-
-- **Programming:** Python, SQL, PySpark
-
+- **Programming:** Python, SQL, PySpark, TypeScript
 - **Data Engineering:** Apache Kafka, PySpark Streaming, ETL/ELT Pipelines, Data Ingestion, Data Transformation, Batch & Streaming Processing, Microsoft Fabric
-
 - **AI / LLM / App Development:** RAG, LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, GenAI, AI Agents
-
 - **Data Platforms:** Databricks, Apache Spark, Delta Lake, Relational Databases
-
 - **Quality & Testing:** Pytest, Unittest, Mocking, Data Validation, Schema Validation
-
 - **DevOps & Tools:** Git, CI/CD Pipelines, Docker, Terraform, Jira, Agile Scrum
-
 - **Architecture:** Object-Oriented Programming, Modular Coding, YAML/JSON, Logging, Exception Handling, System Design
-
+- **Open Source & Collaboration:** GitHub REST API, Open Source Contribution Workflow, Code Review, Maintainer-Style Reviews
 - **Building Toward:** Cloud (AWS/Azure), Kubernetes, Platform Engineering, Observability
-
-
 
 ## Education & Achievements
 
-
-
 - B.Tech in Computer Science and Engineering – CGPA 7.99
-
 - JEE Mains – 94.14 Percentile
-
 - Enterprise Data Engineer at Accenture
 
+### OSS Achievements
 
+- Merged documentation PR in `fastify/fastify` (2026-07-29)
+- Merged documentation PR in `axios/axios` (2026-07-29)
+- Maintainer-style review of `axios/axios#11115`
 
 ## GitHub Stats
 
