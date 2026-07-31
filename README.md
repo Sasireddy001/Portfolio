@@ -166,16 +166,17 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 |---|---|---|
 | [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) | docs: update TypeScript docs to reference Fastify 5.x | 2026-07-29 |
 | [axios/axios#11113](https://github.com/axios/axios/pull/11113) | docs: add missing `fs` import to README stream example | 2026-07-29 |
+| [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9) | Add `--min-severity` flag to control which findings appear in reports | 2026-07-31 |
+| [Sasireddy001/Microg#1](https://github.com/Sasireddy001/Microg/pull/1) | feat: add microG RCS bounty research and implementation work | 2026-07-28 |
 
 ### Active
 
 | PR | Description |
 |---|---|
-| [strapi/strapi#27152](https://github.com/strapi/strapi/pull/27152) | Fix `deleteMany` not working when filter by nested entity |
-| [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680) | Add RCS AIDL services and PhoneInfo real-telephony provider |
+| [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680) | Add RCS AIDL services and PhoneInfo real-telephony provider *(bounty: [microg/GmsCore#2994](https://github.com/microg/GmsCore/issues/2994))* |
 | [trpc/trpc#7452](https://github.com/trpc/trpc/pull/7452) | docs: add secure error reporting section |
 | [jsdoc/jsdoc#2176](https://github.com/jsdoc/jsdoc/pull/2176) | docs: align README Node.js requirement with package.json |
-| [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9) | Add `--min-severity` flag to control which findings appear in reports |
+| [xxnjms1-code/kickama-prize-lab#33](https://github.com/xxnjms1-code/kickama-prize-lab/pull/33) | [$35 BOUNTY] Coordinate auth token refresh across tabs |
 
 ### Reviews
 
