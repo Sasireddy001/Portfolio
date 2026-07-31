@@ -103,11 +103,12 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 - [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680) — Add RCS AIDL services and PhoneInfo real-telephony provider *(bounty: [microg/GmsCore#2994](https://github.com/microg/GmsCore/issues/2994))*  
 - [trpc/trpc#7452](https://github.com/trpc/trpc/pull/7452) — Add secure error reporting section  
 - [jsdoc/jsdoc#2176](https://github.com/jsdoc/jsdoc/pull/2176) — Align README Node.js requirement with package.json  
+- [xxnjms1-code/kickama-prize-lab#33](https://github.com/xxnjms1-code/kickama-prize-lab/pull/33) — [$35 BOUNTY] Coordinate auth token refresh across tabs  
 
 ### Review
 
 - [axios/axios#11115](https://github.com/axios/axios/pull/11115) — `fix(interceptors): tolerate a falsy handlers array`; maintainer-style review  
 
-*Last verified: 2026-07-31 · 3 merged PRs / 3 active PRs / 1 review*
+*Last verified: 2026-07-31 · 3 merged PRs / 4 active PRs / 1 review*
 
 - Portfolio: https://sasireddy001.github.io/Portfolio/#oss
