@@ -93,5 +93,4 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 
 - **Merged:** [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880), [axios/axios#11113](https://github.com/axios/axios/pull/11113), [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9), [Sasireddy001/Microg#1](https://github.com/Sasireddy001/Microg/pull/1)
 - **Active contributions:** [trpc/trpc#7452](https://github.com/trpc/trpc/pull/7452), [jsdoc/jsdoc#2176](https://github.com/jsdoc/jsdoc/pull/2176), [xxnjms1-code/kickama-prize-lab#33](https://github.com/xxnjms1-code/kickama-prize-lab/pull/33)
-- **Closed (not merged):** [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680) (bounty: [#2994](https://github.com/microg/GmsCore/issues/2994))
 - Portfolio: https://sasireddy001.github.io/Portfolio/#oss
