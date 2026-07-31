@@ -92,8 +92,20 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 
 ## OPEN SOURCE
 
-- **Merged:** [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) — TypeScript docs update for Fastify 5.x  
-- **Merged:** [axios/axios#11113](https://github.com/axios/axios/pull/11113) — README stream example fix  
-- **Active:** [strapi/strapi#27152](https://github.com/strapi/strapi/pull/27152), [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680), [trpc/trpc#7452](https://github.com/trpc/trpc/pull/7452), [jsdoc/jsdoc#2176](https://github.com/jsdoc/jsdoc/pull/2176), [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9)  
-- **Review:** [axios/axios#11115](https://github.com/axios/axios/pull/11115) — maintainer-style review  
+### Merged
+
+- [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) — TypeScript docs update for Fastify 5.x  
+- [axios/axios#11113](https://github.com/axios/axios/pull/11113) — README stream example fix  
+- [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9) — Add `--min-severity` flag to control report findings  
+
+### Active
+
+- [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680) — Add RCS AIDL services and PhoneInfo real-telephony provider  
+- [trpc/trpc#7452](https://github.com/trpc/trpc/pull/7452) — Add secure error reporting section  
+- [jsdoc/jsdoc#2176](https://github.com/jsdoc/jsdoc/pull/2176) — Align README Node.js requirement with package.json  
+
+### Review
+
+- [axios/axios#11115](https://github.com/axios/axios/pull/11115) — `fix(interceptors): tolerate a falsy handlers array`; maintainer-style review  
+
 - Portfolio: https://sasireddy001.github.io/Portfolio/#oss
