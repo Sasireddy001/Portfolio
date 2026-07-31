@@ -222,8 +222,10 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 ### OSS Achievements
 
-- Merged documentation PR in `fastify/fastify` (2026-07-29)
-- Merged documentation PR in `axios/axios` (2026-07-29)
+- Merged documentation PRs in `fastify/fastify#6880` and `axios/axios#11113` (2026-07-29)
+- Merged feature PR `Topicspot/skillfrisk#9` — `--min-severity` flag (2026-07-31)
+- Merged research/implementation PR `Sasireddy001/Microg#1` — microG RCS bounty work (2026-07-28)
+- Active upstream PRs: `microg/GmsCore#3680` (RCS bounty), `trpc/trpc#7452`, `jsdoc/jsdoc#2176`, `xxnjms1-code/kickama-prize-lab#33` ($35 bounty)
 - Maintainer-style review of `axios/axios#11115`
 
 ## GitHub Stats
