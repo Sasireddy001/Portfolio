@@ -173,10 +173,15 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 | PR | Description |
 |---|---|
-| [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680) | Add RCS AIDL services and PhoneInfo real-telephony provider *(bounty: [microg/GmsCore#2994](https://github.com/microg/GmsCore/issues/2994))* |
 | [trpc/trpc#7452](https://github.com/trpc/trpc/pull/7452) | docs: add secure error reporting section |
 | [jsdoc/jsdoc#2176](https://github.com/jsdoc/jsdoc/pull/2176) | docs: align README Node.js requirement with package.json |
 | [xxnjms1-code/kickama-prize-lab#33](https://github.com/xxnjms1-code/kickama-prize-lab/pull/33) | [$35 BOUNTY] Coordinate auth token refresh across tabs |
+
+### Closed (Not Merged)
+
+| PR | Description |
+|---|---|
+| [microg/GmsCore#3680](https://github.com/microg/GmsCore/pull/3680) | Add RCS AIDL services and PhoneInfo real-telephony provider *(bounty: [microg/GmsCore#2994](https://github.com/microg/GmsCore/issues/2994))* |
 
 ### Reviews
 
@@ -225,7 +230,8 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 - Merged documentation PRs in `fastify/fastify#6880` and `axios/axios#11113` (2026-07-29)
 - Merged feature PR `Topicspot/skillfrisk#9` — `--min-severity` flag (2026-07-31)
 - Merged research/implementation PR `Sasireddy001/Microg#1` — microG RCS bounty work (2026-07-28)
-- Active upstream PRs: `microg/GmsCore#3680` (RCS bounty), `trpc/trpc#7452`, `jsdoc/jsdoc#2176`, `xxnjms1-code/kickama-prize-lab#33` ($35 bounty)
+- Active upstream PRs: `trpc/trpc#7452`, `jsdoc/jsdoc#2176`, `xxnjms1-code/kickama-prize-lab#33` ($35 bounty)
+- Closed without merge: `microg/GmsCore#3680` (RCS bounty)
 - Maintainer-style review of `axios/axios#11115`
 
 ## GitHub Stats
