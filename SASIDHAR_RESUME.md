@@ -97,6 +97,7 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 - [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) — TypeScript docs update for Fastify 5.x  
 - [axios/axios#11113](https://github.com/axios/axios/pull/11113) — README stream example fix  
 - [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9) — Add `--min-severity` flag to control report findings  
+- [Sasireddy001/Microg#1](https://github.com/Sasireddy001/Microg/pull/1) — microG RCS bounty research and implementation work (merged 2026-07-28)  
 
 ### Active
 
@@ -109,6 +110,6 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 
 - [axios/axios#11115](https://github.com/axios/axios/pull/11115) — `fix(interceptors): tolerate a falsy handlers array`; maintainer-style review  
 
-*Last verified: 2026-07-31 · 3 merged PRs / 4 active PRs / 1 review*
+*Last verified: 2026-07-31 · 4 merged PRs / 4 active PRs / 1 review*
 
 - Portfolio: https://sasireddy001.github.io/Portfolio/#oss
