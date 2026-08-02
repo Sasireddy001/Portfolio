@@ -64,7 +64,7 @@ I am expanding into cloud-native deployment, Kubernetes, Terraform, and producti
 
 Portfolio: https://sasireddy001.github.io/Portfolio/
 
-Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.html
+Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME_ATS_V2.html
 
 GitHub: https://github.com/Sasireddy001
 
@@ -204,7 +204,7 @@ Madanapalle Institute of Technology & Science | 2023
 
 - [DP-700: Implementing Data Engineering Solutions using Microsoft Fabric](https://learn.microsoft.com/api/credentials/share/en-us/MopuruSasidhar-4473/13AA53E82F21D70C?sharingId=57F4CD5FCA3B941E) – Microsoft
 
-- [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/550e3234-a017-4afd-a236-5d695da5c212?utm_source=whatsapp&utm_medium=social) – Databricks
+- [Databricks Certified Data Engineer Associate](https://www.credly.com/users/sasidhar-mopuru) – Databricks
 
 - Databricks PySpark Streaming Training (8 Weeks) – Accenture
 

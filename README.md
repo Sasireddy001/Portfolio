@@ -24,7 +24,7 @@
 
 [![GitHub  Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
-[![Resume](https://img.shields.io/badge/Resume-View-2563EB)](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.html)
+[![Resume](https://img.shields.io/badge/Resume-View-2563EB)](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME_ATS_V2.html)
 
 
 
@@ -194,7 +194,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 | [DP-700: Implementing Data Engineering Solutions using Microsoft Fabric](https://learn.microsoft.com/api/credentials/share/en-us/MopuruSasidhar-4473/13AA53E82F21D70C?sharingId=57F4CD5FCA3B941E) | Microsoft |
 
-| [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/550e3234-a017-4afd-a236-5d695da5c212?utm_source=whatsapp&utm_medium=social) | Databricks |
+| [Databricks Certified Data Engineer Associate](https://www.credly.com/users/sasidhar-mopuru) | Databricks |
 
 | Databricks PySpark Streaming Training – 8 Weeks | Accenture |
 
@@ -253,7 +253,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 - Portfolio: [sasireddy001.github.io/Portfolio](https://sasireddy001.github.io/Portfolio)
 
-- Resume: [HTML Resume](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.html)
+- Resume: [HTML Resume](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME_ATS_V2.html)
 
 - Email: [sasidharmopuru@gmail.com](mailto:sasidharmopuru@gmail.com)
 

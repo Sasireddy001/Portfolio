@@ -56,7 +56,7 @@
         <li><strong>Documentation discipline:</strong> Every project has architecture and system design docs with diagrams.</li>
         <li><strong>Proof of execution:</strong> Deployment guides, Terraform code, monitoring, and benchmark evidence.</li>
       </ul>
-      <a href="SASIDHAR_RESUME.html" class="btn" target="_blank">View Resume</a>
+      <a href="SASIDHAR_RESUME_ATS_V2.html" class="btn" target="_blank" rel="noopener noreferrer">View Resume</a>
     </div>
 
     <h2>Engineering Practices</h2>
@@ -89,7 +89,7 @@
         <path d="M140 80 H180" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
         <path d="M300 80 H340" stroke="#38bdf8" stroke-width="2"/>
         <path d="M460 80 H500" stroke="#38bdf8" stroke-width="2"/>
-        <text x="60" y="140" fill="#94a3b8" font-size="11">Read more in the repo's <a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/ARCHITECTURE.md" target="_blank">ARCHITECTURE.md</a></text>
+        <text x="60" y="140" fill="#94a3b8" font-size="11">Read more in the repo's <a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer">ARCHITECTURE.md</a></text>
       </svg>
     </div>
     <div class="card">
@@ -97,8 +97,8 @@
       <p><strong>Tradeoffs:</strong> Delta adds metadata overhead but gives ACID and time travel. Watermark bounds memory but drops very late duplicates.</p>
       <p><strong>Failure handling:</strong> Spark checkpoint resumes from last offset; Delta idempotent writes prevent replays from creating duplicates.</p>
       <p><strong>Scalability:</strong> Increase Kafka partitions and Spark executors; partition by `event_date` and `event_hour`.</p>
-      <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/ARCHITECTURE.md" target="_blank">Full Architecture →</a>
-      <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/SYSTEM_DESIGN.md" target="_blank">System Design →</a>
+      <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer">Full Architecture →</a>
+      <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/SYSTEM_DESIGN.md" target="_blank" rel="noopener noreferrer">System Design →</a>
     </div>
 
     <h3>Cloud-Native Streaming Platform</h3>
@@ -122,7 +122,7 @@
       <p><strong>Tradeoffs:</strong> Dual cloud increases module count but reduces vendor lock-in and supports more clients.</p>
       <p><strong>Failure handling:</strong> Terraform state locking, CloudWatch/Azure Monitor alarms, checkpointed Spark state.</p>
       <p><strong>Scalability:</strong> Scale partitions, Spark executors, and storage throughput independently.</p>
-      <a class="btn" href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/ARCHITECTURE.md" target="_blank">Full Architecture →</a>
+      <a class="btn" href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer">Full Architecture →</a>
     </div>
 
     <h3>RAG Document QA</h3>
@@ -149,7 +149,7 @@
       <p><strong>Tradeoffs:</strong> ChromaDB is local-first; Pinecone/pgvector would be used for production scale.</p>
       <p><strong>Failure handling:</strong> Caching reduces redundant API calls; provider abstraction allows graceful fallback.</p>
       <p><strong>Scalability:</strong> Document ingestion can be parallelized by chunk; vector DB is swappable.</p>
-      <a class="btn" href="https://github.com/Sasireddy001/rag-document-qa/blob/main/ARCHITECTURE.md" target="_blank">Full Architecture →</a>
+      <a class="btn" href="https://github.com/Sasireddy001/rag-document-qa/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer">Full Architecture →</a>
     </div>
 
     <h2>Project Case Studies</h2>
@@ -159,29 +159,29 @@
         <p>Real-time streaming ingestion with exactly-once semantics, schema enforcement, and AWS deployment.</p>
         <div><span class="tag">PySpark</span><span class="tag">Kafka</span><span class="tag">Delta Lake</span><span class="tag">AWS</span></div>
         <p><strong>Result:</strong> 31k–45k rows/sec, 95%+ test coverage.</p>
-        <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/CASE_STUDY.md" target="_blank">Read Case Study →</a>
-        <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/DEPLOYMENT.md" target="_blank">Deployment →</a>
+        <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/CASE_STUDY.md" target="_blank" rel="noopener noreferrer">Read Case Study →</a>
+        <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Deployment →</a>
       </div>
       <div class="card">
         <h3 style="margin-top:0">Cloud-Native Streaming</h3>
         <p>Multi-cloud streaming platform with Terraform, Databricks, and managed Kafka/Event Hubs.</p>
         <div><span class="tag">Azure</span><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Databricks</span></div>
         <p><strong>Result:</strong> Reproducible multi-environment infrastructure.</p>
-        <a class="btn" href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/CASE_STUDY.md" target="_blank">Read Case Study →</a>
-        <a class="btn" href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/DEPLOYMENT.md" target="_blank">Deployment →</a>
+        <a class="btn" href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/CASE_STUDY.md" target="_blank" rel="noopener noreferrer">Read Case Study →</a>
+        <a class="btn" href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Deployment →</a>
       </div>
       <div class="card">
         <h3 style="margin-top:0">RAG QA Chatbot</h3>
         <p>FastAPI + ChromaDB retrieval chatbot with FastAPI, Streamlit, and Ollama/OpenAI backends.</p>
         <div><span class="tag">FastAPI</span><span class="tag">ChromaDB</span><span class="tag">LLM</span><span class="tag">RAG</span></div>
         <p><strong>Result:</strong> 85% retrieval accuracy, 70% fewer API calls with caching.</p>
-        <a class="btn" href="https://github.com/Sasireddy001/rag-document-qa/blob/main/CASE_STUDY.md" target="_blank">Read Case Study →</a>
-        <a class="btn" href="https://github.com/Sasireddy001/rag-document-qa/blob/main/DEPLOYMENT.md" target="_blank">Deployment →</a>
+        <a class="btn" href="https://github.com/Sasireddy001/rag-document-qa/blob/main/CASE_STUDY.md" target="_blank" rel="noopener noreferrer">Read Case Study →</a>
+        <a class="btn" href="https://github.com/Sasireddy001/rag-document-qa/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Deployment →</a>
       </div>
     </div>
 
     <h2>Live Demo Evidence</h2>
-    <p>The flagship pipeline has a complete deployment plan for local Docker, Databricks, and AWS. The AWS run produces the evidence below. See <a href="LIVE_DEMO_PLAN.md" target="_blank">LIVE_DEMO_PLAN.md</a> and <a href="PUBLIC_SHOWCASE.md" target="_blank">PUBLIC_SHOWCASE.md</a> for the full execution and showcase strategy.</p>
+    <p>The flagship pipeline has a complete deployment plan for local Docker, Databricks, and AWS. The AWS run produces the evidence below. See <a href="LIVE_DEMO_PLAN.md" target="_blank" rel="noopener noreferrer">LIVE_DEMO_PLAN.md</a> for the full execution and showcase strategy.</p>
 
     <h3>Screenshot gallery (to be captured after live AWS run)</h3>
     <div class="gallery">
@@ -221,20 +221,19 @@
         <p><span class="pending">○</span> Manager recommendation</p>
         <p><span class="pending">○</span> Technical lead recommendation</p>
         <p><span class="pending">○</span> Senior engineer recommendation</p>
-        <p><em>Outreach templates prepared; see <a href="88-execution/05_RECOMMENDATION_OUTREACH.md">recommendation outreach kit</a>.</em></p>
+        <p><em>Outreach templates prepared; recommendation outreach kit coming soon.</em></p>
       </div>
       <div class="card">
         <h3 style="margin-top:0">Open Source</h3>
-        <p><span class="check">✓</span> <a href="https://github.com/fastify/fastify/pull/6880" target="_blank" rel="noopener">fastify/fastify#6880</a> — TypeScript docs update (merged)</p>
-        <p><span class="check">✓</span> <a href="https://github.com/axios/axios/pull/11113" target="_blank" rel="noopener">axios/axios#11113</a> — README stream example fix (merged)</p>
-        <p><span class="check">✓</span> <a href="https://github.com/Topicspot/skillfrisk/pull/9" target="_blank" rel="noopener">Topicspot/skillfrisk#9</a> — <code>--min-severity</code> flag (merged)</p>
-        <p><span class="check">✓</span> <a href="https://github.com/Sasireddy001/Microg/pull/1" target="_blank" rel="noopener">Sasireddy001/Microg#1</a> — microG RCS bounty research (merged)</p>
-        <p><span class="pending">○</span> <a href="https://github.com/trpc/trpc/pull/7452" target="_blank" rel="noopener">trpc/trpc#7452</a> — secure error reporting docs (active)</p>
-        <p><span class="pending">○</span> <a href="https://github.com/jsdoc/jsdoc/pull/2176" target="_blank" rel="noopener">jsdoc/jsdoc#2176</a> — Node.js version alignment (active)</p>
-        <p><span class="pending">○</span> <a href="https://github.com/xxnjms1-code/kickama-prize-lab/pull/33" target="_blank" rel="noopener">xxnjms1-code/kickama-prize-lab#33</a> — $35 BOUNTY: coordinate auth token refresh (active)</p>
-        <p><span class="pending">○</span> <a href="https://github.com/axios/axios/pull/11115" target="_blank" rel="noopener">axios/axios#11115</a> — interceptor fix review (active)</p>
-        <p><em><a href="https://github.com/Sasireddy001" target="_blank" rel="noopener">Full GitHub profile →</a></em></p>
-        <p style="font-size:.85em;color:var(--muted);"><em>Last verified: 2026-07-31 · 4 merged / 3 active / 1 review</em></p>
+        <p><span class="check">✓</span> <a href="https://github.com/fastify/fastify/pull/6880" target="_blank" rel="noopener noreferrer">fastify/fastify#6880</a> — TypeScript docs update (merged)</p>
+        <p><span class="check">✓</span> <a href="https://github.com/axios/axios/pull/11113" target="_blank" rel="noopener noreferrer">axios/axios#11113</a> — README stream example fix (merged)</p>
+        <p><span class="check">✓</span> <a href="https://github.com/Topicspot/skillfrisk/pull/9" target="_blank" rel="noopener noreferrer">Topicspot/skillfrisk#9</a> — <code>--min-severity</code> flag (merged)</p>
+        <p><span class="pending">○</span> <a href="https://github.com/trpc/trpc/pull/7452" target="_blank" rel="noopener noreferrer">trpc/trpc#7452</a> — secure error reporting docs (active)</p>
+        <p><span class="pending">○</span> <a href="https://github.com/jsdoc/jsdoc/pull/2176" target="_blank" rel="noopener noreferrer">jsdoc/jsdoc#2176</a> — Node.js version alignment (active)</p>
+        <p><span class="pending">○</span> <a href="https://github.com/xxnjms1-code/kickama-prize-lab/pull/33" target="_blank" rel="noopener noreferrer">xxnjms1-code/kickama-prize-lab#33</a> — $35 BOUNTY: coordinate auth token refresh (active)</p>
+        <p><span class="pending">○</span> <a href="https://github.com/axios/axios/pull/11115" target="_blank" rel="noopener noreferrer">axios/axios#11115</a> — interceptor fix review (active)</p>
+        <p><em><a href="https://github.com/Sasireddy001" target="_blank" rel="noopener noreferrer">Full GitHub profile →</a></em></p>
+        <p style="font-size:.85em;color:var(--muted);"><em>Last verified: 2026-08-01 · 3 merged / 3 active / 1 review</em></p>
       </div>
       <div class="card">
         <h3 style="margin-top:0">Conference Talks</h3>
@@ -246,10 +245,10 @@
     <h2>Deployment Evidence</h2>
     <p>Every project has a deployment guide and infrastructure-as-code or Docker setup.</p>
     <ul>
-      <li><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/DEPLOYMENT.md" target="_blank">Kafka Pipeline Deployment</a> — local, Databricks, and AWS Terraform.</li>
-      <li><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/tree/main/deploy/aws" target="_blank">AWS Terraform modules</a> — MSK, EMR, S3, IAM, CloudWatch, SNS.</li>
-      <li><a href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/DEPLOYMENT.md" target="_blank">Cloud Platform Deployment</a> — Azure and AWS multi-environment Terraform.</li>
-      <li><a href="https://github.com/Sasireddy001/rag-document-qa/blob/main/DEPLOYMENT.md" target="_blank">RAG Deployment</a> — local, Docker, and cloud ECS/EKS path.</li>
+      <li><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Kafka Pipeline Deployment</a> — local, Databricks, and AWS Terraform.</li>
+      <li><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/tree/main/deploy/aws" target="_blank" rel="noopener noreferrer">AWS Terraform modules</a> — MSK, EMR, S3, IAM, CloudWatch, SNS.</li>
+      <li><a href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Cloud Platform Deployment</a> — Azure and AWS multi-environment Terraform.</li>
+      <li><a href="https://github.com/Sasireddy001/rag-document-qa/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">RAG Deployment</a> — local, Docker, and cloud ECS/EKS path.</li>
     </ul>
 
     <h2>Final Audit</h2>
@@ -263,7 +262,7 @@
   </main>
 
   <footer>
-    <p>© 2026 Sasidhar Mopuru · <a href="index.html">Portfolio</a> · <a href="https://github.com/Sasireddy001" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank">LinkedIn</a></p>
+    <p>© 2026 Sasidhar Mopuru · <a href="index.html">Portfolio</a> · <a href="https://github.com/Sasireddy001" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
   </footer>
 </body>
 </html>
