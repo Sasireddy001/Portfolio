@@ -76,6 +76,7 @@ Expanding into cloud-native deployment, Kubernetes, Terraform, and production LL
 - Streamlit
 - ChromaDB
 - Vector Databases
+- AWS (S3, EMR Serverless, MSK Serverless)
 
 ---
 
@@ -119,6 +120,32 @@ Feb 2024 – Present (Associate → Analyst, Feb 2026 (effective March 2026))
 **Data Engineering Portfolio**
 - Link: https://sasireddy001.github.io/Portfolio/
 - Description: A live portfolio site showcasing my data engineering experience, certifications, technical skills, and projects. Built with HTML/CSS and hosted on GitHub Pages.
+
+---
+
+## Open Source
+
+**Open Source Contributions**
+
+### Merged
+
+- [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) — TypeScript docs update for Fastify 5.x
+- [axios/axios#11113](https://github.com/axios/axios/pull/11113) — README stream example fix
+- [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9) — Add `--min-severity` flag to control report findings
+
+### Active
+
+- [trpc/trpc#7452](https://github.com/trpc/trpc/pull/7452) — Add secure error reporting section
+- [jsdoc/jsdoc#2176](https://github.com/jsdoc/jsdoc/pull/2176) — Align README Node.js requirement with package.json
+- [xxnjms1-code/kickama-prize-lab#33](https://github.com/xxnjms1-code/kickama-prize-lab/pull/33) — [$35 BOUNTY] Coordinate auth token refresh across tabs
+
+### Review
+
+- [axios/axios#11115](https://github.com/axios/axios/pull/11115) — `fix(interceptors): tolerate a falsy handlers array`; maintainer-style review
+
+*Last verified: 2026-08-01 · 3 merged PRs / 3 active PRs / 1 review*
+
+Portfolio: https://sasireddy001.github.io/Portfolio/#oss
 
 ---
 
