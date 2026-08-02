@@ -82,17 +82,21 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 ## Professional Experience
 
-### Data Engineer – Accenture
+### Data Engineer, Management & Governance Analyst — Accenture
 
-*Feb 2024 – Present*
+*Feb 2024 – Present (Associate → Analyst, Feb 2026 (effective March 2026))*
 
 - Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs through Python development, JSON configuration, and DDL development.
+- Led 12 change requests (CRs) across 14 CDPs and completed tag validations for 40+ SDPs in a single day by comparing design documents, Kafka messages, and data across SDP STG → ACTIVE → HIST and SDP Active → CDP STG → ACTIVE → HIST flows.
+- Worked in a 7-member E2E supply-chain data engineering team (1 lead, 1 tester, 5 DEs) covering site, supplier, item, and product sub-domains; primarily owned site and supplier pipelines while supporting item/product live monitoring.
+- Managed full lifecycle of each physical data product: PySpark/Python main scripts, JSON configs, unit tests, SingleStore tables, Delta Lake lakehouse tables (with catalog/schemas), Control-M scheduling, IOMate job orchestration, and Acceldata monitoring across DEV, SIT, and PROD.
 - Reduced deployment time by 40% by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.
 - Achieved 99.5% pipeline uptime through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.
 - Maintained 95%+ overall test coverage across 60+ pytest suites with mocked components and integration patterns.
 - Improved data processing latency by 30% through partitioning, caching, and performance tuning.
 - Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
 - Developed Kafka consumer and validation workflows, DDL scripts, and validation/reconciliation queries for real-time SDP/CDP data processing, and monitored/troubleshot production pipelines.
+- Developed SDPs from design documents and built CDPs based on SDP schemas, applying transformation queries when multiple source SDPs feed a single CDP; maintained per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.
 
 ## Selected Projects
 
@@ -167,7 +171,6 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 | [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) | docs: update TypeScript docs to reference Fastify 5.x | 2026-07-29 |
 | [axios/axios#11113](https://github.com/axios/axios/pull/11113) | docs: add missing `fs` import to README stream example | 2026-07-29 |
 | [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9) | Add `--min-severity` flag to control which findings appear in reports | 2026-07-31 |
-| [Sasireddy001/Microg#1](https://github.com/Sasireddy001/Microg/pull/1) | feat: add microG RCS bounty research and implementation work | 2026-07-28 |
 
 ### Active
 
@@ -223,7 +226,6 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 - Merged documentation PRs in `fastify/fastify#6880` and `axios/axios#11113` (2026-07-29)
 - Merged feature PR `Topicspot/skillfrisk#9` — `--min-severity` flag (2026-07-31)
-- Merged research/implementation PR `Sasireddy001/Microg#1` — microG RCS bounty work (2026-07-28)
 - Active upstream PRs: `trpc/trpc#7452`, `jsdoc/jsdoc#2176`, `xxnjms1-code/kickama-prize-lab#33` ($35 bounty)
 - Maintainer-style review of `axios/axios#11115`
 

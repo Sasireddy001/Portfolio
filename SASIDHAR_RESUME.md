@@ -18,14 +18,18 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 - Based in Bengaluru, India — open to Bengaluru, hybrid, or remote opportunities
 - Notice period: 90 days
 - Target roles: Data Engineer / Data & AI Platform Engineer / Cloud Data Engineer
+- Expected CTC: 12+ LPA
 
 ---
 
 ## EXPERIENCE
 
-### **Data Engineer — Accenture** | *Feb 2024 – Present | Bengaluru, India*
+### **Data Engineer, Management & Governance Analyst — Accenture** | *Feb 2024 – Present (Associate → Analyst, Feb 2026 (effective March 2026)) | Bengaluru, India*
 
 - **Delivered** 90+ production PySpark ETL jobs across 4 end-to-end supply-chain sub-domains, supporting **67 SDPs** and **120+ CDPs** through Python development, JSON configuration, and DDL development.
+- **Led** 12 change requests (CRs) across 14 CDPs and completed tag validations for 40+ SDPs in a single day by comparing design documents, Kafka messages, and data across SDP STG → ACTIVE → HIST and SDP Active → CDP STG → ACTIVE → HIST flows.
+- **Part of a 7-member** E2E supply-chain data engineering team (1 lead, 1 tester, 5 DEs) covering site, supplier, item, and product sub-domains; primarily owned site and supplier pipelines while supporting item/product live monitoring.
+- **Managed** full lifecycle of each physical data product: PySpark/Python main scripts, JSON configs, unit tests, SingleStore tables, Delta Lake lakehouse tables (with catalog/schemas), Control-M scheduling, IOMate job orchestration, and Acceldata monitoring across DEV, SIT, and PROD.
 - **Reduced deployment time by 40%** by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.
 - **Achieved 99.5% pipeline uptime** through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.
 - **Maintained 95%+ overall test coverage** across 60+ pytest suites with mocked components and integration patterns.
@@ -34,6 +38,8 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 - **Developed Kafka consumer and validation workflows** for real-time event processing, schema validation, and end-to-end data verification using Kafka topic messages.
 - **Developed DDL scripts, database object definitions, and validation queries** for SDP/CDP layers using Python, SQL, and Git.
 - **Monitored and troubleshot production data pipelines**, performing job monitoring, data-load validation, and production issue analysis.
+- **Used Jira dashboards** to track sprint tasks, incidents, and maintenance activities for 90+ production data products.
+- **Developed SDPs from design documents** and built CDPs based on SDP schemas, applying transformation queries when multiple source SDPs feed a single CDP; maintained per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.
 
 ---
 
@@ -64,7 +70,7 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 
 ## EDUCATION
 
-**B.Tech in Computer Science and Engineering** — *CGPA 7.99*  
+**B.Tech in Computer Science and Engineering** — Madanapalle Institute of Technology & Science, 2023 — *CGPA 7.99*  
 JEE Mains — **94.14 Percentile (Top 6% nationally)**
 
 ---
@@ -84,7 +90,7 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 - **Languages:** Python, SQL
 - **Data Engineering:** PySpark, Apache Spark, Delta Lake, Apache Kafka, ETL/ELT, Data Modeling, Data Quality, Schema Validation
 - **Cloud & Platforms:** Databricks, Microsoft Fabric, Azure Event Hubs, ADLS Gen2, AWS (S3, EMR Serverless, MSK Serverless)
-- **DevOps:** GitLab CI/CD, GitHub Actions, Docker, Terraform, Linux
+- **DevOps:** GitLab CI/CD, GitHub Actions, Docker, Terraform, Linux, Jira
 - **AI / LLM:** RAG, LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, OpenAI, Sentence-Transformers
 - **Testing:** pytest, unittest, mocking, test-driven development
 
@@ -97,7 +103,6 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 - [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) — TypeScript docs update for Fastify 5.x  
 - [axios/axios#11113](https://github.com/axios/axios/pull/11113) — README stream example fix  
 - [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9) — Add `--min-severity` flag to control report findings  
-- [Sasireddy001/Microg#1](https://github.com/Sasireddy001/Microg/pull/1) — microG RCS bounty research and implementation work (merged 2026-07-28)  
 
 ### Active
 
@@ -109,6 +114,6 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 
 - [axios/axios#11115](https://github.com/axios/axios/pull/11115) — `fix(interceptors): tolerate a falsy handlers array`; maintainer-style review  
 
-*Last verified: 2026-07-31 · 4 merged PRs / 3 active PRs / 1 review*
+*Last verified: 2026-08-01 · 3 merged PRs / 3 active PRs / 1 review*
 
 - Portfolio: https://sasireddy001.github.io/Portfolio/#oss
