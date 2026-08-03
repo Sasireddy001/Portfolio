@@ -6,9 +6,9 @@
 
 ## 1. My 30-second intro (use this everywhere)
 
-"Hi, I'm Sasidhar. I'm a Data & AI Platform Engineer at Accenture with a little over two years of experience building configuration-driven PySpark data products. At work I run a Core Data Product platform that covers 90+ production ETL jobs across 67 source data products and 120+ core data products. I deal with PySpark, Docker, GitLab CI/CD, Kafka, HashiCorp Vault for secrets, and I keep 95%+ unit-test coverage across the pipeline files. Outside of work I've built a RAG chatbot with FastAPI, Streamlit, ChromaDB and OpenAI, and a Kafka → PySpark → Delta Lake streaming pipeline with AWS and Terraform. I'm now looking for Data Platform Engineer, Cloud Data Engineer or AI/Data Engineer roles where I can own the full data lifecycle."
+"Hi, I'm Sasidhar, a Data & AI Platform Engineer at Accenture with a little over two years of experience building real-time data platforms. I work with PySpark, Kafka, Delta Lake, Databricks, and Terraform on Azure. I've shipped a Kafka → PySpark → Delta Lake streaming pipeline that benchmarks at 31k–45k rows/sec, a RAG document QA chatbot with FastAPI, ChromaDB, and LLMs, and I reduced deployment cycle time by 40% at Accenture while keeping 99.5% uptime and 95%+ test coverage across 90+ production PySpark jobs. I'm Databricks Data Engineer Associate and Microsoft DP-700 certified, and I contribute to open source through Fastify and Axios. I'm looking for Data & AI Platform Engineer roles where I can own end-to-end data and AI platforms."
 
-**Why it works:** It opens with role, company, scale, tech, and closes with what you want. Keep it under 30 seconds.
+**Why it works:** It opens with role, company, measurable impact, tech, and closes with what you want. Keep it under 30 seconds.
 
 ---
 
