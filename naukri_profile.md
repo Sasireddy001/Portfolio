@@ -76,7 +76,7 @@ Expanding into cloud-native deployment, Kubernetes, Terraform, and production LL
 - Streamlit
 - ChromaDB
 - Vector Databases
-- AWS (S3, EMR Serverless, MSK Serverless)
+- Cloud deployment concepts (Azure, building toward multi-cloud)
 
 ---
 

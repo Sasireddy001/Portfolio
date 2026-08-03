@@ -309,7 +309,7 @@ Add these to the Skills section (top 50):
 
 - GenAI / AI Agents (building toward)
 
-- AWS (S3, EMR Serverless, MSK Serverless)
+- Cloud deployment concepts (Azure, building toward multi-cloud)
 
 
 

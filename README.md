@@ -36,7 +36,7 @@
 
 
 
-- **AWS cloud deployment** added to the Kafka → PySpark → Delta Lake pipeline (MSK Serverless + EMR Serverless + S3 + Terraform).
+- **Cloud-ready deployment guide** added to the Kafka → PySpark → Delta Lake pipeline (local + Databricks).
 - **Architecture and System Design docs** published for all major projects with Mermaid diagrams, scalability, fault tolerance, and tradeoff analysis.
 - **New technical blog articles** on Kafka/PySpark/Delta Lake, RAG with FastAPI/ChromaDB, and the Databricks DE Associate journey.
 - **10 ready-to-post LinkedIn technical posts** and a public cloud-native project roadmap.
@@ -214,7 +214,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 - **DevOps & Tools:** Git, CI/CD Pipelines, Docker, Terraform, Jira, Agile Scrum
 - **Architecture:** Object-Oriented Programming, Modular Coding, YAML/JSON, Logging, Exception Handling, System Design
 - **Open Source & Collaboration:** GitHub REST API, Open Source Contribution Workflow, Code Review, Maintainer-Style Reviews
-- **Building Toward:** Cloud (AWS/Azure), Kubernetes, Platform Engineering, Observability
+- **Building Toward:** Cloud (Azure), Kubernetes, Platform Engineering, Observability
 
 ## Education & Achievements
 

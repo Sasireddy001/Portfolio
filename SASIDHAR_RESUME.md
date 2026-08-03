@@ -89,7 +89,7 @@ JEE Mains — **94.14 Percentile (Top 6% nationally)**
 
 - **Languages:** Python, SQL
 - **Data Engineering:** PySpark, Apache Spark, Delta Lake, Apache Kafka, ETL/ELT, Data Modeling, Data Quality, Schema Validation
-- **Cloud & Platforms:** Databricks, Microsoft Fabric, Azure Event Hubs, ADLS Gen2, AWS (S3, EMR Serverless, MSK Serverless)
+- **Cloud & Platforms:** Databricks, Microsoft Fabric, Azure Event Hubs, ADLS Gen2
 - **DevOps:** GitLab CI/CD, GitHub Actions, Docker, Terraform, Linux, Jira
 - **AI / LLM:** RAG, LLM, FastAPI, Streamlit, ChromaDB, Vector Databases, OpenAI, Sentence-Transformers
 - **Testing:** pytest, unittest, mocking, test-driven development

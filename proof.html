@@ -62,9 +62,9 @@
     <h2>Engineering Practices</h2>
     <div class="grid">
       <div class="card"><span class="check">✓</span> <strong>Unit Testing</strong><p>pytest with in-memory Spark fixtures and mocked Kafka/S3.</p></div>
-      <div class="card"><span class="check">✓</span> <strong>CI/CD</strong><p>GitHub Actions for lint, test, Terraform validation, and AWS deploy.</p></div>
+      <div class="card"><span class="check">✓</span> <strong>CI/CD</strong><p>GitHub Actions for lint, test, Terraform validation, and cloud deploy.</p></div>
       <div class="card"><span class="check">✓</span> <strong>Code Quality</strong><p>flake8, black, type hints, and PR review discipline.</p></div>
-      <div class="card"><span class="check">✓</span> <strong>Infrastructure as Code</strong><p>Terraform for AWS MSK, EMR, S3, IAM, CloudWatch, and Azure resources.</p></div>
+      <div class="card"><span class="check">✓</span> <strong>Infrastructure as Code</strong><p>Terraform for Azure Event Hubs, Databricks, ADLS Gen2, and related Azure resources.</p></div>
       <div class="card"><span class="check">✓</span> <strong>Monitoring</strong><p>CloudWatch dashboards and alarms for job failures, lag, and S3 errors.</p></div>
       <div class="card"><span class="check">✓</span> <strong>Documentation</strong><p>ARCHITECTURE.md, SYSTEM_DESIGN.md, DEPLOYMENT.md, and CASE_STUDY.md in every repo.</p></div>
       <div class="card"><span class="check">✓</span> <strong>System Design</strong><p>Tradeoff analysis, NFRs, scalability, and failure handling documented.</p></div>
@@ -118,7 +118,7 @@
       </svg>
     </div>
     <div class="card">
-      <p><strong>Design decisions:</strong> Terraform modules for multi-environment parity, Azure/AWS dual support, managed streaming services.</p>
+      <p><strong>Design decisions:</strong> Terraform modules for multi-environment parity, Azure support, managed streaming services.</p>
       <p><strong>Tradeoffs:</strong> Dual cloud increases module count but reduces vendor lock-in and supports more clients.</p>
       <p><strong>Failure handling:</strong> Terraform state locking, CloudWatch/Azure Monitor alarms, checkpointed Spark state.</p>
       <p><strong>Scalability:</strong> Scale partitions, Spark executors, and storage throughput independently.</p>
@@ -156,8 +156,8 @@
     <div class="grid">
       <div class="card">
         <h3 style="margin-top:0">Kafka → PySpark → Delta</h3>
-        <p>Real-time streaming ingestion with exactly-once semantics, schema enforcement, and AWS deployment.</p>
-        <div><span class="tag">PySpark</span><span class="tag">Kafka</span><span class="tag">Delta Lake</span><span class="tag">AWS</span></div>
+        <p>Real-time streaming ingestion with exactly-once semantics, schema enforcement, and cloud deployment.</p>
+        <div><span class="tag">PySpark</span><span class="tag">Kafka</span><span class="tag">Delta Lake</span></div>
         <p><strong>Result:</strong> 31k–45k rows/sec, 95%+ test coverage.</p>
         <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/CASE_STUDY.md" target="_blank" rel="noopener noreferrer">Read Case Study →</a>
         <a class="btn" href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Deployment →</a>
@@ -165,7 +165,7 @@
       <div class="card">
         <h3 style="margin-top:0">Cloud-Native Streaming</h3>
         <p>Multi-cloud streaming platform with Terraform, Databricks, and managed Kafka/Event Hubs.</p>
-        <div><span class="tag">Azure</span><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Databricks</span></div>
+        <div><span class="tag">Azure</span><span class="tag">Terraform</span><span class="tag">Databricks</span></div>
         <p><strong>Result:</strong> Reproducible multi-environment infrastructure.</p>
         <a class="btn" href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/CASE_STUDY.md" target="_blank" rel="noopener noreferrer">Read Case Study →</a>
         <a class="btn" href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Deployment →</a>
@@ -181,9 +181,9 @@
     </div>
 
     <h2>Live Demo Evidence</h2>
-    <p>The flagship pipeline has a complete deployment plan for local Docker, Databricks, and AWS. The AWS run produces the evidence below. See <a href="LIVE_DEMO_PLAN.md" target="_blank" rel="noopener noreferrer">LIVE_DEMO_PLAN.md</a> for the full execution and showcase strategy.</p>
+    <p>The flagship pipeline has a complete deployment plan for local Docker and Databricks. The live run produces the evidence below. See <a href="LIVE_DEMO_PLAN.md" target="_blank" rel="noopener noreferrer">LIVE_DEMO_PLAN.md</a> for the full execution and showcase strategy.</p>
 
-    <h3>Screenshot gallery (to be captured after live AWS run)</h3>
+    <h3>Screenshot gallery (to be captured after live run)</h3>
     <div class="gallery">
       <div class="thumb"><strong>Kafka / MSK</strong><p>Cluster status and bootstrap brokers</p><span class="pending">Live run pending</span></div>
       <div class="thumb"><strong>EMR Serverless</strong><p>Job run success and runtime</p><span class="pending">Live run pending</span></div>
@@ -245,20 +245,20 @@
     <h2>Deployment Evidence</h2>
     <p>Every project has a deployment guide and infrastructure-as-code or Docker setup.</p>
     <ul>
-      <li><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Kafka Pipeline Deployment</a> — local, Databricks, and AWS Terraform.</li>
-      <li><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/tree/main/deploy/aws" target="_blank" rel="noopener noreferrer">AWS Terraform modules</a> — MSK, EMR, S3, IAM, CloudWatch, SNS.</li>
-      <li><a href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Cloud Platform Deployment</a> — Azure and AWS multi-environment Terraform.</li>
+      <li><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Kafka Pipeline Deployment</a> — local, Databricks, and Terraform.</li>
+      <li><a href="https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/tree/main/deploy/aws" target="_blank" rel="noopener noreferrer">Cloud Terraform modules</a> — reference infrastructure for extension.</li>
+      <li><a href="https://github.com/Sasireddy001/Cloud-data-platform/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">Cloud Platform Deployment</a> — Azure multi-environment Terraform.</li>
       <li><a href="https://github.com/Sasireddy001/rag-document-qa/blob/main/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer">RAG Deployment</a> — local, Docker, and cloud ECS/EKS path.</li>
     </ul>
 
     <h2>Final Audit</h2>
     <div class="grid">
-      <div class="card"><div class="metric">8.5→9.0</div><div class="label">Technical Quality (with live AWS evidence)</div></div>
+      <div class="card"><div class="metric">8.5→9.0</div><div class="label">Technical Quality (with live evidence)</div></div>
       <div class="card"><div class="metric">8.5→9.0</div><div class="label">Architecture Quality (with live diagrams + case studies)</div></div>
       <div class="card"><div class="metric">7.8→8.7</div><div class="label">Portfolio Score (after proof.html and case studies)</div></div>
       <div class="card"><div class="metric">8.7→9.2</div><div class="label">Recruiter Appeal (with live demo + LinkedIn execution)</div></div>
     </div>
-    <p><strong>Current portfolio score: ~8.2/10</strong> after this proof page. To reach 9.0+, complete the live AWS demo, capture the 8 screenshots, publish the articles, and execute the LinkedIn calendar. The structure, content, and plans are now in place.</p>
+    <p><strong>Current portfolio score: ~8.2/10</strong> after this proof page. To reach 9.0+, complete the live demo, capture the 8 screenshots, publish the articles, and execute the LinkedIn calendar. The structure, content, and plans are now in place.</p>
   </main>
 
   <footer>
