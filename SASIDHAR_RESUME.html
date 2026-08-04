@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sasidhar Mopuru &mdash; Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0f1c2e;
+      --charcoal: #1f2937;
+      --emerald: #059669;
+      --emerald-dark: #047857;
+      --text: #334155;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", "Aptos", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 9.5pt;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #fff;
+      padding: 13mm 15mm 14mm;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      position: relative;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--emerald);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .brand h1 {
+      font-size: 26pt;
+      font-weight: 700;
+      margin: 0;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+    }
+    .brand .role {
+      font-size: 11.5pt;
+      font-weight: 600;
+      color: var(--emerald-dark);
+      margin: 3px 0 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .contact {
+      text-align: right;
+      font-size: 9pt;
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .contact a {
+      color: var(--text);
+      text-decoration: none;
+      display: block;
+    }
+    .contact a:hover { color: var(--emerald); text-decoration: underline; }
+    .contact span { display: block; color: var(--muted); }
+    section { margin-bottom: 13px; }
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--navy);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+      margin: 0 0 8px;
+    }
+    .summary p {
+      margin: 0;
+      color: var(--charcoal);
+      font-size: 10pt;
+      line-height: 1.6;
+    }
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .highlight {
+      background: #f0fdf4;
+      border-left: 3px solid var(--emerald);
+      padding: 7px 9px;
+      border-radius: 4px;
+    }
+    .highlight .metric {
+      display: block;
+      font-size: 14pt;
+      font-weight: 700;
+      color: var(--emerald-dark);
+      line-height: 1.2;
+    }
+    .highlight .label {
+      display: block;
+      font-size: 8pt;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "main sidebar";
+      gap: 18px;
+    }
+    .main { grid-area: main; }
+    .sidebar { grid-area: sidebar; }
+    .job { margin-bottom: 11px; }
+    .job-header h3 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0;
+    }
+    .job-header .company {
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: var(--emerald-dark);
+      margin: 1px 0 2px;
+    }
+    .job-header .date {
+      font-size: 8.5pt;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+    .promo { font-weight: 500; color: var(--charcoal); }
+    ul { margin: 4px 0 0; padding-left: 16px; }
+    li { margin-bottom: 4px; text-align: justify; }
+    li::marker { color: var(--emerald); }
+    .project { margin-bottom: 9px; }
+    .project h3 {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0;
+    }
+    .project-meta { margin: 3px 0 4px; }
+    .tech {
+      display: inline-block;
+      font-size: 7.5pt;
+      color: #fff;
+      background: var(--charcoal);
+      padding: 2px 6px;
+      border-radius: 10px;
+      margin-right: 4px;
+      margin-bottom: 3px;
+    }
+    .skill-group { margin-bottom: 7px; }
+    .skill-group strong {
+      display: block;
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 1px;
+    }
+    .skill-group span {
+      font-size: 8.5pt;
+      color: var(--text);
+    }
+    .certifications ul { padding-left: 14px; }
+    .certifications li { margin-bottom: 4px; font-size: 8.5pt; }
+    .education p { margin: 0; font-size: 8.5pt; line-height: 1.5; }
+    .education strong { color: var(--navy); }
+    .print-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--emerald);
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .print-btn:hover { background: var(--emerald-dark); }
+    @media print {
+      body { background: #fff; }
+      .page { width: 100%; box-shadow: none; margin: 0; padding: 12mm 14mm 13mm; }
+      .print-btn { display: none; }
+      a { text-decoration: none; color: var(--text); }
+    }
+  </style>
+</head>
+<body>
+  <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <h1>Sasidhar Mopuru</h1>
+        <p class="role">Data &amp; AI Platform Engineer</p>
+      </div>
+      <div class="contact">
+        <span>Bengaluru, India</span>
+        <a href="tel:+916302960712">+91 63029 60712</a>
+        <a href="mailto:sasidharmopuru@gmail.com">sasidharmopuru@gmail.com</a>
+        <a href="https://www.linkedin.com/in/sasidhar-mopuru-417a03233">linkedin.com/in/sasidhar-mopuru</a>
+        <a href="https://github.com/Sasireddy001">github.com/Sasireddy001</a>
+        <a href="https://sasireddy001.github.io/Portfolio/">sasireddy001.github.io/Portfolio</a>
+      </div>
+    </header>
+
+    <section class="summary">
+      <h2>Professional Summary</h2>
+      <p>Data &amp; AI Platform Engineer with 2+ years architecting, validating, and operating production-grade streaming data platforms and lakehouse systems at Accenture. Contributed to <strong>50+ data products</strong> (20 SDPs, 16 physical CDPs, 20 CDP views) on a platform supporting <strong>64 physical SDPs</strong> and <strong>126 CDPs</strong> (46 physical + 79 views). Delivered <strong>90+ production PySpark ETL jobs</strong>, maintaining <strong>99.5% pipeline uptime</strong> and <strong>95%+ test coverage</strong>. Databricks and Microsoft Fabric certified. Core stack: <strong>PySpark, Apache Kafka, Delta Lake, Databricks, Python, SQL</strong>.</p>
+    </section>
+
+    <section class="highlights">
+      <h2>Key Impact Highlights</h2>
+      <div class="highlight-grid">
+        <div class="highlight"><span class="metric">90+</span><span class="label">Production ETL Jobs</span></div>
+        <div class="highlight"><span class="metric">50+</span><span class="label">Data Products</span></div>
+        <div class="highlight"><span class="metric">99.5%</span><span class="label">Pipeline Uptime</span></div>
+        <div class="highlight"><span class="metric">95%+</span><span class="label">Test Coverage</span></div>
+        <div class="highlight"><span class="metric">40%</span><span class="label">Faster Deployments</span></div>
+        <div class="highlight"><span class="metric">30%</span><span class="label">Latency Reduction</span></div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <div class="main">
+        <section class="experience">
+          <h2>Professional Experience</h2>
+          <div class="job">
+            <div class="job-header">
+              <h3>Data Engineer, Management &amp; Governance Analyst</h3>
+              <div class="company">Accenture &middot; Bengaluru, India</div>
+              <div class="date">Feb 2024 &ndash; Present <span class="promo">(Associate &rarr; Analyst, effective March 2026)</span></div>
+            </div>
+            <ul>
+              <li>Built and validated <strong>90+ production PySpark ETL jobs</strong> across 4 supply-chain sub-domains, supporting <strong>64 physical SDPs</strong> and <strong>126 CDPs</strong> (46 physical + 79 views); personally contributed to <strong>50+ data products</strong> (20 SDPs, 16 physical CDPs, 20 CDP views).</li>
+              <li>Led <strong>12 change requests</strong> across <strong>16 physical CDPs</strong> and <strong>20 CDP views</strong> and completed tag validations for <strong>20 SDPs</strong> in a single day.</li>
+              <li>Part of a <strong>7-member E2E</strong> supply-chain data engineering team (1 lead, 1 tester, 5 DEs) covering site, supplier, item, and product sub-domains; primarily owned site and supplier pipelines.</li>
+              <li>Developed configuration-driven pipeline definitions and reusable Python utilities, <strong>cutting deployment cycle time by 40%</strong>.</li>
+              <li>Achieved <strong>99.5% pipeline uptime</strong> through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.</li>
+              <li>Maintained <strong>95%+ test coverage</strong> across <strong>60+ pytest suites</strong> with mocked components and integration patterns.</li>
+              <li>Improved data processing latency by <strong>30%</strong> via partitioning, caching, and Delta Lake query tuning.</li>
+              <li>Owned end-to-end data quality and platform validation for <strong>3&ndash;4 sprint releases</strong> across Kafka &rarr; Stage &rarr; Raw &rarr; HAST/CDP layers.</li>
+              <li>Used Jira dashboards to track sprint tasks, incidents, and maintenance for <strong>64 physical SDPs</strong> and <strong>126 CDPs</strong>.</li>
+              <li>Developed SDPs from design documents and built CDPs from SDP schemas, maintaining per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="projects">
+          <h2>Selected Projects</h2>
+          <div class="project">
+            <h3>Cloud-Native Streaming Data Platform</h3>
+            <p class="project-meta">
+              <span class="tech">Azure Event Hubs</span>
+              <span class="tech">Databricks</span>
+              <span class="tech">ADLS Gen2</span>
+              <span class="tech">Delta Lake</span>
+              <span class="tech">Terraform</span>
+            </p>
+            <ul>
+              <li>Designed modular Terraform templates for multi-environment infrastructure and a PySpark Structured Streaming job with watermark-based dedup and exactly-once Delta Lake writes.</li>
+              <li>Automated Terraform plan/apply pipelines through GitHub Actions for dev and prod environments.</li>
+              <li>Validated streaming output with schema checks and row-level data quality checks.</li>
+            </ul>
+          </div>
+          <div class="project">
+            <h3>Kafka &rarr; PySpark &rarr; Delta Pipeline</h3>
+            <p class="project-meta">
+              <span class="tech">Apache Kafka</span>
+              <span class="tech">PySpark</span>
+              <span class="tech">Delta Lake</span>
+              <span class="tech">Databricks</span>
+            </p>
+            <ul>
+              <li>Ingested JSON events from Kafka, enforced schemas, and wrote exactly-once to Delta Lake using checkpointing and idempotent writes.</li>
+              <li>Benchmarked <strong>31k&ndash;45k rows/sec</strong> on a 4-core laptop for 100k&ndash;1M row workloads.</li>
+              <li>Maintained 95%+ pytest coverage with an in-memory Spark fixture and continuous integration.</li>
+            </ul>
+          </div>
+          <div class="project">
+            <h3>RAG Document QA Chatbot</h3>
+            <p class="project-meta">
+              <span class="tech">FastAPI</span>
+              <span class="tech">ChromaDB</span>
+              <span class="tech">OpenAI</span>
+              <span class="tech">LLaMA</span>
+              <span class="tech">Streamlit</span>
+            </p>
+            <ul>
+              <li>Built dense vector retrieval with ChromaDB, FastAPI backend, response caching, and modular LLM interfaces (OpenAI/LLaMA).</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <section class="skills">
+          <h2>Technical Skills</h2>
+          <div class="skill-group"><strong>Data Engineering</strong><span>PySpark, Apache Spark, Delta Lake, ETL/ELT, Data Modeling, Data Quality, Schema Enforcement</span></div>
+          <div class="skill-group"><strong>Streaming &amp; Messaging</strong><span>Apache Kafka, Azure Event Hubs</span></div>
+          <div class="skill-group"><strong>Cloud &amp; Lakehouse</strong><span>Databricks, Microsoft Fabric, Azure ADLS Gen2, SingleStore</span></div>
+          <div class="skill-group"><strong>Programming</strong><span>Python, SQL, YAML, JSON</span></div>
+          <div class="skill-group"><strong>DevOps &amp; CI/CD</strong><span>Docker, Terraform, GitLab CI/CD, GitHub Actions, Control-M, Vault</span></div>
+          <div class="skill-group"><strong>Testing &amp; Quality</strong><span>pytest, Unit &amp; Integration Testing, 95%+ Coverage</span></div>
+          <div class="skill-group"><strong>Monitoring</strong><span>Acceldata, CloudWatch, Jira</span></div>
+          <div class="skill-group"><strong>AI &amp; Vector</strong><span>RAG, ChromaDB, FastAPI, Vector Databases, Sentence-Transformers, Streamlit</span></div>
+        </section>
+
+        <section class="certifications">
+          <h2>Certifications</h2>
+          <ul>
+            <li><strong>Databricks Certified Data Engineer Associate</strong> (Dec 2024)</li>
+            <li><strong>DP-700: Data Engineering with Microsoft Fabric</strong> (Dec 2025)</li>
+            <li><strong>Databricks PySpark Streaming Training</strong> (Accenture)</li>
+            <li><strong>Google Data Analytics Professional</strong> (Coursera)</li>
+            <li><strong>NPTEL Management Information Systems</strong> &mdash; IIT Kharagpur (Elite 73%)</li>
+          </ul>
+        </section>
+
+        <section class="education">
+          <h2>Education</h2>
+          <p><strong>B.Tech in Computer Science &amp; Engineering</strong><br>Madanapalle Institute of Technology and Science, 2023<br>CGPA <strong>7.99/10</strong> &middot; JEE Mains <strong>94.14 Percentile</strong> (Top 6% nationally)</p>
+        </section>
+      </aside>
+    </div>
+  </div>
+  <script>
+    if (window.location.search.includes('print=1')) {
+      window.addEventListener('load', () => setTimeout(() => window.print(), 300));
+    }
+  </script>
+</body>
+</html>
