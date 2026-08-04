@@ -9,7 +9,7 @@ Bengaluru, India | +91 63029 60712 | sasidharmopuru@gmail.com
 
 ## SUMMARY
 
-Data & AI Platform Engineer with 2+ years of experience building production-grade data pipelines, streaming platforms, and lakehouse systems at Accenture. Proven track record delivering 90+ PySpark ETL jobs across 67 source data products and 120+ core data products, with 99.5% uptime and 95%+ test coverage. Databricks DE Associate and DP-700 (Microsoft Fabric) certified. Expanding into cloud-native data platforms, RAG/LLM applications, and platform engineering.
+Data & AI Platform Engineer with 2+ years architecting, validating, and operating production-grade streaming data platforms and lakehouse systems at Accenture. Spearheaded 90+ production ETL jobs, achieved 99.5% pipeline uptime, and cut deployment cycle time by 40%. Core stack: PySpark, Apache Kafka, Delta Lake, Databricks, Python, SQL.
 
 ---
 
@@ -26,8 +26,8 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 
 ### **Data Engineer, Management & Governance Analyst — Accenture** | *Feb 2024 – Present (Associate → Analyst, Feb 2026 (effective March 2026)) | Bengaluru, India*
 
-- **Delivered** 90+ production PySpark ETL jobs across 4 end-to-end supply-chain sub-domains, supporting **67 SDPs** and **120+ CDPs** through Python development, JSON configuration, and DDL development.
-- **Led** 12 change requests (CRs) across 14 CDPs and completed tag validations for 40+ SDPs in a single day by comparing design documents, Kafka messages, and data across SDP STG → ACTIVE → HIST and SDP Active → CDP STG → ACTIVE → HIST flows.
+- **Delivered** 90+ production PySpark ETL jobs across 4 end-to-end supply-chain sub-domains, supporting **64 SDPs** and **126 CDPs** (team), with personal contributions to **25-30 SDPs** and **40-50 CDPs** through Python development, JSON configuration, and DDL development.
+- **Led** 12 change requests (CRs) across 40-50 CDPs and completed tag validations for 25-30 SDPs in a single day by comparing design documents, Kafka messages, and data across SDP STG → ACTIVE → HIST and SDP Active → CDP STG → ACTIVE → HIST flows.
 - **Part of a 7-member** E2E supply-chain data engineering team (1 lead, 1 tester, 5 DEs) covering site, supplier, item, and product sub-domains; primarily owned site and supplier pipelines while supporting item/product live monitoring.
 - **Managed** full lifecycle of each physical data product: PySpark/Python main scripts, JSON configs, unit tests, SingleStore tables, Delta Lake lakehouse tables (with catalog/schemas), Control-M scheduling, IOMate job orchestration, and Acceldata monitoring across DEV, SIT, and PROD.
 - **Reduced deployment time by 40%** by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.
@@ -38,7 +38,7 @@ Data & AI Platform Engineer with 2+ years of experience building production-grad
 - **Developed Kafka consumer and validation workflows** for real-time event processing, schema validation, and end-to-end data verification using Kafka topic messages.
 - **Developed DDL scripts, database object definitions, and validation queries** for SDP/CDP layers using Python, SQL, and Git.
 - **Monitored and troubleshot production data pipelines**, performing job monitoring, data-load validation, and production issue analysis.
-- **Used Jira dashboards** to track sprint tasks, incidents, and maintenance activities for 90+ production data products.
+- **Used Jira dashboards** to track sprint tasks, incidents, and maintenance activities for 64 SDPs and 126 CDPs.
 - **Developed SDPs from design documents** and built CDPs based on SDP schemas, applying transformation queries when multiple source SDPs feed a single CDP; maintained per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.
 
 ---

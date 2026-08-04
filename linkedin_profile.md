@@ -138,7 +138,7 @@ Feb 2024 – Present (Associate → Analyst, Feb 2026 (effective March 2026))
 
 
 
-- Built and validated 90+ production PySpark ETL jobs across supply-chain data products, supporting 67 SDPs and 120+ CDPs using Python, JSON configs, SQL/DDL, and Delta Lake lakehouse tables.
+- Built and validated 90+ production PySpark ETL jobs across supply-chain data products, supporting 64 SDPs and 126 CDPs (team), with personal contributions to 25-30 SDPs and 40-50 CDPs using Python, JSON configs, SQL/DDL, and Delta Lake lakehouse tables.
 - Reduced deployment time by 40% with configuration-driven pipeline definitions and reusable Python utilities consumed by CI/CD workflows.
 - Achieved 99.5% pipeline uptime through modular pipelines with error handling, retry logic, schema validation, and data quality checks.
 - Maintained 95%+ test coverage across 60+ pytest suites with mocked components and integration patterns.
