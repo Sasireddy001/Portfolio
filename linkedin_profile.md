@@ -42,15 +42,15 @@ I build real-time, reliable data platforms that turn high-velocity event streams
 
 
 
-At Accenture, I develop and validate configuration-driven **Core Data Product (CDP)** pipelines. I build Source-to-Core Data Product flows with PySpark, define JSON-based job configurations and reusable Python utilities, and validate data across Kafka → Stage → Raw → HAST/CDP layers. I use Dockerized Spark jobs and GitLab CI/CD pipelines within the platform team's approved development environment, and I work with credentials and secrets supplied by platform/security teams.
+At Accenture, I develop and validate configuration-driven data pipelines. I build source-to-target data flows with PySpark, define JSON-based job configurations and reusable Python utilities, and validate data across source-to-target data layers. I use Dockerized Spark jobs and GitLab CI/CD pipelines within the platform team's approved development environment, and I work with credentials and secrets supplied by platform/security teams.
 
-I also own end-to-end data quality and platform validation for sprint releases, acting as the primary validation resource for SDP and CDP data products. I validate schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and I prepare test evidence and SQL-based reconciliation reports that support clean production sign-off.
+I also own end-to-end data quality and platform validation for sprint releases, acting as the primary validation resource for data products. I validate schemas, tags, record counts, primary keys, business hash keys, and duplicate records across source-to-target data layers, and I prepare test evidence and SQL-based reconciliation reports that support clean production sign-off.
 
 
 
 Featured work:
 
-• Configuration-driven CDP platform at Accenture: PySpark, JSON configurations, Kafka, and SQL validation — building reusable Python utilities for logging, retry, schema validation, and data-quality checks.
+• Configuration-driven data platform at Accenture: PySpark, JSON configurations, Kafka, and SQL validation — building reusable Python utilities for logging, retry, schema validation, and data-quality checks.
 
 • Production-Style Kafka → PySpark → Delta Lake pipeline: schema enforcement, watermark-based deduplication, checkpointing, and 31k–45k rows/s throughput on a 4-core laptop.
 
@@ -138,13 +138,13 @@ Feb 2024 – Present (Associate → Analyst, Feb 2026 (effective March 2026))
 
 
 
-- Built and validated 90+ production PySpark ETL jobs across supply-chain data products, supporting 64 physical SDPs and 126 CDPs (46 physical + 79 views); personally contributed to 50+ data products (20 SDPs, 16 physical CDPs, 20 CDP views) using Python, JSON configs, SQL/DDL, and Delta Lake lakehouse tables.
+- Built and validated 90+ production PySpark ETL jobs across supply-chain data products, contributing to 50+ data products using Python, JSON configs, SQL/DDL, and Delta Lake lakehouse tables.
 - Reduced deployment time by 40% with configuration-driven pipeline definitions and reusable Python utilities consumed by CI/CD workflows.
 - Achieved 99.5% pipeline uptime through modular pipelines with error handling, retry logic, schema validation, and data quality checks.
 - Maintained 95%+ test coverage across 60+ pytest suites with mocked components and integration patterns.
 - Improved data processing latency by 30% through partitioning, caching, and performance tuning.
 - Owned end-to-end data quality and platform validation for sprint releases, preparing SQL-based reconciliation evidence for production sign-off.
-- Developed real-time Kafka consumer and validation workflows, DDL scripts, and data pipelines across DEV, SIT, and PROD.
+- Worked with Kafka-based data pipelines and validation workflows, DDL scripts, and data pipelines across DEV, SIT, and PROD.
 
 
 
@@ -199,7 +199,7 @@ Madanapalle Institute of Technology & Science | 2023
 
 - [DP-700: Implementing Data Engineering Solutions using Microsoft Fabric](https://learn.microsoft.com/api/credentials/share/en-us/MopuruSasidhar-4473/13AA53E82F21D70C?sharingId=57F4CD5FCA3B941E) – Microsoft
 
-- [Databricks Certified Data Engineer Associate](https://www.credly.com/users/sasidhar-mopuru) – Databricks
+- [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/550e3234-a017-4afd-a236-5d695da5c212) – Databricks
 
 - Databricks PySpark Streaming Training (8 Weeks) – Accenture
 

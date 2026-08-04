@@ -29,9 +29,9 @@ Data & AI Platform Engineer | Databricks Certified | PySpark · Kafka · Delta L
 
 ## Professional Summary
 
-Data & AI Platform Engineer with 2+ years architecting, validating, and operating production-grade streaming data platforms and lakehouse systems at Accenture. Contributed to 50+ data products (20 SDPs, 16 physical CDPs, 20 CDP views) on a platform supporting 64 physical SDPs and 126 CDPs (46 physical + 79 views). Delivered 90+ production PySpark ETL jobs, maintaining 99.5% pipeline uptime and 95%+ test coverage. Core stack: PySpark, Apache Kafka, Delta Lake, Databricks, Python, SQL.
+Data & AI Platform Engineer with 2+ years validating, building, and operating production-grade data platforms and lakehouse systems at Accenture. Contributed to 50+ data products and delivered 90+ production PySpark ETL jobs, maintaining 99.5% pipeline uptime and 95%+ test coverage. Core stack: PySpark, Delta Lake, Databricks, Python, SQL.
 
-Hands-on with end-to-end data flows from source systems to SDP and CDP layers, real-time streaming with Kafka and PySpark, Delta Lake lakehouse architectures, and cloud-native deployment patterns. Strong in writing modular, configuration-driven Python code with comprehensive test coverage.
+Hands-on with end-to-end data flows from source systems to target data layers, real-time streaming with Kafka and PySpark, Delta Lake lakehouse architectures, and cloud-native deployment patterns. Strong in writing modular, configuration-driven Python code with comprehensive test coverage.
 
 Expanding into cloud-native deployment, Kubernetes, Terraform, and production LLM evaluation for high-scale data platforms.
 
@@ -85,17 +85,17 @@ Expanding into cloud-native deployment, Kubernetes, Terraform, and production LL
 **Data Engineer, Management & Governance Analyst — Accenture**
 Feb 2024 – Present (Associate → Analyst, Feb 2026 (effective March 2026))
 
-- Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, supporting 64 physical SDPs and 126 CDPs (46 physical + 79 views); personally contributed to 50+ data products (20 SDPs, 16 physical CDPs, 20 CDP views) through Python development, JSON configuration, and DDL development.
-- Led 12 change requests (CRs) across 16 physical CDPs and 20 CDP views and completed tag validations for 20 SDPs in a single day by comparing design documents, Kafka messages, and data across SDP STG → ACTIVE → HIST and SDP Active → CDP STG → ACTIVE → HIST flows.
+- Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, contributing to 50+ data products through Python development, JSON configuration, and DDL development.
+- Led 12 change requests (CRs) across data products and completed tag validations in a single day by comparing design documents, source messages, and data across staging, active, and history layers.
 - Worked in a 7-member E2E supply-chain data engineering team (1 lead, 1 tester, 5 DEs) covering site, supplier, item, and product sub-domains; primarily owned site and supplier pipelines while supporting item/product live monitoring.
-- Managed full lifecycle of each physical data product: PySpark/Python main scripts, JSON configs, unit tests, SingleStore tables, Delta Lake lakehouse tables (with catalog/schemas), Control-M scheduling, IOMate job orchestration, and Acceldata monitoring across DEV, SIT, and PROD.
-- Reduced deployment time by 40% by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.
+- Managed full lifecycle of data products: PySpark/Python main scripts, JSON configs, unit tests, SingleStore tables, Delta Lake lakehouse tables (with catalog/schemas), Control-M scheduling, IOMate job orchestration, and Acceldata monitoring across DEV, SIT, and PROD.
+- Reduced deployment time by 40% by developing configuration-driven pipeline definitions and reusable Python utilities used by the data platform and consumed by existing CI/CD workflows.
 - Achieved 99.5% pipeline uptime through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.
 - Maintained 95%+ overall test coverage across 60+ pytest suites with mocked components and integration patterns.
 - Improved data processing latency by 30% through partitioning, caching, and performance tuning.
-- Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
-- Developed Kafka consumer and validation workflows, DDL scripts, and validation/reconciliation queries for real-time SDP/CDP data processing, and monitored and troubleshot production pipelines.
-- Developed SDPs from design documents and built CDPs based on SDP schemas, applying transformation queries when multiple source SDPs feed a single CDP; maintained per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.
+- Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across source-to-target data layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
+- Worked with Kafka-based data pipelines and validation workflows, DDL scripts, and validation/reconciliation queries for real-time data processing, and monitored and troubleshot production pipelines.
+- Developed data products from design documents and built downstream datasets from source schemas, applying transformation queries when multiple source data products feed a single dataset; maintained per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.
 - Worked under strict NDA and enterprise data governance standards.
 
 ---
@@ -161,7 +161,7 @@ Madanapalle Institute of Technology & Science | 2023
 ## Certifications
 
 - [DP-700: Implementing Data Engineering Solutions using Microsoft Fabric](https://learn.microsoft.com/api/credentials/share/en-us/MopuruSasidhar-4473/13AA53E82F21D70C?sharingId=57F4CD5FCA3B941E) – Microsoft
-- [Databricks Certified Data Engineer Associate](https://www.credly.com/users/sasidhar-mopuru) – Databricks
+- [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/550e3234-a017-4afd-a236-5d695da5c212) – Databricks
 - Databricks PySpark Streaming Training (8 Weeks) – Accenture
 - [Google Data Analytics Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/DAZFH4EUB7LG?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Ds12n) – Coursera
 - [NPTEL Management Information System (MIS)](https://nptel.ac.in/noc/E_Certificate/NPTEL22MG100S5435012910114355) – Elite · 73% · IIT Kharagpur (Jul–Oct 2022)
