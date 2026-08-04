@@ -26,7 +26,7 @@ Sasidhar Mopuru
 
 
 
-Data & AI Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Building Real-Time Streaming & AI-Ready Data Systems
+Data & AI Platform Engineer | Databricks & Microsoft Fabric Certified | PySpark · Kafka · Delta Lake · Python | AI Coding Task Author & LLM Evaluator | Building Real-Time Streaming & AI-Ready Data Systems
 
 
 
@@ -58,7 +58,7 @@ Featured work:
 
 
 
-I am expanding into cloud-native deployment, Kubernetes, Terraform, and production LLM evaluation — the next layer for high-scale data platforms.
+I am actively expanding into AI coding-task authoring, LLM evaluation, cloud-native deployment (Kubernetes, Terraform), and production-ready AI-agent workflows — applying my data-engineering and testing background to high-scale data and AI platforms.
 
 
 
@@ -74,7 +74,7 @@ Email: sasidharmopuru@gmail.com
 
 
 
-Open to Data Platform Engineer and Data Engineer roles in Bengaluru and remote.
+Open to Data Platform Engineer, Data Engineer, AI Coding Task Author, LLM Research/Evaluation, and AI Training/Data Quality engagements in Bengaluru, remote, and globally.
 
 
 
@@ -138,18 +138,13 @@ Feb 2024 – Present (Associate → Analyst, Feb 2026 (effective March 2026))
 
 
 
-- Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs through Python development, JSON configuration, and DDL development.
-- Led 12 change requests (CRs) across 14 CDPs and completed tag validations for 40+ SDPs in a single day by comparing design documents, Kafka messages, and data across SDP STG → ACTIVE → HIST and SDP Active → CDP STG → ACTIVE → HIST flows.
-- Worked in a 7-member E2E supply-chain data engineering team (1 lead, 1 tester, 5 DEs) covering site, supplier, item, and product sub-domains; primarily owned site and supplier pipelines while supporting item/product live monitoring.
-- Managed full lifecycle of each physical data product: PySpark/Python main scripts, JSON configs, unit tests, SingleStore tables, Delta Lake lakehouse tables (with catalog/schemas), Control-M scheduling, IOMate job orchestration, and Acceldata monitoring across DEV, SIT, and PROD.
-- Reduced deployment time by 40% by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.
-- Achieved 99.5% pipeline uptime through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.
-- Maintained 95%+ overall test coverage across 60+ pytest suites with mocked components and integration patterns.
+- Built and validated 90+ production PySpark ETL jobs across supply-chain data products, supporting 67 SDPs and 120+ CDPs using Python, JSON configs, SQL/DDL, and Delta Lake lakehouse tables.
+- Reduced deployment time by 40% with configuration-driven pipeline definitions and reusable Python utilities consumed by CI/CD workflows.
+- Achieved 99.5% pipeline uptime through modular pipelines with error handling, retry logic, schema validation, and data quality checks.
+- Maintained 95%+ test coverage across 60+ pytest suites with mocked components and integration patterns.
 - Improved data processing latency by 30% through partitioning, caching, and performance tuning.
-- Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
-- Developed Kafka consumer and validation workflows, DDL scripts, and validation/reconciliation queries for real-time SDP/CDP data processing, and monitored and troubleshot production pipelines.
-- Developed SDPs from design documents and built CDPs based on SDP schemas, applying transformation queries when multiple source SDPs feed a single CDP; maintained per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.
-- Worked under strict NDA and enterprise data governance standards.
+- Owned end-to-end data quality and platform validation for sprint releases, preparing SQL-based reconciliation evidence for production sign-off.
+- Developed real-time Kafka consumer and validation workflows, DDL scripts, and data pipelines across DEV, SIT, and PROD.
 
 
 
@@ -310,6 +305,11 @@ Add these to the Skills section (top 50):
 - GenAI / AI Agents (building toward)
 
 - Cloud deployment concepts (Azure, building toward multi-cloud)
+- AI / LLM Evaluation
+- Coding Task Design
+- Automated Testing
+- Debugging
+- GitHub Workflows
 
 
 
