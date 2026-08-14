@@ -70,6 +70,12 @@ I am actively expanding into **Cloud, DevOps, Platform Engineering, and AI/LLM s
 
 End-to-end streaming data platforms that feed analytics, ML, and generative AI applications — with the reliability, testability, and observability production systems demand.
 
+## Knowledge Base
+
+I maintain [engineering-vault](https://github.com/Sasireddy001/engineering-vault-), a comprehensive knowledge management system that captures and organizes technical knowledge, patterns, and learnings across data engineering, AI/RAG, OSS research, technical writing, architecture patterns, certifications, and career development.
+
+This serves as my second brain for systematic learning and knowledge preservation.
+
 
 
 ## Target Roles
