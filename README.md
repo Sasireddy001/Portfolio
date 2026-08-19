@@ -24,7 +24,7 @@
 
 [![GitHub  Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
-[![Resume](https://img.shields.io/badge/Resume-View-2563EB)](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME_ATS_V2.html)
+[![Resume](https://img.shields.io/badge/Resume-View-2563EB)](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.html)
 
 
 
@@ -282,7 +282,7 @@ Python Developer · Automation Engineer · Data Engineer · Backend Engineer · 
 
 - Portfolio: [sasireddy001.github.io/Portfolio](https://sasireddy001.github.io/Portfolio)
 
-- Resume: [HTML Resume](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME_ATS_V2.html)
+- Resume: [HTML Resume](https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.html)
 
 - Email: [sasidharmopuru@gmail.com](mailto:sasidharmopuru@gmail.com)
 
