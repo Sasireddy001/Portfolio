@@ -6,7 +6,7 @@
 
 
 
-### Data & AI Platform Engineer | Databricks Certified | PySpark · Kafka · Delta Lake · Python | Building Real-Time Streaming & AI-Ready Data Systems
+### Python | Automation | Data Engineering | System Integration
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-I am a **Data & AI Platform Engineer** with 2+ years of experience building production-grade streaming data products and lakehouse systems at Accenture. I specialize in turning high-velocity event data into reliable, AI-ready data platforms.
+I am a **Software Engineer** with experience in Python development, automation, data engineering, API integrations, ETL workflows, and enterprise platform support. I specialize in building automation solutions, developer tools, data validation frameworks, and integration systems.
 
 
 
@@ -80,9 +80,7 @@ This serves as my second brain for systematic learning and knowledge preservatio
 
 ## Target Roles
 
-
-
-Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Architect · DevOps Engineer (data-platform focus)
+Python Developer · Automation Engineer · Data Engineer · Backend Engineer · Platform Engineer · Full Stack Developer
 
 
 
@@ -92,19 +90,41 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 *Feb 2024 – Present (Associate → Analyst, Feb 2026 (effective March 2026))*
 
-- Delivered 90+ production PySpark ETL jobs across 4 supply-chain sub-domains, supporting 67 SDPs and 120+ CDPs through Python development, JSON configuration, and DDL development.
-- Led 12 change requests (CRs) across 14 CDPs and completed tag validations for 40+ SDPs in a single day by comparing design documents, Kafka messages, and data across SDP STG → ACTIVE → HIST and SDP Active → CDP STG → ACTIVE → HIST flows.
-- Worked in a 7-member E2E supply-chain data engineering team (1 lead, 1 tester, 5 DEs) covering site, supplier, item, and product sub-domains; primarily owned site and supplier pipelines while supporting item/product live monitoring.
-- Managed full lifecycle of each physical data product: PySpark/Python main scripts, JSON configs, unit tests, SingleStore tables, Delta Lake lakehouse tables (with catalog/schemas), Control-M scheduling, IOMate job orchestration, and Acceldata monitoring across DEV, SIT, and PROD.
-- Reduced deployment time by 40% by developing configuration-driven pipeline definitions and reusable Python utilities used by the CDP/SDP platform and consumed by existing CI/CD workflows.
-- Achieved 99.5% pipeline uptime through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.
-- Maintained 95%+ overall test coverage across 60+ pytest suites with mocked components and integration patterns.
-- Improved data processing latency by 30% through partitioning, caching, and performance tuning.
-- Owned end-to-end data quality and platform validation for 3–4 sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across Kafka → Stage → Raw → HAST/CDP layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
-- Developed Kafka consumer and validation workflows, DDL scripts, and validation/reconciliation queries for real-time SDP/CDP data processing, and monitored/troubleshot production pipelines.
-- Developed SDPs from design documents and built CDPs based on SDP schemas, applying transformation queries when multiple source SDPs feed a single CDP; maintained per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.
+- Delivered numerous production ETL jobs across multiple business domains through Python development, JSON configuration, and DDL development.
+- Led change requests across data products and completed validations by comparing design documents, source messages, and data across multiple environments.
+- Worked in cross-functional data engineering teams covering multiple business domains; owned data pipeline domains while supporting live monitoring.
+- Managed full lifecycle of data products: PySpark/Python main scripts, JSON configs, unit tests, production database tables, Delta Lake lakehouse tables, enterprise scheduling tools, job orchestration platforms, and monitoring solutions across multiple environments.
+- Improved deployment efficiency by developing configuration-driven pipeline definitions and reusable Python utilities used by the data platform and consumed by existing CI/CD workflows.
+- Maintained high pipeline availability through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.
+- Achieved comprehensive test coverage across pytest suites with mocked components and integration patterns.
+- Optimized pipeline performance through partitioning, caching, and performance tuning strategies.
+- Owned end-to-end data quality and platform validation for sprint releases, validating schemas, tags, record counts, primary keys, business hash keys, and duplicate records across data layers, and prepared SQL-based reconciliation evidence for clean production sign-off.
+- Developed Kafka consumer and validation workflows, DDL scripts, and validation/reconciliation queries for real-time data processing, and monitored/troubleshot production pipelines.
+- Developed data products from design documents and built downstream datasets based on source schemas, applying transformation queries when multiple source data products feed a single dataset; maintained per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.
 
 ## Selected Projects
+
+### DataOps Toolkit
+
+*Aug 2026*
+
+- Built an enterprise-grade CLI toolkit for SQL validation, lineage analysis, schema comparison, data quality auditing, and reporting.
+- Implemented multi-dialect SQL parsing, column-level lineage analysis, Hive partition auditing, metadata profiling, and HTML report generation.
+- Created comprehensive test suite with 23 tests, CLI interface with Typer, and rich terminal output with Rich library.
+- Published to GitHub with B+ grade after maintainer audit focusing on code quality, documentation, and best practices.
+
+**Links:** [Repository](https://github.com/Sasireddy001/dataops-toolkit)
+
+### Dagster OSS Contribution
+
+*Aug 2026*
+
+- Fixed critical bug in Dagster's AssetNode parent_keys handling, improving data pipeline reliability for thousands of users.
+- Added regression tests to prevent future issues and scoped warning suppression for async test execution.
+- Submitted PR #34143 to the Dagster repository, demonstrating ability to work with large-scale open-source codebases.
+- Followed contribution guidelines, wrote clear commit messages, and engaged with maintainers in code review process.
+
+**Links:** [Pull Request](https://github.com/dagster-io/dagster/pull/34143)
 
 
 
@@ -170,10 +190,13 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 ## Open Source Contributions
 
+**14+ Public Pull Requests** across major open-source projects including Dagster, urllib3, axios, fastify, strapi, tRPC, vitest, and jsdoc.
+
 ### Merged
 
 | PR | Description | Merged |
 |---|---|---|
+| [dagster/dagster#34143](https://github.com/dagster-io/dagster/pull/34143) | fix: AssetNode parent_keys mutation bug | 2026-08-19 |
 | [fastify/fastify#6880](https://github.com/fastify/fastify/pull/6880) | docs: update TypeScript docs to reference Fastify 5.x | 2026-07-29 |
 | [axios/axios#11113](https://github.com/axios/axios/pull/11113) | docs: add missing `fs` import to README stream example | 2026-07-29 |
 | [Topicspot/skillfrisk#9](https://github.com/Topicspot/skillfrisk/pull/9) | Add `--min-severity` flag to control which findings appear in reports | 2026-07-31 |
@@ -269,7 +292,7 @@ Cloud Data Engineer · Data Platform Engineer · AI Engineer · Solutions Archit
 
 - Location: India
 
-- Open to global remote Data & AI roles
+- Open to global remote Python, Automation, Data Engineering, and System Integration roles
 
 ## Blog
 
