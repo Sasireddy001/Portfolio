@@ -6,7 +6,7 @@
 
 
 
-### Python | Automation | Data Engineering | System Integration
+### Data Engineer | Data Platform Engineering | Streaming & Lakehouse
 
 
 
@@ -111,7 +111,7 @@ Python Developer · Automation Engineer · Data Engineer · Backend Engineer · 
 - Built an enterprise-grade CLI toolkit for SQL validation, lineage analysis, schema comparison, data quality auditing, and reporting.
 - Implemented multi-dialect SQL parsing, column-level lineage analysis, Hive partition auditing, metadata profiling, and HTML report generation.
 - Created comprehensive test suite with 23 tests, CLI interface with Typer, and rich terminal output with Rich library.
-- Published to GitHub with B+ grade after maintainer audit focusing on code quality, documentation, and best practices.
+- Published to GitHub with 6 modules, 23 tests, and comprehensive documentation.
 
 **Links:** [Repository](https://github.com/Sasireddy001/dataops-toolkit)
 
