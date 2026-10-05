@@ -784,6 +784,30 @@
 
     .btn-outline:hover { background: var(--bg); border-color: var(--primary); color: var(--primary); transform: translateY(-2px); }
 
+    .btn-large {
+      padding: 15px 30px;
+      font-size: 15px;
+    }
+
+    .btn-tertiary {
+      padding: 11px 20px;
+      font-size: 13px;
+    }
+
+    .btn-text {
+      padding: 11px 0;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .btn-text:hover {
+      color: var(--primary);
+      background: transparent;
+      transform: none;
+    }
+
     /* Header */
     header {
       position: fixed;
@@ -1520,10 +1544,10 @@
             <span class="tag">CI/CD</span>
           </div>
           <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#projects" class="btn btn-primary btn-large">View Projects</a>
             <a href="SASIDHAR_RESUME.html" class="btn btn-outline" target="_blank">View Resume</a>
-            <a href="proof.html" class="btn btn-outline">Recruiter Proof →</a>
-            <a href="https://github.com/Sasireddy001" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/Sasireddy001" class="btn btn-outline btn-tertiary" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="proof.html" class="btn btn-text">Recruiter Proof →</a>
           </div>
         </div>
         <div class="hero-right reveal">
@@ -1827,7 +1851,7 @@
         <div class="featured-footer">
           <span class="featured-metric">23 Tests</span>
           <span class="featured-metric">6 Modules</span>
-          <span class="featured-metric">B+ Grade Audit</span>
+          <span class="featured-metric">Multi-Dialect SQL</span>
         </div>
       </div>
       
@@ -1951,7 +1975,7 @@
         <h3 style="font-size: 20px; margin-bottom: 20px; color: var(--text-primary);">Featured Contributions</h3>
         <div class="cert-grid">
           <div class="card cert-card">
-            <div class="oss-status oss-merged">Merged</div>
+            <div class="oss-status oss-active">Open</div>
             <h4>dagster/dagster #34143</h4>
             <p><strong>Problem:</strong> Critical bug in AssetNode parent_keys handling affecting data pipeline reliability</p>
             <p><strong>Solution:</strong> Fixed mutation bug with defensive copy and added regression tests</p>
