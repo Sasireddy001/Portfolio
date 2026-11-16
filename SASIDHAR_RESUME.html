@@ -207,7 +207,7 @@
     <header>
       <div class="brand">
         <h1>Sasidhar Mopuru</h1>
-        <p class="role">Data &amp; AI Platform Engineer</p>
+        <p class="role">Data Engineer</p>
       </div>
       <div class="contact">
         <span>Bengaluru, India</span>
@@ -221,7 +221,7 @@
 
     <section class="summary">
       <h2>Professional Summary</h2>
-      <p>Data &amp; AI Platform Engineer with 2+ years validating, building, and operating production-grade data platforms and lakehouse systems at Accenture. Contributed to <strong>50+ data products</strong> and delivered <strong>90+ production PySpark ETL jobs</strong>, maintaining <strong>99.5% pipeline uptime</strong> and <strong>95%+ test coverage</strong>. Databricks and Microsoft Fabric certified. Core stack: <strong>PySpark, Delta Lake, Databricks, Python, SQL</strong>.</p>
+      <p>Data Engineer with 2+ years building production data platforms at Accenture. Delivered 90+ PySpark ETL jobs and 50+ data products with 95%+ test coverage. I focus on configuration-driven pipelines, data quality, and reliable production operations. Databricks and Microsoft Fabric certified. Core stack: PySpark, Delta Lake, Kafka, Python, SQL.</p>
     </section>
 
     <section class="highlights">
@@ -242,54 +242,48 @@
           <h2>Professional Experience</h2>
           <div class="job">
             <div class="job-header">
-              <h3>Data Engineer, Management &amp; Governance Analyst</h3>
+              <h3>Data Engineer</h3>
               <div class="company">Accenture &middot; Bengaluru, India</div>
-              <div class="date">Feb 2024 &ndash; Present <span class="promo">(Associate &rarr; Analyst, effective March 2026)</span></div>
+              <div class="date">Feb 2024 &ndash; Present</div>
             </div>
             <ul>
-              <li>Built and validated <strong>90+ production PySpark ETL jobs</strong> across 4 supply-chain sub-domains, contributing to <strong>50+ data products</strong> through Python, JSON configuration, and DDL.</li>
-              <li>Led <strong>12 change requests</strong> across data products and completed tag validations in a single day by comparing design documents, source messages, and data across staging, active, and history layers.</li>
-              <li>Part of a <strong>7-member E2E</strong> supply-chain data engineering team (1 lead, 1 tester, 5 DEs) covering site, supplier, item, and product sub-domains; primarily owned site and supplier pipelines while supporting item and product live monitoring.</li>
-              <li>Developed configuration-driven pipeline definitions and reusable Python utilities, <strong>cutting deployment cycle time by 40%</strong>.</li>
-              <li>Achieved <strong>99.5% pipeline uptime</strong> through modular PySpark pipelines with error handling, retry logic, schema validation, and data quality checks.</li>
-              <li>Maintained <strong>95%+ test coverage</strong> across <strong>60+ pytest suites</strong> with mocked components and integration patterns.</li>
-              <li>Improved data processing latency by <strong>30%</strong> via partitioning, caching, and Delta Lake query tuning.</li>
-              <li>Owned end-to-end data quality and platform validation for <strong>3&ndash;4 sprint releases</strong> across source-to-target data layers.</li>
-              <li>Used Jira dashboards to track sprint tasks, incidents, and maintenance activities for data products across the supply-chain platform.</li>
-              <li>Developed data products from design documents and built downstream datasets from source schemas, applying transformation queries when multiple source data products feed a single dataset; maintained per-schema exception tables to capture invalid records with target table reference, error log, and timestamp.</li>
+              <li>Built 90+ production PySpark ETL jobs across multiple data domains, contributing to 50+ data products through Python, JSON configuration, and DDL.</li>
+              <li>Developed configuration-driven pipeline definitions and reusable Python utilities, cutting deployment time by 40%.</li>
+              <li>Maintained 95%+ test coverage across 60+ pytest suites with mocked components and integration patterns.</li>
+              <li>Worked with Kafka for real-time data ingestion and Delta Lake for storage with exactly-once semantics.</li>
+              <li>Owned data quality validation for sprint releases — checking schemas, record counts, duplicates, and preparing reconciliation evidence.</li>
+              <li>Used Control-M for job scheduling, IOMate for orchestration, and Acceldata for monitoring production pipelines.</li>
+              <li>Contributed to open source projects (urllib3, axios, Dagster) in my spare time.</li>
             </ul>
           </div>
         </section>
 
         <section class="projects">
-          <h2>Selected Projects</h2>
+          <h2>Projects</h2>
           <div class="project">
-            <h3>Cloud-Native Streaming Data Platform</h3>
-            <p class="project-meta">
-              <span class="tech">Azure Event Hubs</span>
-              <span class="tech">Databricks</span>
-              <span class="tech">ADLS Gen2</span>
-              <span class="tech">Delta Lake</span>
-              <span class="tech">Terraform</span>
-            </p>
-            <ul>
-              <li>Designed modular Terraform templates for multi-environment infrastructure and a PySpark Structured Streaming job with watermark-based dedup and exactly-once Delta Lake writes.</li>
-              <li>Automated Terraform plan/apply pipelines through GitHub Actions for dev and prod environments.</li>
-              <li>Validated streaming output with schema checks and row-level data quality checks.</li>
-            </ul>
-          </div>
-          <div class="project">
-            <h3>Kafka &rarr; PySpark &rarr; Delta Pipeline</h3>
+            <h3>Kafka → PySpark → Delta Pipeline</h3>
             <p class="project-meta">
               <span class="tech">Apache Kafka</span>
               <span class="tech">PySpark</span>
               <span class="tech">Delta Lake</span>
-              <span class="tech">Databricks</span>
             </p>
             <ul>
-              <li>Ingested JSON events from Kafka, enforced schemas, and wrote exactly-once to Delta Lake using checkpointing and idempotent writes.</li>
-              <li>Benchmarked <strong>31k&ndash;45k rows/sec</strong> on a 4-core laptop for 100k&ndash;1M row workloads.</li>
-              <li>Maintained 95%+ pytest coverage with an in-memory Spark fixture and continuous integration.</li>
+              <li>Built real-time streaming pipeline with exactly-once delivery using checkpointing and idempotent writes.</li>
+              <li>Achieved 31k-45k rows/sec throughput with schema validation and data quality checks.</li>
+              <li>Maintained 95%+ pytest coverage with in-memory Spark fixture.</li>
+            </ul>
+          </div>
+          <div class="project">
+            <h3>Cloud Data Platform</h3>
+            <p class="project-meta">
+              <span class="tech">Azure</span>
+              <span class="tech">Terraform</span>
+              <span class="tech">Databricks</span>
+              <span class="tech">Delta Lake</span>
+            </p>
+            <ul>
+              <li>Designed Terraform templates for multi-environment infrastructure with Databricks and Event Hubs.</li>
+              <li>Automated deployments through GitHub Actions for dev and prod environments.</li>
             </ul>
           </div>
           <div class="project">
@@ -298,11 +292,10 @@
               <span class="tech">FastAPI</span>
               <span class="tech">ChromaDB</span>
               <span class="tech">OpenAI</span>
-              <span class="tech">LLaMA</span>
-              <span class="tech">Streamlit</span>
             </p>
             <ul>
-              <li>Built dense vector retrieval with ChromaDB, FastAPI backend, response caching, and modular LLM interfaces (OpenAI/LLaMA).</li>
+              <li>Built retrieval-augmented generation chatbot with vector search and LLM generation.</li>
+              <li>FastAPI backend with response caching and modular LLM interfaces.</li>
             </ul>
           </div>
         </section>
@@ -311,14 +304,13 @@
       <aside class="sidebar">
         <section class="skills">
           <h2>Technical Skills</h2>
-          <div class="skill-group"><strong>Data Engineering</strong><span>PySpark, Apache Spark, Delta Lake, ETL/ELT, Data Modeling, Data Quality, Schema Enforcement</span></div>
-          <div class="skill-group"><strong>Streaming &amp; Messaging</strong><span>Apache Kafka, Azure Event Hubs</span></div>
-          <div class="skill-group"><strong>Cloud &amp; Lakehouse</strong><span>Databricks, Microsoft Fabric, Azure ADLS Gen2, SingleStore</span></div>
+          <div class="skill-group"><strong>Data Engineering</strong><span>PySpark, Apache Spark, Delta Lake, ETL/ELT, Data Modeling, Data Quality</span></div>
+          <div class="skill-group"><strong>Streaming</strong><span>Apache Kafka, Azure Event Hubs, Structured Streaming</span></div>
+          <div class="skill-group"><strong>Cloud & Lakehouse</strong><span>Databricks, Microsoft Fabric, Azure ADLS, SingleStore</span></div>
           <div class="skill-group"><strong>Programming</strong><span>Python, SQL, YAML, JSON</span></div>
-          <div class="skill-group"><strong>DevOps &amp; CI/CD</strong><span>Docker, Terraform, GitLab CI/CD, GitHub Actions, Control-M, Vault</span></div>
-          <div class="skill-group"><strong>Testing &amp; Quality</strong><span>pytest, Unit &amp; Integration Testing, 95%+ Coverage</span></div>
-          <div class="skill-group"><strong>Monitoring</strong><span>Acceldata, CloudWatch, Jira</span></div>
-          <div class="skill-group"><strong>AI &amp; Vector</strong><span>RAG, ChromaDB, FastAPI, Vector Databases, Sentence-Transformers, Streamlit</span></div>
+          <div class="skill-group"><strong>DevOps</strong><span>Docker, Terraform, GitLab CI/CD, GitHub Actions, Control-M</span></div>
+          <div class="skill-group"><strong>Testing</strong><span>pytest, Unit & Integration Testing, 95%+ Coverage</span></div>
+          <div class="skill-group"><strong>AI/LLM</strong><span>RAG, ChromaDB, FastAPI, Vector Databases, OpenAI</span></div>
         </section>
 
         <section class="certifications">
